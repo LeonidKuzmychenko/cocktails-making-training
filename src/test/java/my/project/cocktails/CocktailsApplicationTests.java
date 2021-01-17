@@ -1,4 +1,4 @@
-package com.example.demo;
+package my.project.cocktails;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
