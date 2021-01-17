@@ -1,4 +1,4 @@
-package com.example.demo;
+package my.project.cocktails;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
