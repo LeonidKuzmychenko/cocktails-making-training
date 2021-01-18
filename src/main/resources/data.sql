@@ -1,1 +1,2 @@
-INSERT INTO ingredient_name
+-- INSERT INTO ingredient_name (ingredient_name_id, locale, name) VALUES (1, 'RU', 'Бейлис')
+-- INSERT INTO ingredient (ingredient_id, ingredient_name)

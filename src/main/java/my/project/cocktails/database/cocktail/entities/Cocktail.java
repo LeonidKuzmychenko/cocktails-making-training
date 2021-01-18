@@ -9,6 +9,7 @@ import my.project.cocktails.database.ingredient.entities.Ingredient;
 import org.jetbrains.annotations.NotNull;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Set;
 
 @Getter
