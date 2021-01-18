@@ -9,8 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.function.Consumer;
-import java.util.stream.Collectors;
 
 @RestController
 //@RequestMapping(value = "/status")
