@@ -1,4 +1,4 @@
-package my.project.cocktails.entities;
+package my.project.cocktails.database.ingredient.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,12 +10,12 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "CocktailName")
-public class CocktailName {
+@Table(name = "IngredientName")
+public class IngredientName {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long cocktailNameId;
+    private Long ingredientNameId;
 
     @Column
     private String locale;
@@ -23,7 +23,7 @@ public class CocktailName {
     @Column
     private String name;
 
-    public CocktailName(String locale, String name) {
+    public IngredientName(String locale, String name) {
         this.locale = locale;
         this.name = name;
     }

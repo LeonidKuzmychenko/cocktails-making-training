@@ -1,4 +1,4 @@
-package my.project.cocktails.entities;
+package my.project.cocktails.database.cocktail.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

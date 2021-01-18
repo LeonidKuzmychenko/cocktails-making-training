@@ -1,4 +1,4 @@
-package my.project.cocktails.configuration;
+package my.project.cocktails.configuration.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

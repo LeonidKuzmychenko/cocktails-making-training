@@ -14,11 +14,11 @@ import java.util.Map;
 //@RequestMapping(value = "/status")
 //produces (content-type) то что отправляем
 //consumes то что получаем
-public class CheckController {
+public class StatusController {
 
     @GetMapping(value = "/status")
-    public ResponseEntity<String> status() {
-        return new ResponseEntity<>("server is starting", HttpStatus.OK);
+    public ResponseEntity<Void> status() {
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @GetMapping(value = "/env", produces = MediaType.APPLICATION_JSON_VALUE)
@@ -28,7 +28,7 @@ public class CheckController {
         return new ResponseEntity<>(json, HttpStatus.OK);
     }
 
-    @GetMapping(value = "/envDataBase", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "/env-data-base", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> envDataBase() {
         Map<String, String> env = System.getenv();
         Map<String, String> database = new HashMap<>();

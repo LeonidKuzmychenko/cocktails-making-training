@@ -1,6 +1,6 @@
-package my.project.cocktails.repositories;
+package my.project.cocktails.database.cocktail.repositories;
 
-import my.project.cocktails.entities.CocktailName;
+import my.project.cocktails.database.cocktail.entities.CocktailName;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
