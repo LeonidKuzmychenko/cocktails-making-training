@@ -5,9 +5,9 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import my.project.cocktails.data.ILocale;
 import my.project.cocktails.data.ILocalization;
 import my.project.cocktails.data.Locale;
+import org.jetbrains.annotations.NotNull;
 
 import javax.persistence.*;
 
@@ -26,13 +26,15 @@ public class CocktailDescription implements ILocalization {
 
     @Column
     @Expose
+    @NotNull
     private Locale locale;
 
     @Column
     @Expose
+    @NotNull
     private String name;
 
-    public CocktailDescription(Locale locale, String name) {
+    public CocktailDescription(@NotNull Locale locale, @NotNull String name) {
         this.locale = locale;
         this.name = name;
     }

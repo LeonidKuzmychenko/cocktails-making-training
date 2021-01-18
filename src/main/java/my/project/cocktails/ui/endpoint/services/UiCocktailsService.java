@@ -28,6 +28,7 @@ public class UiCocktailsService {
         List<UiCocktail> cocktails = new ArrayList<>();
         cocktailService.findAll().forEach(cocktail -> {
             String name = getLocaleString(new ArrayList<>(cocktail.getCocktailNames()), locale);
+            String image = cocktail.getImage();
             String description = getLocaleString(new ArrayList<>(cocktail.getCocktailDescriptions()), locale);
             List<UiIngredient> ingredients = ingredientsToUiVersion(cocktail.getIngredients(), locale);
             //TODO добавить неправильные варианты ответов из БД
@@ -35,8 +36,7 @@ public class UiCocktailsService {
             for (int i = 0; i < notConsists; i++) {
                 ingredients.add(new UiIngredient("var", false));
             }
-            UiCocktail uiCocktail = new UiCocktail(name, "image", description, ingredients);
-            //TODO добавить ссылку на картинку в БД
+            UiCocktail uiCocktail = new UiCocktail(name, image, description, ingredients);
             cocktails.add(uiCocktail);
         });
         return cocktails;
