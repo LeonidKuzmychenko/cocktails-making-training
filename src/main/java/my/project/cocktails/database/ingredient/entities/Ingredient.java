@@ -8,7 +8,6 @@ import lombok.Setter;
 import my.project.cocktails.database.cocktail.entities.Cocktail;
 
 import javax.persistence.*;
-import java.util.List;
 import java.util.Set;
 
 @Getter
@@ -26,12 +25,12 @@ public class Ingredient {
 
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @Expose
-    private List<IngredientName> ingredientNames;
+    private Set<IngredientName> ingredientNames;
 
     @ManyToMany(mappedBy = "ingredients")
     private Set<Cocktail> cocktails;
 
-    public Ingredient(List<IngredientName> ingredientNames) {
+    public Ingredient(Set<IngredientName> ingredientNames) {
         this.ingredientNames = ingredientNames;
     }
 

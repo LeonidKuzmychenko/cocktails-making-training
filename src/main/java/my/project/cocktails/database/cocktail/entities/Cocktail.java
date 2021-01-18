@@ -6,9 +6,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import my.project.cocktails.database.ingredient.entities.Ingredient;
+import org.jetbrains.annotations.NotNull;
 
 import javax.persistence.*;
-import java.util.List;
 import java.util.Set;
 
 @Getter
@@ -24,13 +24,15 @@ public class Cocktail {
     @Expose
     private Long cocktailId;
 
+    @NotNull
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @Expose
-    private List<CocktailName> cocktailNames;
+    private Set<CocktailName> cocktailNames;
 
-//    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-//    @Expose
-//    private List<CocktailDescription> cocktailDescriptions;
+    @NotNull
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @Expose
+    private Set<CocktailDescription> cocktailDescriptions;
 
     @ManyToMany
     @JoinTable(
@@ -40,8 +42,9 @@ public class Cocktail {
     @Expose
     private Set<Ingredient> ingredients;
 
-    public Cocktail(List<CocktailName> cocktailNames) {
+    public Cocktail(@NotNull Set<CocktailName> cocktailNames, @NotNull Set<CocktailDescription> cocktailDescriptions) {
         this.cocktailNames = cocktailNames;
+        this.cocktailDescriptions = cocktailDescriptions;
     }
 
     public void addIngredient(Ingredient ingredient) {
