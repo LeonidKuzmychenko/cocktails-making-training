@@ -40,7 +40,6 @@ public class Cocktail {
     @NotNull
     private Set<CocktailDescription> cocktailDescriptions;
 
-
     @ManyToMany
     @JoinTable(
             name = "cocktails_ingredient_join",
@@ -57,9 +56,6 @@ public class Cocktail {
     }
 
     public void addIngredient(@NotNull Ingredient ingredient) {
-        System.out.println(ingredient.toString());
-//        if (ingredients == null)
-//            ingredients = new HashSet<>();
         ingredients.add(ingredient);
     }
 

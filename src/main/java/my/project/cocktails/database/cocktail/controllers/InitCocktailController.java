@@ -126,7 +126,7 @@ public class InitCocktailController {
                 ))));
 
         cocktailService.save(new Cocktail(
-                "https://i.pinimg.com/originals/2a/81/2f/2a812f4d95c8d869e889f307444ba285.png",
+                "https://static.winestreet.ru/off-line/cocktail/55/image_S.png",
                 new HashSet<>(Arrays.asList(
                         new CocktailName(Locale.RU, "Опухоль мозга"),
                         new CocktailName(Locale.EN, "Brain tumor")

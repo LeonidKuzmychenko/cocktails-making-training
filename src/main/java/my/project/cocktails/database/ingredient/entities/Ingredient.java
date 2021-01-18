@@ -39,9 +39,6 @@ public class Ingredient {
     }
 
     public void addCocktail(Cocktail cocktail) {
-        System.out.println(cocktail);
-//        if (cocktails == null)
-//            cocktails = new HashSet<>();
         cocktails.add(cocktail);
     }
 

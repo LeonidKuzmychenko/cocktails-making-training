@@ -43,7 +43,7 @@ public class UiCocktailsService {
         return cocktails;
     }
 
-    private String getLocaleString(Collection<ILocalization> collection, Locale locale) {
+    private String getLocaleString(List<ILocalization> collection, Locale locale) {
         for (ILocalization item : collection) {
             if (item.getLocale() == locale)
                 return item.getName();
