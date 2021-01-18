@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -17,10 +18,10 @@ public class Cocktail {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long cocktailId;
 
-    @Column
-    private String cocktailName;
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    private List<CocktailName> cocktailNames;
 
-    public Cocktail(String cocktailName) {
-        this.cocktailName = cocktailName;
+    public Cocktail(List<CocktailName> cocktailNames) {
+        this.cocktailNames = cocktailNames;
     }
 }

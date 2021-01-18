@@ -23,4 +23,8 @@ public class CocktailName {
     @Column
     private String name;
 
+    public CocktailName(String locale, String name) {
+        this.locale = locale;
+        this.name = name;
+    }
 }
