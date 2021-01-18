@@ -1,7 +1,6 @@
 package my.project.cocktails.controller;
 
 import com.google.gson.Gson;
-import my.project.cocktails.dto.CocktailDto;
 import my.project.cocktails.entities.Cocktail;
 import my.project.cocktails.services.CocktailService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,12 +24,6 @@ public class CocktailController {
         List<Cocktail> cocktails = cocktailService.findAll();
         return new ResponseEntity<>(new Gson().toJson(cocktails), HttpStatus.OK);
     }
-
-//    @PostMapping(value = "/save", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
-//    public ResponseEntity<String> save(@Valid @RequestBody CocktailDto cocktailDto) {
-//        Cocktail savedCocktail = cocktailService.save(cocktailDto.toCocktail());
-//        return new ResponseEntity<>(new Gson().toJson(savedCocktail), HttpStatus.OK);
-//    }
 
     @PostMapping(value = "/save", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> save(@Valid @RequestBody Cocktail cocktail) {
