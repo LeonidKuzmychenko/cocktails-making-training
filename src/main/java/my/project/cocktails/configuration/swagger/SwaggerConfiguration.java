@@ -1,4 +1,4 @@
-package my.project.cocktails.configuration;
+package my.project.cocktails.configuration.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -20,12 +20,12 @@ public class SwaggerConfiguration {
     @Bean
     public Docket api() {
         ApiInfo apiInfo = new ApiInfoBuilder()
-                .title("Велком ин батино апи")
-                .description("Это апи делает все для моего счастья")
+                .title("Swagger2")
+                .description("Cocktails Making Training")
                 .contact(new Contact("Leonid Kuzmychenko", "", ""))
-                .license("Free chinese")
+                .license("Free")
                 .licenseUrl("")
-                .version("Super-uber ultimate edition 1.0")
+                .version("0.9")
                 .build();
 
         return new Docket(DocumentationType.SWAGGER_2).select()
