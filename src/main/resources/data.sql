@@ -1,1 +1,1 @@
-INSERT INTO cocktail (coc)
+INSERT INTO ingredient_name

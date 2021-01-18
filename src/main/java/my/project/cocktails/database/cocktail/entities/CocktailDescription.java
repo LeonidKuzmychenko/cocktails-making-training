@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import my.project.cocktails.data.ILocale;
+import my.project.cocktails.data.ILocalization;
 import my.project.cocktails.data.Locale;
 
 import javax.persistence.*;
@@ -15,7 +17,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Entity
 @Table(name = "CocktailDescription")
-public class CocktailDescription {
+public class CocktailDescription implements ILocalization {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
