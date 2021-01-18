@@ -1,12 +1,12 @@
 package my.project.cocktails.database.ingredient.entities;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.google.gson.annotations.Expose;
+import lombok.*;
 
 import javax.persistence.*;
 
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
@@ -15,12 +15,15 @@ public class IngredientName {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Expose
     private Long ingredientNameId;
 
     @Column
+    @Expose
     private String locale;
 
     @Column
+    @Expose
     private String name;
 
     public IngredientName(String locale, String name) {
