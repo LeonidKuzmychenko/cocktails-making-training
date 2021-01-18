@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import my.project.cocktails.data.Locale;
 
 import javax.persistence.*;
 
@@ -23,13 +24,13 @@ public class IngredientName {
 
     @Column
     @Expose
-    private String locale;
+    private Locale locale;
 
     @Column
     @Expose
     private String name;
 
-    public IngredientName(String locale, String name) {
+    public IngredientName(Locale locale, String name) {
         this.locale = locale;
         this.name = name;
     }

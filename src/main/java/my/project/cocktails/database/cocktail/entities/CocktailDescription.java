@@ -14,13 +14,13 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "CocktailName")
-public class CocktailName {
+@Table(name = "CocktailDescription")
+public class CocktailDescription {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Expose
-    private Long cocktailNameId;
+    private Long cocktailDescriptionId;
 
     @Column
     @Expose
@@ -30,7 +30,7 @@ public class CocktailName {
     @Expose
     private String name;
 
-    public CocktailName(Locale locale, String name) {
+    public CocktailDescription(Locale locale, String name) {
         this.locale = locale;
         this.name = name;
     }

@@ -28,6 +28,10 @@ public class Cocktail {
     @Expose
     private List<CocktailName> cocktailNames;
 
+//    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+//    @Expose
+//    private List<CocktailDescription> cocktailDescriptions;
+
     @ManyToMany
     @JoinTable(
             name = "cocktails_ingredient_join",
