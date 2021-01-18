@@ -1,4 +1,4 @@
-package my.project.cocktails.database.mix;
+package my.project.cocktails.database.mix.service;
 
 import my.project.cocktails.database.cocktail.entities.Cocktail;
 import my.project.cocktails.database.cocktail.repositories.CocktailRepository;
@@ -18,7 +18,7 @@ public class MixCocktailService {
     @Autowired
     private IngredientRepository ingredientRepository;
 
-    public Cocktail addIngredient(Long idCocktail, Long idIngredient){
+    public Cocktail addIngredient(Long idCocktail, Long idIngredient) {
         Optional<Cocktail> cocktailOptional = cocktailRepository.findById(idCocktail);
         Optional<Ingredient> ingredientOptional = ingredientRepository.findById(idIngredient);
 

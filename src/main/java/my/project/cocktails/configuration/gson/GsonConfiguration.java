@@ -9,12 +9,12 @@ import org.springframework.context.annotation.Configuration;
 public class GsonConfiguration {
 
     @Bean("Gson")
-    public Gson getGson(){
+    public Gson getGson() {
         return new Gson();
     }
 
     @Bean("GsonExpose")
-    public Gson getGsonExpose(){
+    public Gson getGsonExpose() {
         return new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
     }
 }

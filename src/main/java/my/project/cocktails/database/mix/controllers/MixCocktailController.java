@@ -1,9 +1,10 @@
-package my.project.cocktails.database.mix;
+package my.project.cocktails.database.mix.controllers;
 
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import my.project.cocktails.database.cocktail.entities.Cocktail;
+import my.project.cocktails.database.mix.service.MixCocktailService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -19,12 +20,15 @@ public class MixCocktailController {
     @Autowired
     private MixCocktailService mixCocktailService;
 
+    @Autowired
+    @Qualifier("GsonExpose")
+    private Gson gson;
+
     @PutMapping(value = "/mix", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> mix(
             @RequestParam("idCocktail") Long idCocktail,
             @RequestParam("idIngredient") Long idIngredient) {
         Cocktail savedCocktail = mixCocktailService.addIngredient(idCocktail, idIngredient);
-        Gson gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
         return new ResponseEntity<>(gson.toJson(savedCocktail), HttpStatus.OK);
     }
 

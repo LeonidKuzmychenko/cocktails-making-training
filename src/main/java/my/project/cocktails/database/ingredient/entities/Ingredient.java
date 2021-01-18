@@ -1,8 +1,10 @@
 package my.project.cocktails.database.ingredient.entities;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.google.gson.annotations.Expose;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import my.project.cocktails.database.cocktail.entities.Cocktail;
 
 import javax.persistence.*;
@@ -33,7 +35,7 @@ public class Ingredient {
         this.ingredientNames = ingredientNames;
     }
 
-    public void addCocktail(Cocktail cocktail){
+    public void addCocktail(Cocktail cocktail) {
         cocktails.add(cocktail);
     }
 

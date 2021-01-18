@@ -1,7 +1,6 @@
 package my.project.cocktails.database.cocktail.controllers;
 
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import my.project.cocktails.database.cocktail.entities.Cocktail;
 import my.project.cocktails.database.cocktail.services.CocktailService;
 import org.springframework.beans.factory.annotation.Autowired;
