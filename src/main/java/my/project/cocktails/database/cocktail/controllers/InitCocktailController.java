@@ -34,7 +34,7 @@ public class InitCocktailController {
     private MixCocktailService mixCocktailService;
 
     @GetMapping(value = "/init", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Void> findAll() {
+    public ResponseEntity<Void> init() {
 
         ingredientService.save(new Ingredient(new HashSet<>(Arrays.asList(
                 new IngredientName(Locale.RU, "Айриш Крим"),
@@ -42,8 +42,8 @@ public class InitCocktailController {
         ))));//1
 
         ingredientService.save(new Ingredient(new HashSet<>(Arrays.asList(
-                new IngredientName(Locale.RU, "Калуа"),
-                new IngredientName(Locale.EN, "Khalua")
+                new IngredientName(Locale.RU, "Кофейный ликер"),
+                new IngredientName(Locale.EN, "Coffee liqueur")
         ))));//2
 
         ingredientService.save(new Ingredient(new HashSet<>(Arrays.asList(
@@ -52,8 +52,8 @@ public class InitCocktailController {
         ))));//3
 
         ingredientService.save(new Ingredient(new HashSet<>(Arrays.asList(
-                new IngredientName(Locale.RU, "Пизанг Амбон"),
-                new IngredientName(Locale.EN, "Pizang Ambon")
+                new IngredientName(Locale.RU, "Банановый ликер"),
+                new IngredientName(Locale.EN, "Banana liqueur")
         ))));//4
 
         ingredientService.save(new Ingredient(new HashSet<>(Arrays.asList(
@@ -101,7 +101,7 @@ public class InitCocktailController {
                 new HashSet<>(Arrays.asList(
                         new CocktailDescription(Locale.RU, "Мой любимый шот."),
                         new CocktailDescription(Locale.EN, "My favorite shot.")
-                ))));
+                ))));//1
 
         cocktailService.save(new Cocktail(
                 "https://royalclub.md/wp-content/uploads/2018/06/8-8.png",
@@ -112,7 +112,7 @@ public class InitCocktailController {
                 new HashSet<>(Arrays.asList(
                         new CocktailDescription(Locale.RU, "Более прошибной, чем Б-52"),
                         new CocktailDescription(Locale.EN, "More breakable than the B-52")
-                ))));
+                ))));//2
 
         cocktailService.save(new Cocktail(
                 "https://i.pinimg.com/originals/2a/81/2f/2a812f4d95c8d869e889f307444ba285.png",
@@ -123,7 +123,7 @@ public class InitCocktailController {
                 new HashSet<>(Arrays.asList(
                         new CocktailDescription(Locale.RU, "Еще более прошибной, чем Зеленый Мексиканец."),
                         new CocktailDescription(Locale.EN, "Even more breakable than the Green Mexican.")
-                ))));
+                ))));//3
 
         cocktailService.save(new Cocktail(
                 "https://static.winestreet.ru/off-line/cocktail/55/image_S.png",
@@ -134,8 +134,19 @@ public class InitCocktailController {
                 new HashSet<>(Arrays.asList(
                         new CocktailDescription(Locale.RU, "Красивый, но вонючий. Внутри свернувшиеся сливки."),
                         new CocktailDescription(Locale.EN, "Nice but smelly. Curdled cream inside.")
-                ))));
+                ))));//4
 
+        cocktailService.save(new Cocktail(
+                "https://static.winestreet.ru/off-line/cocktail/55/image_S.png",
+                new HashSet<>(Arrays.asList(
+                        new CocktailName(Locale.RU, "Скользкий сосок"),
+                        new CocktailName(Locale.EN, "Slippery nipple")
+                )),
+                new HashSet<>(Arrays.asList(
+                        new CocktailDescription(Locale.RU, ""),
+                        new CocktailDescription(Locale.EN, "")
+                ))));//5
+        
         mixCocktailService.addIngredient(1L, 1L);
         mixCocktailService.addIngredient(1L, 2L);
         mixCocktailService.addIngredient(1L, 3L);
@@ -153,6 +164,10 @@ public class InitCocktailController {
         mixCocktailService.addIngredient(4L, 9L);
         mixCocktailService.addIngredient(4L, 10L);
         mixCocktailService.addIngredient(4L, 11L);
+
+        mixCocktailService.addIngredient(5L, 1L);
+        mixCocktailService.addIngredient(5L, 7L);
+        mixCocktailService.addIngredient(5L, 9L);
 
         return new ResponseEntity<>(HttpStatus.OK);
     }
