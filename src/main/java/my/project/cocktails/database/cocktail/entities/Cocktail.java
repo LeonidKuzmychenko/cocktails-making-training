@@ -25,14 +25,19 @@ public class Cocktail {
     @Expose
     private Long cocktailId;
 
+    @Column
+    @Expose
     @NotNull
+    private String image;
+
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @Expose
+    @NotNull
     private Set<CocktailName> cocktailNames;
 
-    @NotNull
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @Expose
+    @NotNull
     private Set<CocktailDescription> cocktailDescriptions;
 
     @ManyToMany
@@ -41,14 +46,26 @@ public class Cocktail {
             joinColumns = @JoinColumn(name = "cocktail_id"),
             inverseJoinColumns = @JoinColumn(name = "ingredient_id"))
     @Expose
-    private Set<Ingredient> ingredients;
+    @NotNull
+    private Set<Ingredient> ingredients = new HashSet<>();
 
-    public Cocktail(@NotNull Set<CocktailName> cocktailNames, @NotNull Set<CocktailDescription> cocktailDescriptions) {
+    public Cocktail(@NotNull String image, @NotNull Set<CocktailName> cocktailNames, @NotNull Set<CocktailDescription> cocktailDescriptions) {
+        this.image = image;
         this.cocktailNames = cocktailNames;
         this.cocktailDescriptions = cocktailDescriptions;
     }
 
-    public void addIngredient(Ingredient ingredient) {
+    public void addIngredient(@NotNull Ingredient ingredient) {
         ingredients.add(ingredient);
+    }
+
+    @Override
+    public String toString() {
+        return "Cocktail{" +
+                "cocktailId=" + cocktailId +
+                ", image='" + image + '\'' +
+                ", cocktailNames=" + cocktailNames +
+                ", cocktailDescriptions=" + cocktailDescriptions +
+                '}';
     }
 }
