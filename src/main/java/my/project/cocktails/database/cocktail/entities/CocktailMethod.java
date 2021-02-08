@@ -1,4 +1,4 @@
-package my.project.cocktails.database.ingredient.entities;
+package my.project.cocktails.database.cocktail.entities;
 
 import com.google.gson.annotations.Expose;
 import lombok.AllArgsConstructor;
@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import my.project.cocktails.customtypes.locale.ILocalization;
 import my.project.cocktails.customtypes.locale.Locale;
+import org.jetbrains.annotations.NotNull;
 
 import javax.persistence.*;
 
@@ -15,23 +16,25 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "IngredientName")
-public class IngredientName implements ILocalization {
+@Table(name = "CocktailMethod")
+public class CocktailMethod implements ILocalization {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Expose
-    private Long ingredientNameId;
+    private Long cocktailMethodId;
 
     @Column
     @Expose
+    @NotNull
     private Locale locale;
 
     @Column
     @Expose
+    @NotNull
     private String name;
 
-    public IngredientName(Locale locale, String name) {
+    public CocktailMethod(@NotNull Locale locale, @NotNull String name) {
         this.locale = locale;
         this.name = name;
     }

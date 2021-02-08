@@ -38,7 +38,27 @@ public class Cocktail {
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @Expose
     @NotNull
-    private Set<CocktailDescription> cocktailDescriptions;
+    private Set<CocktailAssociation> cocktailAssociations;
+
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @Expose
+    @NotNull
+    private Set<CocktailType> cocktailType;
+
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @Expose
+    @NotNull
+    private Set<CocktailMethod> cocktailMethod;
+
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @Expose
+    @NotNull
+    private Set<CocktailNote> cocktailNote;
+
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @Expose
+    @NotNull
+    private Set<CocktailGarnish> cocktailGarnish;
 
     @ManyToMany
     @JoinTable(
@@ -49,14 +69,25 @@ public class Cocktail {
     @NotNull
     private Set<Ingredient> ingredients = new HashSet<>();
 
-    public Cocktail(@NotNull String image, @NotNull Set<CocktailName> cocktailNames, @NotNull Set<CocktailDescription> cocktailDescriptions) {
-        this.image = image;
-        this.cocktailNames = cocktailNames;
-        this.cocktailDescriptions = cocktailDescriptions;
-    }
-
     public void addIngredient(@NotNull Ingredient ingredient) {
         ingredients.add(ingredient);
+    }
+
+//    @OneToMany
+//    private Set<MixIngredient> ingredients = new HashSet<>();
+
+//    public void addIngredient(@NotNull MixIngredient mixIngredient) {
+//        ingredients.add(mixIngredient);
+//    }
+
+    public Cocktail(@NotNull Set<CocktailName> cocktailNames, @NotNull Set<CocktailAssociation> cocktailAssociations, @NotNull Set<CocktailType> cocktailType, @NotNull Set<CocktailMethod> cocktailMethod, @NotNull Set<CocktailNote> cocktailNote, @NotNull Set<CocktailGarnish> cocktailGarnish, @NotNull Set<Ingredient> ingredients) {
+        this.cocktailNames = cocktailNames;
+        this.cocktailAssociations = cocktailAssociations;
+        this.cocktailType = cocktailType;
+        this.cocktailMethod = cocktailMethod;
+        this.cocktailNote = cocktailNote;
+        this.cocktailGarnish = cocktailGarnish;
+        this.ingredients = ingredients;
     }
 
     @Override
@@ -65,7 +96,12 @@ public class Cocktail {
                 "cocktailId=" + cocktailId +
                 ", image='" + image + '\'' +
                 ", cocktailNames=" + cocktailNames +
-                ", cocktailDescriptions=" + cocktailDescriptions +
+                ", cocktailAssociations=" + cocktailAssociations +
+                ", cocktailType=" + cocktailType +
+                ", cocktailMethod=" + cocktailMethod +
+                ", cocktailNote=" + cocktailNote +
+                ", cocktailGarnish=" + cocktailGarnish +
+                ", ingredients=" + ingredients +
                 '}';
     }
 }

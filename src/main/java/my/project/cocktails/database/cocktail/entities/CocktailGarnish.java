@@ -5,8 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import my.project.cocktails.data.ILocalization;
-import my.project.cocktails.data.Locale;
+import my.project.cocktails.customtypes.locale.ILocalization;
+import my.project.cocktails.customtypes.locale.Locale;
 import org.jetbrains.annotations.NotNull;
 
 import javax.persistence.*;
@@ -16,13 +16,13 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "CocktailDescription")
-public class CocktailDescription implements ILocalization {
+@Table(name = "CocktailGarnish")
+public class CocktailGarnish implements ILocalization {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Expose
-    private Long cocktailDescriptionId;
+    private Long cocktailGarnishId;
 
     @Column
     @Expose
@@ -34,7 +34,7 @@ public class CocktailDescription implements ILocalization {
     @NotNull
     private String name;
 
-    public CocktailDescription(@NotNull Locale locale, @NotNull String name) {
+    public CocktailGarnish(@NotNull Locale locale, @NotNull String name) {
         this.locale = locale;
         this.name = name;
     }

@@ -31,4 +31,19 @@ public class MixCocktailService {
         cocktailRepository.save(cocktail);
         return cocktail;
     }
+
+//    public Cocktail addIngredient(Long idCocktail, Long idIngredient, IngredientVolumeType volumeType, String volume) {
+//        Optional<Cocktail> cocktailOptional = cocktailRepository.findById(idCocktail);
+//        Optional<Ingredient> ingredientOptional = ingredientRepository.findById(idIngredient);
+//
+//        Cocktail cocktail = cocktailOptional.get();
+//        Ingredient ingredient = ingredientOptional.get();
+//
+//        MixIngredient mixIngredient = new MixIngredient(ingredient, volumeType, volume);
+//        cocktail.addIngredient(mixIngredient);
+////        ingredient.addCocktail(cocktail);
+//
+//        cocktailRepository.save(cocktail);
+//        return cocktail;
+//    }
 }

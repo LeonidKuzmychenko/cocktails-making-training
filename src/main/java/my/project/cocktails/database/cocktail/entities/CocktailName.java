@@ -5,8 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import my.project.cocktails.data.ILocalization;
-import my.project.cocktails.data.Locale;
+import my.project.cocktails.customtypes.locale.ILocalization;
+import my.project.cocktails.customtypes.locale.Locale;
 import org.jetbrains.annotations.NotNull;
 
 import javax.persistence.*;
