@@ -13,6 +13,11 @@ import java.util.Map;
 @RestController
 public class StatusController {
 
+    @GetMapping(value = "/version")
+    public ResponseEntity<String> version() {
+        return new ResponseEntity<>("1.1", HttpStatus.OK);
+    }
+
     @GetMapping(value = "/status")
     public ResponseEntity<Void> status() {
         return new ResponseEntity<>(HttpStatus.OK);

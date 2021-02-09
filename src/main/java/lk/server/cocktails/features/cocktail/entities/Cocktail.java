@@ -1,22 +1,15 @@
 package lk.server.cocktails.features.cocktail.entities;
 
 import com.google.gson.annotations.Expose;
-import lk.server.cocktails.customtypes.locale.Locale;
 import lk.server.cocktails.features.ingredient.entities.Ingredient;
-import lk.server.cocktails.features.init.dto.CocktailFileStructure;
-import lk.server.cocktails.features.init.dto.IngredientFileStructure;
-import lk.server.cocktails.features.init.dto.help.CocktailsTransformHelperStart;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import org.jetbrains.annotations.NotNull;
 
 import javax.persistence.*;
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 @Getter
 @Setter

@@ -1,6 +1,5 @@
 package lk.server.cocktails.ui.endpoint.services;
 
-import lk.server.cocktails.customtypes.locale.ILocalization;
 import lk.server.cocktails.customtypes.locale.Locale;
 import lk.server.cocktails.customtypes.locale.LocaleService;
 import lk.server.cocktails.features.cocktail.entities.Cocktail;
@@ -30,11 +29,9 @@ public class UiCocktailsService {
     @Autowired
     private LocaleService localeService;
 
-    private final int INGREDIENT_SIZE = 10;
-
-    public List<UiCocktail> getCocktails(Locale locale) {
+    public List<UiCocktail> getCocktails(Locale locale, int cSize, int iSize) {
         List<UiCocktail> cocktails = new ArrayList<>();
-        cocktailService.findRandomLimitCocktails(3).forEach(cocktail -> {
+        cocktailService.findRandomLimitCocktails(cSize).forEach(cocktail -> {
             String name = localeService.getStringByLocale(new ArrayList<>(cocktail.getCocktailName()), locale);
             String association = localeService.getStringByLocale(new ArrayList<>(cocktail.getCocktailAssociation()), locale);
             String type = localeService.getStringByLocale(new ArrayList<>(cocktail.getCocktailType()), locale);
@@ -43,8 +40,8 @@ public class UiCocktailsService {
             String garnish = localeService.getStringByLocale(new ArrayList<>(cocktail.getCocktailGarnish()), locale);
             List<Ingredient> ingredients = new ArrayList<>(cocktail.getIngredients());
             List<UiIngredient> uiIngredients = ingredientsToUiVersion(ingredients, true, locale);
-            uiIngredients.addAll(getNotConsistsIngredients(cocktail, INGREDIENT_SIZE - uiIngredients.size(), locale));
-            Collections.shuffle(ingredients);
+            uiIngredients.addAll(getNotConsistsIngredients(cocktail, iSize - uiIngredients.size(), locale));
+            Collections.shuffle(uiIngredients);
             UiCocktail uiCocktail = new UiCocktail();
             uiCocktail.setName(name);
             uiCocktail.setAssociation(association);

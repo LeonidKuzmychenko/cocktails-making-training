@@ -18,7 +18,7 @@ public class InitCocktailController {
     @Autowired
     private InitService initService;
 
-    @GetMapping(value = "/initIngredients", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "/init", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> init() throws IOException {
         initService.init();
         return new ResponseEntity<>(HttpStatus.OK);

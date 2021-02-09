@@ -1,9 +1,5 @@
 package lk.server.cocktails.customtypes.locale;
 
-import lk.server.cocktails.features.ingredient.entities.IngredientName;
-
-import java.util.List;
-
 public interface ILocalization extends ILocale {
     String getName();
 
