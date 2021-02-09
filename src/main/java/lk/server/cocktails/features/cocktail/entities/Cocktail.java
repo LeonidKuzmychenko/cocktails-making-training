@@ -1,15 +1,22 @@
 package lk.server.cocktails.features.cocktail.entities;
 
 import com.google.gson.annotations.Expose;
+import lk.server.cocktails.customtypes.locale.Locale;
 import lk.server.cocktails.features.ingredient.entities.Ingredient;
+import lk.server.cocktails.features.init.dto.CocktailFileStructure;
+import lk.server.cocktails.features.init.dto.IngredientFileStructure;
+import lk.server.cocktails.features.init.dto.help.CocktailsTransformHelperStart;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import org.jetbrains.annotations.NotNull;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 @Getter
 @Setter
@@ -98,5 +105,30 @@ public class Cocktail {
                 ", cocktailGarnish=" + cocktailGarnish +
                 ", ingredients=" + ingredients +
                 '}';
+    }
+
+    public CocktailsTransformHelperStart toCocktailsTransformHelperStart(List<CocktailFileStructure> cocktailFileStructures) {
+        CocktailsTransformHelperStart cocktailsTransformHelperStart = new CocktailsTransformHelperStart();
+        cocktailsTransformHelperStart.setCocktailId(this.cocktailId);
+        cocktailsTransformHelperStart.setIngredientNames(getIngredientListByName(cocktailFileStructures, getCocktailEnName()));
+        return cocktailsTransformHelperStart;
+    }
+
+    private List<String> getIngredientListByName(List<CocktailFileStructure> cocktailFileStructures, String name) {
+        for (CocktailFileStructure cocktail : cocktailFileStructures) {
+            if (cocktail.getNameEN().equals(name)) {
+                return cocktail.getIngredientStructures().stream()
+                        .map(IngredientFileStructure::getNameEN)
+                        .collect(Collectors.toList());
+            }
+        }
+        return new ArrayList<>();
+    }
+
+    public String getCocktailEnName() {
+        for (CocktailName name : cocktailName)
+            if (name.getLocale() == Locale.EN)
+                return name.getName();
+        return null;
     }
 }

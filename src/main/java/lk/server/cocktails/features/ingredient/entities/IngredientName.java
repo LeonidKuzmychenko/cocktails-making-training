@@ -35,4 +35,5 @@ public class IngredientName implements ILocalization {
         this.locale = locale;
         this.name = name;
     }
+
 }

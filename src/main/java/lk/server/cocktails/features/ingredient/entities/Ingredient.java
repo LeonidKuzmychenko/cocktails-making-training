@@ -1,6 +1,7 @@
 package lk.server.cocktails.features.ingredient.entities;
 
 import com.google.gson.annotations.Expose;
+import lk.server.cocktails.customtypes.locale.Locale;
 import lk.server.cocktails.features.cocktail.entities.Cocktail;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -48,6 +49,13 @@ public class Ingredient {
                 "ingredientId=" + ingredientId +
                 ", ingredientNames=" + ingredientNames +
                 '}';
+    }
+
+    public String getIngredientEnName() {
+        for (IngredientName name : ingredientNames)
+            if (name.getLocale() == Locale.EN)
+                return name.getName();
+        return null;
     }
 
 }
