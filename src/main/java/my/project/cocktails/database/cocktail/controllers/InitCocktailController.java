@@ -1,15 +1,37 @@
 package my.project.cocktails.database.cocktail.controllers;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+import lk.utils.files.FileManager;
+import my.project.cocktails.customtypes.locale.Locale;
+import my.project.cocktails.data.parsing.CocktailFileStructure;
+import my.project.cocktails.data.parsing.IngredientFileStructure;
+import my.project.cocktails.data.parsing.IngredientStructure;
+import my.project.cocktails.database.cocktail.controllers.dto.SavedCocktailsDto;
+import my.project.cocktails.database.cocktail.controllers.dto.SavedCocktailsDto2;
+import my.project.cocktails.database.cocktail.entities.*;
 import my.project.cocktails.database.cocktail.services.CocktailService;
+import my.project.cocktails.database.ingredient.entities.Ingredient;
+import my.project.cocktails.database.ingredient.entities.IngredientName;
 import my.project.cocktails.database.ingredient.services.IngredientService;
 import my.project.cocktails.database.mix.service.MixCocktailService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.io.IOException;
+import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.function.Consumer;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping(value = "/cocktails")
@@ -24,143 +46,137 @@ public class InitCocktailController {
     @Autowired
     private MixCocktailService mixCocktailService;
 
-    @GetMapping(value = "/init", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Void> init() {
+    @Autowired
+    private FileManager fileManager;
 
-//        ingredientService.save(new Ingredient(new HashSet<>(Arrays.asList(
-//                new IngredientName(Locale.RU, "Айриш Крим"),
-//                new IngredientName(Locale.EN, "Irish Cream")
-//        ))));//1
-//
-//        ingredientService.save(new Ingredient(new HashSet<>(Arrays.asList(
-//                new IngredientName(Locale.RU, "Кофейный ликер"),
-//                new IngredientName(Locale.EN, "Coffee liqueur")
-//        ))));//2
-//
-//        ingredientService.save(new Ingredient(new HashSet<>(Arrays.asList(
-//                new IngredientName(Locale.RU, "Трипл-Сек"),
-//                new IngredientName(Locale.EN, "Triple-Sec")
-//        ))));//3
-//
-//        ingredientService.save(new Ingredient(new HashSet<>(Arrays.asList(
-//                new IngredientName(Locale.RU, "Банановый ликер"),
-//                new IngredientName(Locale.EN, "Banana liqueur")
-//        ))));//4
-//
-//        ingredientService.save(new Ingredient(new HashSet<>(Arrays.asList(
-//                new IngredientName(Locale.RU, "Лимонный сок"),
-//                new IngredientName(Locale.EN, "Lemon juice")
-//        ))));//5
-//
-//        ingredientService.save(new Ingredient(new HashSet<>(Arrays.asList(
-//                new IngredientName(Locale.RU, "Текила"),
-//                new IngredientName(Locale.EN, "Tequila")
-//        ))));//6
-//
-//        ingredientService.save(new Ingredient(new HashSet<>(Arrays.asList(
-//                new IngredientName(Locale.RU, "Самбука"),
-//                new IngredientName(Locale.EN, "Sambuca")
-//        ))));//7
-//
-//        ingredientService.save(new Ingredient(new HashSet<>(Arrays.asList(
-//                new IngredientName(Locale.RU, "Абсент"),
-//                new IngredientName(Locale.EN, "Absinthe")
-//        ))));//8
-//
-//        ingredientService.save(new Ingredient(new HashSet<>(Arrays.asList(
-//                new IngredientName(Locale.RU, "Гренадин"),
-//                new IngredientName(Locale.EN, "Grenadine")
-//        ))));//9
-//
-//        ingredientService.save(new Ingredient(new HashSet<>(Arrays.asList(
-//                new IngredientName(Locale.RU, "Сухой вермут"),
-//                new IngredientName(Locale.EN, "Dry vermouth")
-//        ))));//10
-//
-//        ingredientService.save(new Ingredient(new HashSet<>(Arrays.asList(
-//                new IngredientName(Locale.RU, "Водка"),
-//                new IngredientName(Locale.EN, "Vodka")
-//        ))));//11
-//
-//
-//        cocktailService.save(new Cocktail(
-//                "https://www.kahlua.com/globalassets/images/cocktails/2018/opt/kahluadrinks_b521.png",
-//                new HashSet<>(Arrays.asList(
-//                        new CocktailName(Locale.RU, "Б-52"),
-//                        new CocktailName(Locale.EN, "B-52")
-//                )),
-//                new HashSet<>(Arrays.asList(
-//                        new CocktailDescription(Locale.RU, "Мой любимый шот."),
-//                        new CocktailDescription(Locale.EN, "My favorite shot.")
-//                ))));//1
-//
-//        cocktailService.save(new Cocktail(
-//                "https://royalclub.md/wp-content/uploads/2018/06/8-8.png",
-//                new HashSet<>(Arrays.asList(
-//                        new CocktailName(Locale.RU, "Зеленый Мексиканец"),
-//                        new CocktailName(Locale.EN, "Green Mexican")
-//                )),
-//                new HashSet<>(Arrays.asList(
-//                        new CocktailDescription(Locale.RU, "Более прошибной, чем Б-52"),
-//                        new CocktailDescription(Locale.EN, "More breakable than the B-52")
-//                ))));//2
-//
-//        cocktailService.save(new Cocktail(
-//                "https://i.pinimg.com/originals/2a/81/2f/2a812f4d95c8d869e889f307444ba285.png",
-//                new HashSet<>(Arrays.asList(
-//                        new CocktailName(Locale.RU, "Хиросима"),
-//                        new CocktailName(Locale.EN, "Hiroshima")
-//                )),
-//                new HashSet<>(Arrays.asList(
-//                        new CocktailDescription(Locale.RU, "Еще более прошибной, чем Зеленый Мексиканец."),
-//                        new CocktailDescription(Locale.EN, "Even more breakable than the Green Mexican.")
-//                ))));//3
-//
-//        cocktailService.save(new Cocktail(
-//                "https://static.winestreet.ru/off-line/cocktail/55/image_S.png",
-//                new HashSet<>(Arrays.asList(
-//                        new CocktailName(Locale.RU, "Опухоль мозга"),
-//                        new CocktailName(Locale.EN, "Brain tumor")
-//                )),
-//                new HashSet<>(Arrays.asList(
-//                        new CocktailDescription(Locale.RU, "Красивый, но вонючий. Внутри свернувшиеся сливки."),
-//                        new CocktailDescription(Locale.EN, "Nice but smelly. Curdled cream inside.")
-//                ))));//4
-//
-//        cocktailService.save(new Cocktail(
-//                "https://static.winestreet.ru/off-line/cocktail/55/image_S.png",
-//                new HashSet<>(Arrays.asList(
-//                        new CocktailName(Locale.RU, "Скользкий сосок"),
-//                        new CocktailName(Locale.EN, "Slippery nipple")
-//                )),
-//                new HashSet<>(Arrays.asList(
-//                        new CocktailDescription(Locale.RU, ""),
-//                        new CocktailDescription(Locale.EN, "")
-//                ))));//5
-//
-//        mixCocktailService.addIngredient(1L, 1L);
-//        mixCocktailService.addIngredient(1L, 2L);
-//        mixCocktailService.addIngredient(1L, 3L);
-//
-//        mixCocktailService.addIngredient(2L, 4L);
-//        mixCocktailService.addIngredient(2L, 5L);
-//        mixCocktailService.addIngredient(2L, 6L);
-//
-//        mixCocktailService.addIngredient(3L, 1L);
-//        mixCocktailService.addIngredient(3L, 7L);
-//        mixCocktailService.addIngredient(3L, 8L);
-//        mixCocktailService.addIngredient(3L, 9L);
-//
-//        mixCocktailService.addIngredient(4L, 1L);
-//        mixCocktailService.addIngredient(4L, 9L);
-//        mixCocktailService.addIngredient(4L, 10L);
-//        mixCocktailService.addIngredient(4L, 11L);
-//
-//        mixCocktailService.addIngredient(5L, 1L);
-//        mixCocktailService.addIngredient(5L, 7L);
-//        mixCocktailService.addIngredient(5L, 9L);
+    @Autowired
+    @Qualifier("Gson")
+    private Gson gson;
 
+    @GetMapping(value = "/initIngredients", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> init() throws IOException {
+        List<SavedCocktailsDto> savedCocktailsDtos = readCocktails();
+        Map<String, Long> savedIngredients = readIngredients();
+
+        List<SavedCocktailsDto2> savedCocktailsDto2List = savedCocktailsDtos.stream().map(it -> {
+            SavedCocktailsDto2 savedCocktailsDto2 = new SavedCocktailsDto2();
+            savedCocktailsDto2.setCocktailId(it.getCocktailId());
+            savedCocktailsDto2.setCocktailName(it.getCocktailName());
+            List<Long> ings = it.getIngredientNames().stream().map(savedIngredients::get).collect(Collectors.toList());
+            savedCocktailsDto2.setIngredientIds(ings);
+            return savedCocktailsDto2;
+        }).collect(Collectors.toList());
+
+        savedCocktailsDto2List
+                .forEach(savedCocktailsDto2 -> savedCocktailsDto2.getIngredientIds()
+                        .forEach(aLong -> mixCocktailService.addIngredient(savedCocktailsDto2.getCocktailId(), aLong)));
         return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    private List<SavedCocktailsDto> readCocktails() throws IOException {
+        //считывание коктелей из бд
+        String readCocktails = fileManager.readString("src/main/resources/db/cocktails.json");
+        Type type = new TypeToken<List<CocktailFileStructure>>() {
+        }.getType();
+        List<CocktailFileStructure> cocktails = gson.fromJson(readCocktails, type);
+
+        //конвертация типа под запись в бд
+        List<Cocktail> cocktailList = cocktails.stream().map(it -> {
+            Cocktail cocktail = new Cocktail();
+            cocktail.setImage("");
+            cocktail.setCocktailName(new HashSet<CocktailName>() {{
+                add(new CocktailName(Locale.RU, it.getNameRU()));
+                add(new CocktailName(Locale.EN, it.getNameEN()));
+            }});
+            cocktail.setCocktailAssociation(new HashSet<CocktailAssociation>() {{
+                add(new CocktailAssociation(Locale.RU, it.getAssociationRU()));
+                add(new CocktailAssociation(Locale.EN, it.getAssociationEN()));
+            }});
+            cocktail.setCocktailType(new HashSet<CocktailType>() {{
+                add(new CocktailType(Locale.RU, it.getTypeRU()));
+                add(new CocktailType(Locale.EN, it.getTypeEN()));
+            }});
+            cocktail.setCocktailMethod(new HashSet<CocktailMethod>() {{
+                add(new CocktailMethod(Locale.RU, it.getMethodRU()));
+                add(new CocktailMethod(Locale.EN, it.getMethodEN()));
+            }});
+            cocktail.setCocktailNote(new HashSet<CocktailNote>() {{
+                add(new CocktailNote(Locale.RU, it.getNoteRU()));
+                add(new CocktailNote(Locale.EN, it.getNoteEN()));
+            }});
+            cocktail.setCocktailGarnish(new HashSet<CocktailGarnish>() {{
+                add(new CocktailGarnish(Locale.RU, it.getGarnishRU()));
+                add(new CocktailGarnish(Locale.EN, it.getGarnishEN()));
+            }});
+            return cocktail;
+        }).collect(Collectors.toList());
+
+        //запись в бд
+        cocktailList.forEach(cocktail -> cocktailService.save(cocktail));
+
+        //считывание с бд
+        List<Cocktail> savedCocktails = cocktailService.findAll();
+
+        //преобразование типа
+        List<SavedCocktailsDto> savedCocktailsDtos = savedCocktails.stream().map(it -> {
+            SavedCocktailsDto savedCocktailsDto = new SavedCocktailsDto();
+            savedCocktailsDto.setCocktailId(it.getCocktailId());
+            String name = null;
+            for (CocktailName nameThis : it.getCocktailName()) {
+                if (nameThis.getLocale() == Locale.EN)
+                    name = nameThis.getName();
+            }
+            savedCocktailsDto.setCocktailName(name);
+            savedCocktailsDto.setIngredientNames(getIngredientListByName(cocktails, name));
+            return savedCocktailsDto;
+        }).collect(Collectors.toList());
+        return savedCocktailsDtos;
+    }
+
+    private List<String> getIngredientListByName(List<CocktailFileStructure> cocktails, String name) {
+        for (CocktailFileStructure cocktail : cocktails) {
+            if (cocktail.getNameEN().equals(name)) {
+                return cocktail.getIngredientStructures().stream()
+                        .map(IngredientStructure::getNameEN)
+                        .collect(Collectors.toList());
+            }
+        }
+        return new ArrayList<>();
+    }
+
+    private Map<String, Long> readIngredients() throws IOException {
+        //считывание ингредиентов из бд
+        String readIngredients = fileManager.readString("src/main/resources/db/ingredients.json");
+        Type type = new TypeToken<List<IngredientFileStructure>>() {
+        }.getType();
+        List<IngredientFileStructure> cocktails = gson.fromJson(readIngredients, type);
+
+        //все ингредиенты из файла в нужном формате
+        List<Ingredient> cocktailsFinish = cocktails.stream().map(it -> {
+            Ingredient ingredient = new Ingredient();
+            ingredient.setIngredientNames(new HashSet<IngredientName>() {{
+                add(new IngredientName(Locale.RU, it.getNameRU()));
+                add(new IngredientName(Locale.EN, it.getNameEN()));
+            }});
+            return ingredient;
+        }).collect(Collectors.toList());
+
+        //сохранение в бд
+        cocktailsFinish.forEach(ingredient -> ingredientService.save(ingredient));
+
+        //получение из бд
+        List<Ingredient> savedIngredients = ingredientService.findAll();
+
+        //создание списка коктелей, где ключ - имя, а значение - id
+        Map<String, Long> ingredientsMap = savedIngredients.stream().collect(Collectors.toMap(key -> {
+            for (IngredientName name : key.getIngredientNames())
+                if (name.getLocale() == Locale.EN)
+                    return name.getName();
+            System.out.println("ERROR");
+            return null;
+        }, Ingredient::getIngredientId));
+
+        return ingredientsMap;
     }
 
 

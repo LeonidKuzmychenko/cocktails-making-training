@@ -14,7 +14,6 @@ import java.util.Set;
 
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
 @Entity
 @Table(name = "Cocktail")
@@ -33,12 +32,12 @@ public class Cocktail {
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @Expose
     @NotNull
-    private Set<CocktailName> cocktailNames;
+    private Set<CocktailName> cocktailName;
 
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @Expose
     @NotNull
-    private Set<CocktailAssociation> cocktailAssociations;
+    private Set<CocktailAssociation> cocktailAssociation;
 
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @Expose
@@ -73,21 +72,18 @@ public class Cocktail {
         ingredients.add(ingredient);
     }
 
-//    @OneToMany
-//    private Set<MixIngredient> ingredients = new HashSet<>();
+    public Cocktail() {
 
-//    public void addIngredient(@NotNull MixIngredient mixIngredient) {
-//        ingredients.add(mixIngredient);
-//    }
+    }
 
-    public Cocktail(@NotNull Set<CocktailName> cocktailNames, @NotNull Set<CocktailAssociation> cocktailAssociations, @NotNull Set<CocktailType> cocktailType, @NotNull Set<CocktailMethod> cocktailMethod, @NotNull Set<CocktailNote> cocktailNote, @NotNull Set<CocktailGarnish> cocktailGarnish, @NotNull Set<Ingredient> ingredients) {
-        this.cocktailNames = cocktailNames;
-        this.cocktailAssociations = cocktailAssociations;
+    public Cocktail(@NotNull String image, @NotNull Set<CocktailName> cocktailName, @NotNull Set<CocktailAssociation> cocktailAssociation, @NotNull Set<CocktailType> cocktailType, @NotNull Set<CocktailMethod> cocktailMethod, @NotNull Set<CocktailNote> cocktailNote, @NotNull Set<CocktailGarnish> cocktailGarnish) {
+        this.image = image;
+        this.cocktailName = cocktailName;
+        this.cocktailAssociation = cocktailAssociation;
         this.cocktailType = cocktailType;
         this.cocktailMethod = cocktailMethod;
         this.cocktailNote = cocktailNote;
         this.cocktailGarnish = cocktailGarnish;
-        this.ingredients = ingredients;
     }
 
     @Override
@@ -95,8 +91,8 @@ public class Cocktail {
         return "Cocktail{" +
                 "cocktailId=" + cocktailId +
                 ", image='" + image + '\'' +
-                ", cocktailNames=" + cocktailNames +
-                ", cocktailAssociations=" + cocktailAssociations +
+                ", cocktailNames=" + cocktailName +
+                ", cocktailAssociations=" + cocktailAssociation +
                 ", cocktailType=" + cocktailType +
                 ", cocktailMethod=" + cocktailMethod +
                 ", cocktailNote=" + cocktailNote +

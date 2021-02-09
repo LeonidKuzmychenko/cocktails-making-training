@@ -1,0 +1,69 @@
+[
+  {
+    "nameRU": "BLACK RUSSIAN",
+    "nameEN": "BLACK RUSSIAN",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "AFTER_DINNER",
+    "typeEN": "AFTER_DINNER",
+    "ingredients": [
+      {
+        "size": "50",
+        "typeRU": "ml",
+        "typeEN": "ml",
+        "nameRU": "Vodka",
+        "nameEN": "Vodka"
+      },
+      {
+        "size": "20",
+        "typeRU": "ml",
+        "typeEN": "ml",
+        "nameRU": "Coffee Liqueur",
+        "nameEN": "Coffee Liqueur"
+      }
+    ],
+    "methodRU": "Pour the ingredients into the old fashioned glass filled with ice cubes. Stir gently.",
+    "methodEN": "Pour the ingredients into the old fashioned glass filled with ice cubes. Stir gently.",
+    "noteRU": "WHITE RUSSIAN – Float fresh cream on the top and stir in slowly.",
+    "noteEN": "WHITE RUSSIAN – Float fresh cream on the top and stir in slowly.",
+    "garnishRU": "N/A",
+    "garnishEN": "N/A"
+  },
+  {
+    "nameRU": "MOSCOW MULE",
+    "nameEN": "MOSCOW MULE",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "ALL_DAY",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "size": "45",
+        "typeRU": "ml",
+        "typeEN": "ml",
+        "nameRU": "Vodka",
+        "nameEN": "Vodka"
+      },
+      {
+        "size": "120",
+        "typeRU": "ml",
+        "typeEN": "ml",
+        "nameRU": "Ginger Beer",
+        "nameEN": "Ginger Beer"
+      },
+      {
+        "size": "10",
+        "typeRU": "ml",
+        "typeEN": "ml",
+        "nameRU": "Fresh Lime Juice",
+        "nameEN": "Fresh Lime Juice"
+      }
+    ],
+    "methodRU": "In an Mule Cup or rocks glass, combine the vodka and ginger beer. Add lime juice and gently stir to involve all ingredients.",
+    "methodEN": "In an Mule Cup or rocks glass, combine the vodka and ginger beer. Add lime juice and gently stir to involve all ingredients.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Garnish with a lime slice",
+    "garnishEN": "Garnish with a lime slice"
+  }
+]
