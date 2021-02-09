@@ -28,8 +28,9 @@ public class UiCocktailsController {
     private Gson gson;
 
     @GetMapping(value = "/getAll", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<String> getAll(@RequestParam("locale") Locale locale) {
-        List<UiCocktail> cocktails = uiCocktailsService.getCocktails(locale);
+    public ResponseEntity<String> getAll(@RequestParam("locale") Locale locale,
+                                         @RequestParam("cSize") Integer cSize, @RequestParam("iSize") Integer iSize) {
+        List<UiCocktail> cocktails = uiCocktailsService.getCocktails(locale, cSize, iSize);
         return new ResponseEntity<>(gson.toJson(cocktails), HttpStatus.OK);
     }
 }

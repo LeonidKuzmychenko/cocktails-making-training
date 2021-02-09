@@ -1,10 +1,7 @@
 package lk.server.cocktails.features.ingredient.entities;
 
 import com.google.gson.annotations.Expose;
-import lk.server.cocktails.customtypes.locale.Locale;
-import lk.server.cocktails.customtypes.locale.LocaleService;
 import lk.server.cocktails.features.cocktail.entities.Cocktail;
-import lk.server.cocktails.ui.endpoint.dto.UiIngredient;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,7 +9,6 @@ import lombok.Setter;
 import org.jetbrains.annotations.NotNull;
 
 import javax.persistence.*;
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 

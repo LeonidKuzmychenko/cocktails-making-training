@@ -1,7 +1,6 @@
 package lk.server.cocktails.features.cocktail.repositories;
 
 import lk.server.cocktails.features.cocktail.entities.Cocktail;
-import lk.server.cocktails.features.ingredient.entities.Ingredient;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
