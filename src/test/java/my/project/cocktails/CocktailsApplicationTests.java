@@ -1,4 +1,4 @@
-package my.project.cocktails;
+package lk.server.cocktails;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
