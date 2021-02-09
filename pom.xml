@@ -10,7 +10,7 @@
     </parent>
     <groupId>lk.server</groupId>
     <artifactId>cocktails-making-training</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>cocktails</name>
     <description>Cocktails Making Training</description>
 
@@ -95,6 +95,11 @@
 
     <build>
         <plugins>
+            <!--"mvn clean install -U"-->
+            <!--"mvn versions:use-releases"-->
+            <!--"mvn release:update-versions"-->
+            <!--"mvn versions:use-next-releases"-->
+            <!--"mvn versions:use-latest-releases"-->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -105,11 +110,16 @@
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>3.1.0</version>
             </plugin>
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-compiler-plugin</artifactId>-->
-<!--                <version>3.8.1</version>-->
-<!--            </plugin>-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.21.0</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+            </plugin>
         </plugins>
     </build>
 
