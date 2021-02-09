@@ -2,6 +2,8 @@ package lk.server.cocktails.features.init.services;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import lk.server.cocktails.customtypes.locale.Locale;
+import lk.server.cocktails.customtypes.locale.LocaleService;
 import lk.server.cocktails.features.cocktail.entities.Cocktail;
 import lk.server.cocktails.features.cocktail.services.CocktailService;
 import lk.server.cocktails.features.ingredient.entities.Ingredient;
@@ -18,6 +20,7 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -35,6 +38,9 @@ public class InitService {
 
     @Autowired
     private FileManager fileManager;
+
+    @Autowired
+    private LocaleService localeService;
 
     @Autowired
     @Qualifier("Gson")
@@ -79,7 +85,7 @@ public class InitService {
 
         //Преобразование коктейлей в тип данных, где хранятся только id коктейля и названия ингредиентов на EN
         return savedCocktails.stream()
-                .map(it -> it.toCocktailsTransformHelperStart(cocktailFileStructures))
+                .map(it -> toCocktailsTransformHelperStart(cocktailFileStructures, it))
                 .collect(Collectors.toList());
     }
 
@@ -93,14 +99,38 @@ public class InitService {
         List<IngredientFileStructure> cocktails = gson.fromJson(readIngredients, type);
 
         //Преобразование формата объекта для парсинга в формат для записили в бд
-        List<Ingredient> cocktailsFinish = cocktails.stream().map(IngredientFileStructure::toIngredient).collect(Collectors.toList());
+        List<Ingredient> cocktailsFinish = cocktails.stream()
+                .map(IngredientFileStructure::toIngredient)
+                .collect(Collectors.toList());
 
         //Запись ингредиентов в бд и преобразование их в список с id-шниками
         List<Ingredient> savedIngredients = cocktailsFinish.stream()
                 .map(ingredient -> ingredientService.save(ingredient))
                 .collect(Collectors.toList());
 
+
         //Создание мапы коктелей, где ключ - имя игредиента на английском, а значение - id
-        return savedIngredients.stream().collect(Collectors.toMap(Ingredient::getIngredientEnName, Ingredient::getIngredientId));
+        return savedIngredients.stream()
+                .collect(Collectors.toMap(
+                        key -> localeService.getStringByLocale(new ArrayList<>(key.getIngredientNames()), Locale.EN),
+                        Ingredient::getIngredientId));
+    }
+
+    public CocktailsTransformHelperStart toCocktailsTransformHelperStart(List<CocktailFileStructure> cocktailFileStructures, Cocktail cocktail) {
+        CocktailsTransformHelperStart cocktailsTransformHelperStart = new CocktailsTransformHelperStart();
+        cocktailsTransformHelperStart.setCocktailId(cocktail.getCocktailId());
+        cocktailsTransformHelperStart.setIngredientNames(getIngredientListByName(
+                cocktailFileStructures, localeService.getStringByLocale(
+                        new ArrayList<>(cocktail.getCocktailName()), Locale.EN)));
+        return cocktailsTransformHelperStart;
+    }
+
+    private List<String> getIngredientListByName(List<CocktailFileStructure> cocktailFileStructures, String name) {
+        for (CocktailFileStructure cocktail : cocktailFileStructures)
+            if (cocktail.getNameEN().equals(name))
+                return cocktail.getIngredientStructures().stream()
+                        .map(IngredientFileStructure::getNameEN)
+                        .collect(Collectors.toList());
+        return new ArrayList<>();
     }
 }

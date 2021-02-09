@@ -106,29 +106,4 @@ public class Cocktail {
                 ", ingredients=" + ingredients +
                 '}';
     }
-
-    public CocktailsTransformHelperStart toCocktailsTransformHelperStart(List<CocktailFileStructure> cocktailFileStructures) {
-        CocktailsTransformHelperStart cocktailsTransformHelperStart = new CocktailsTransformHelperStart();
-        cocktailsTransformHelperStart.setCocktailId(this.cocktailId);
-        cocktailsTransformHelperStart.setIngredientNames(getIngredientListByName(cocktailFileStructures, getCocktailEnName()));
-        return cocktailsTransformHelperStart;
-    }
-
-    private List<String> getIngredientListByName(List<CocktailFileStructure> cocktailFileStructures, String name) {
-        for (CocktailFileStructure cocktail : cocktailFileStructures) {
-            if (cocktail.getNameEN().equals(name)) {
-                return cocktail.getIngredientStructures().stream()
-                        .map(IngredientFileStructure::getNameEN)
-                        .collect(Collectors.toList());
-            }
-        }
-        return new ArrayList<>();
-    }
-
-    public String getCocktailEnName() {
-        for (CocktailName name : cocktailName)
-            if (name.getLocale() == Locale.EN)
-                return name.getName();
-        return null;
-    }
 }
