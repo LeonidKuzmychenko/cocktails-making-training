@@ -30,11 +30,11 @@ public class UiCocktailsService {
     @Autowired
     private LocaleService localeService;
 
-    private final int INGREDIENT_SIZE = 10;
+    private final int INGREDIENT_SIZE = 8;
 
     public List<UiCocktail> getCocktails(Locale locale) {
         List<UiCocktail> cocktails = new ArrayList<>();
-        cocktailService.findRandomLimitCocktails(3).forEach(cocktail -> {
+        cocktailService.findRandomLimitCocktails(8).forEach(cocktail -> {
             String name = localeService.getStringByLocale(new ArrayList<>(cocktail.getCocktailName()), locale);
             String association = localeService.getStringByLocale(new ArrayList<>(cocktail.getCocktailAssociation()), locale);
             String type = localeService.getStringByLocale(new ArrayList<>(cocktail.getCocktailType()), locale);
@@ -44,7 +44,7 @@ public class UiCocktailsService {
             List<Ingredient> ingredients = new ArrayList<>(cocktail.getIngredients());
             List<UiIngredient> uiIngredients = ingredientsToUiVersion(ingredients, true, locale);
             uiIngredients.addAll(getNotConsistsIngredients(cocktail, INGREDIENT_SIZE - uiIngredients.size(), locale));
-            Collections.shuffle(ingredients);
+            Collections.shuffle(uiIngredients);
             UiCocktail uiCocktail = new UiCocktail();
             uiCocktail.setName(name);
             uiCocktail.setAssociation(association);
