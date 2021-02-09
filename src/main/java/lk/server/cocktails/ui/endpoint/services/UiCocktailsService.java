@@ -2,10 +2,10 @@
 //
 //import lk.server.cocktails.customtypes.locale.ILocalization;
 //import lk.server.cocktails.customtypes.locale.Locale;
-//import lk.server.cocktails.database.cocktail.entities.Cocktail;
-//import lk.server.cocktails.database.cocktail.services.CocktailService;
-//import lk.server.cocktails.database.ingredient.entities.Ingredient;
-//import lk.server.cocktails.database.ingredient.services.IngredientService;
+//import lk.server.cocktails.db.cocktail.entities.Cocktail;
+//import lk.server.cocktails.db.cocktail.services.CocktailService;
+//import lk.server.cocktails.db.ingredient.entities.Ingredient;
+//import lk.server.cocktails.db.ingredient.services.IngredientService;
 //import lk.server.cocktails.ui.endpoint.dto.UiCocktail;
 //import lk.server.cocktails.ui.endpoint.dto.UiIngredient;
 //import org.springframework.beans.factory.annotation.Autowired;

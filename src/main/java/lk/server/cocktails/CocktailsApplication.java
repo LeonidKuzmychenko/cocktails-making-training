@@ -7,12 +7,12 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @EntityScan(basePackages = {
-        "lk.server.cocktails.database.cocktail.entities",
-        "lk.server.cocktails.database.ingredient.entities"
+        "lk.server.cocktails.db.cocktail.entities",
+        "lk.server.cocktails.db.ingredient.entities"
 })
 @EnableJpaRepositories(basePackages = {
-        "lk.server.cocktails.database.cocktail.repositories",
-        "lk.server.cocktails.database.ingredient.repositories"
+        "lk.server.cocktails.feachers.cocktail.repositories",
+        "lk.server.cocktails.feachers.ingredient.repositories"
 })
 public class CocktailsApplication {
 

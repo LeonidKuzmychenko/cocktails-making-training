@@ -11,9 +11,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-//@RequestMapping(value = "/status")
-//produces (content-type) то что отправляем
-//consumes то что получаем
 public class StatusController {
 
     @GetMapping(value = "/status")

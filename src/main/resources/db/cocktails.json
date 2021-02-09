@@ -8,16 +8,10 @@
     "typeEN": "AFTER_DINNER",
     "ingredients": [
       {
-        "size": "50",
-        "typeRU": "ml",
-        "typeEN": "ml",
         "nameRU": "Vodka",
         "nameEN": "Vodka"
       },
       {
-        "size": "20",
-        "typeRU": "ml",
-        "typeEN": "ml",
         "nameRU": "Coffee Liqueur",
         "nameEN": "Coffee Liqueur"
       }
@@ -38,23 +32,14 @@
     "typeEN": "ALL_DAY",
     "ingredients": [
       {
-        "size": "45",
-        "typeRU": "ml",
-        "typeEN": "ml",
         "nameRU": "Vodka",
         "nameEN": "Vodka"
       },
       {
-        "size": "120",
-        "typeRU": "ml",
-        "typeEN": "ml",
         "nameRU": "Ginger Beer",
         "nameEN": "Ginger Beer"
       },
       {
-        "size": "10",
-        "typeRU": "ml",
-        "typeEN": "ml",
         "nameRU": "Fresh Lime Juice",
         "nameEN": "Fresh Lime Juice"
       }
