@@ -12,7 +12,6 @@ import java.util.List;
 public class UiCocktail {
 
     private String name;
-    private String image;
     private String association;
     private String type;
     private String method;

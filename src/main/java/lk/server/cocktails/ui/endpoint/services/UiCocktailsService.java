@@ -34,8 +34,7 @@ public class UiCocktailsService {
 
     public List<UiCocktail> getCocktails(Locale locale) {
         List<UiCocktail> cocktails = new ArrayList<>();
-        cocktailService.findAll().forEach(cocktail -> {
-            String image = cocktail.getImage();
+        cocktailService.findRandomLimitCocktails(3).forEach(cocktail -> {
             String name = localeService.getStringByLocale(new ArrayList<>(cocktail.getCocktailName()), locale);
             String association = localeService.getStringByLocale(new ArrayList<>(cocktail.getCocktailAssociation()), locale);
             String type = localeService.getStringByLocale(new ArrayList<>(cocktail.getCocktailType()), locale);
@@ -47,7 +46,6 @@ public class UiCocktailsService {
             uiIngredients.addAll(getNotConsistsIngredients(cocktail, INGREDIENT_SIZE - uiIngredients.size(), locale));
             Collections.shuffle(ingredients);
             UiCocktail uiCocktail = new UiCocktail();
-            uiCocktail.setImage(image);
             uiCocktail.setName(name);
             uiCocktail.setAssociation(association);
             uiCocktail.setType(type);

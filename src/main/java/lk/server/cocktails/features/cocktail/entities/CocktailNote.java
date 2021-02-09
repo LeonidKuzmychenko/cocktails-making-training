@@ -29,7 +29,7 @@ public class CocktailNote implements ILocalization {
     @NotNull
     private Locale locale;
 
-    @Column
+    @Column(length = 1024)
     @Expose
     @NotNull
     private String name;

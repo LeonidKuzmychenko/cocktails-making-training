@@ -1,10 +1,18 @@
 package lk.server.cocktails.features.cocktail.repositories;
 
 import lk.server.cocktails.features.cocktail.entities.Cocktail;
+import lk.server.cocktails.features.ingredient.entities.Ingredient;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 @Repository
 public interface CocktailRepository extends JpaRepository<Cocktail, Long> {
+
+    @Query(value = "SELECT * from cocktail ORDER BY random() LIMIT :limit", nativeQuery = true)
+    List<Cocktail> findRandomLimitCocktails(@Param("limit") int limit);
 
 }

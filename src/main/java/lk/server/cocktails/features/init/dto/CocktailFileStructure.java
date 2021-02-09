@@ -58,7 +58,6 @@ public class CocktailFileStructure {
 
     public Cocktail toCocktail() {
         Cocktail cocktail = new Cocktail();
-        cocktail.setImage("/cocktail/image/" + nameEN);
         cocktail.setCocktailName(new HashSet<CocktailName>() {{
             add(new CocktailName(Locale.RU, nameRU));
             add(new CocktailName(Locale.EN, nameEN));

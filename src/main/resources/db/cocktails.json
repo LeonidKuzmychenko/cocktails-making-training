@@ -1,10 +1,34 @@
 [
   {
-    "nameRU": "BLACK RUSSIAN",
+    "nameRU": "БЕЛЛИНИ",
+    "nameEN": "BELLINI",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "ИГРЕНИЕ",
+    "typeEN": "SPARKLING",
+    "ingredients": [
+      {
+        "nameRU": "Prosecco",
+        "nameEN": "Prosecco"
+      },
+      {
+        "nameRU": "White Peach Puree",
+        "nameEN": "White Peach Puree"
+      }
+    ],
+    "methodRU": "Перелить персиковое пюре в стакан со льдом, добавить вино Просекко. Аккуратно перемешайте и вылейте в охлажденный бокал.",
+    "methodEN": "Pour peach puree into the mixing glass with ice, add the Prosecco wine. Stir gently and pour in a chilled flute glass.",
+    "noteRU": "ПУЧЧИНИ - свежий апельсиновый сок мандарина; \nРОССИНИ - Пюре из свежей клубники; \nТИНТОРЕТТО - свежий гранатовый сок.",
+    "noteEN": "PUCCINI – Fresh Mandarin Orange Juice; \nROSSINI – Fresh Strawberry Puree; \nTINTORETTO – Fresh Pomegranate Juice.",
+    "garnishRU": "Нет данных",
+    "garnishEN": "N/A"
+  },
+  {
+    "nameRU": "ЧЕРНЫЙ РУССКИЙ",
     "nameEN": "BLACK RUSSIAN",
     "associationRU": "CONTEMPORARY_CLASSICS",
     "associationEN": "CONTEMPORARY_CLASSICS",
-    "typeRU": "AFTER_DINNER",
+    "typeRU": "ПОСЛЕ УЖИНА",
     "typeEN": "AFTER_DINNER",
     "ingredients": [
       {
@@ -16,24 +40,668 @@
         "nameEN": "Coffee Liqueur"
       }
     ],
-    "methodRU": "Pour the ingredients into the old fashioned glass filled with ice cubes. Stir gently.",
+    "methodRU": "Вылейте ингредиенты в старинный стакан, наполненный кубиками льда. Осторожно перемешайте.",
     "methodEN": "Pour the ingredients into the old fashioned glass filled with ice cubes. Stir gently.",
-    "noteRU": "WHITE RUSSIAN – Float fresh cream on the top and stir in slowly.",
+    "noteRU": "БЕЛЫЙ РУССКИЙ - Добавьте сверху свежие сливки и медленно перемешайте.",
     "noteEN": "WHITE RUSSIAN – Float fresh cream on the top and stir in slowly.",
-    "garnishRU": "N/A",
+    "garnishRU": "Нет данных",
     "garnishEN": "N/A"
   },
   {
-    "nameRU": "MOSCOW MULE",
-    "nameEN": "MOSCOW MULE",
+    "nameRU": "КРОВАВАЯ МЭРИ",
+    "nameEN": "BLOODY MARY",
     "associationRU": "CONTEMPORARY_CLASSICS",
     "associationEN": "CONTEMPORARY_CLASSICS",
-    "typeRU": "ALL_DAY",
+    "typeRU": "ВЕСЬ ДЕНЬ",
     "typeEN": "ALL_DAY",
     "ingredients": [
       {
         "nameRU": "Vodka",
         "nameEN": "Vodka"
+      },
+      {
+        "nameRU": "Tomato Juice",
+        "nameEN": "Tomato Juice"
+      },
+      {
+        "nameRU": "Fresh Lemon Juice",
+        "nameEN": "Fresh Lemon Juice"
+      },
+      {
+        "nameRU": "Worcestershire Sauce",
+        "nameEN": "Worcestershire Sauce"
+      },
+      {
+        "nameRU": "Tabasco",
+        "nameEN": "Tabasco"
+      },
+      {
+        "nameRU": "Pepper (optional)",
+        "nameEN": "Pepper (optional)"
+      },
+      {
+        "nameRU": "Celery Salt (optional)",
+        "nameEN": "Celery Salt (optional)"
+      }
+    ],
+    "methodRU": "Аккуратно перемешайте все ингредиенты в стакане для смешивания со льдом, вылейте в рок-бокал.",
+    "methodEN": "Stir gently all the ingredients in a mixing glass with ice, pour into rocks glass.",
+    "noteRU": "Если требуется, подается со льдом, перелейте в стакан для хайболла.",
+    "noteEN": "If requested served with ice, pour into highball glass.",
+    "garnishRU": "Сельдерей, долька лимона (по желанию)",
+    "garnishEN": "Celery, Lemon Wedge (Optional)"
+  },
+  {
+    "nameRU": "КАЙПИРИНЬЯ",
+    "nameEN": "CAIPIRINHA",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Cachaça",
+        "nameEN": "Cachaça"
+      },
+      {
+        "nameRU": "Lime cut into small wedges",
+        "nameEN": "Lime cut into small wedges"
+      },
+      {
+        "nameRU": "White Cane Sugar",
+        "nameEN": "White Cane Sugar"
+      }
+    ],
+    "methodRU": "Положите лайм и сахар в двойной старомодный стакан и аккуратно перемешайте. Наполните стакан треснувшим льдом и добавьте Cachaça. Осторожно перемешайте, чтобы задействовать ингредиенты.",
+    "methodEN": "Place lime and sugar into a double old fashioned glass and muddle gently. Fill the glass with cracked ice and add Cachaça. Stir gently to involve ingredients.",
+    "noteRU": "CAIPIROSKA - вместо Cachaça используйте водку; \nCAIPIRISSIMA - вместо Cachaça используйте ром.",
+    "noteEN": "CAIPIROSKA - Instead of Cachaça use Vodka;\nCAIPIRISSIMA - Instead of Cachaça use Rum.",
+    "garnishRU": "Нет данных",
+    "garnishEN": "N/A"
+  },
+  {
+    "nameRU": "ШАМПАНСКИЙ КОКТЕЙЛЬ",
+    "nameEN": "CHAMPAGNE COCKTAIL",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "ИГРЕНИЕ",
+    "typeEN": "SPARKLING",
+    "ingredients": [
+      {
+        "nameRU": "Chilled Champagne",
+        "nameEN": "Chilled Champagne"
+      },
+      {
+        "nameRU": "Cognac",
+        "nameEN": "Cognac"
+      },
+      {
+        "nameRU": "Angostura Bitter",
+        "nameEN": "Angostura Bitter"
+      },
+      {
+        "nameRU": "Grand Marnier (optional)",
+        "nameEN": "Grand Marnier (optional)"
+      },
+      {
+        "nameRU": "Sugar Cube",
+        "nameEN": "Sugar Cube"
+      }
+    ],
+    "methodRU": "Поместите сахарный кубик с двумя каплями биэра в большой бокал для шампанского, добавьте коньяк. Налейте слегка охлажденное шампанское.",
+    "methodEN": "Place the sugar cube with 2 dashes of biaers in a large Champagne glass, add the cognac. Pour gently chilled Champagne.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить цедрой апельсина и вишней мараскино.",
+    "garnishEN": "Garnish with orange zest and maraschino cherry."
+  },
+  {
+    "nameRU": "КОСМОПОЛИТАН",
+    "nameEN": "COSMOPOLITAN",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Vodka Citron",
+        "nameEN": "Vodka Citron"
+      },
+      {
+        "nameRU": "Cointreau",
+        "nameEN": "Cointreau"
+      },
+      {
+        "nameRU": "Fresh Lime Juice",
+        "nameEN": "Fresh Lime Juice"
+      },
+      {
+        "nameRU": "Cranberry Juice",
+        "nameEN": "Cranberry Juice"
+      }
+    ],
+    "methodRU": "Добавьте все ингредиенты в шейкер, наполненный льдом. Хорошо взболтать и процедить в большой коктейльный бокал.",
+    "methodEN": "Add all ingredients into cocktail shaker filled with ice. Shake well and strain into large cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить лимонной твёрдой.",
+    "garnishEN": "Garnish with lemon twist."
+  },
+  {
+    "nameRU": "ВОССТАНОВИТЕЛЬ ТРУДА №2",
+    "nameEN": "CORPSE REVIVER #2",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Gin",
+        "nameEN": "Gin"
+      },
+      {
+        "nameRU": "Cointreau",
+        "nameEN": "Cointreau"
+      },
+      {
+        "nameRU": "Lillet Blanc",
+        "nameEN": "Lillet Blanc"
+      },
+      {
+        "nameRU": "Fresh Lemon Juice",
+        "nameEN": "Fresh Lemon Juice"
+      },
+      {
+        "nameRU": "Absinthe",
+        "nameEN": "Absinthe"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер со льдом. Хорошо взболтать и процедить в охлажденный коктейльный бокал.",
+    "methodEN": "Pour all ingredients into shaker with ice. Shake well and strain in chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Апельсиновой цедры.",
+    "garnishEN": "Orange zest."
+  },
+  {
+    "nameRU": "КУБА ЛИБРЕ",
+    "nameEN": "CUBA LIBRE",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "LONG_DRINK",
+    "typeEN": "LONG_DRINK",
+    "ingredients": [
+      {
+        "nameRU": "White Rum",
+        "nameEN": "White Rum"
+      },
+      {
+        "nameRU": "Cola",
+        "nameEN": "Cola"
+      },
+      {
+        "nameRU": "Fresh Lime Juice",
+        "nameEN": "Fresh Lime Juice"
+      }
+    ],
+    "methodRU": "Выложите все ингредиенты в стакан для хайбола, наполненный льдом.",
+    "methodEN": "Build all ingredients in a highball glass filled with ice.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить долькой лайма",
+    "garnishEN": "Garnish with lime wedge"
+  },
+  {
+    "nameRU": "ФРАНЦУЗСКИЙ 75",
+    "nameEN": "FRENCH 75",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "ИГРЕНИЕ",
+    "typeEN": "SPARKLING",
+    "ingredients": [
+      {
+        "nameRU": "Gin",
+        "nameEN": "Gin"
+      },
+      {
+        "nameRU": "Fresh Lemon Juice",
+        "nameEN": "Fresh Lemon Juice"
+      },
+      {
+        "nameRU": "Sugar Syrup",
+        "nameEN": "Sugar Syrup"
+      },
+      {
+        "nameRU": "Champagne",
+        "nameEN": "Champagne"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты, кроме шампанского, в шейкер. Хорошо встряхните и процедите в фужер для шампанского. Долейте шампанское. Осторожно перемешайте",
+    "methodEN": "Pour all the ingredients, except Champagne, into a shaker. Shake well and strain into a Champagne flute. Top up with Champagne. Stir gently",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Нет данных",
+    "garnishEN": "N/A"
+  },
+  {
+    "nameRU": "ФРАНЦУЗСКИЙ СОЕДИНЕНИЕ",
+    "nameEN": "FRENCH CONNECTION",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "ПОСЛЕ УЖИНА",
+    "typeEN": "AFTER_DINNER",
+    "ingredients": [
+      {
+        "nameRU": "Cognac",
+        "nameEN": "Cognac"
+      },
+      {
+        "nameRU": "Amaretto",
+        "nameEN": "Amaretto"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты прямо в старинный стакан, наполненный кубиками льда. Осторожно перемешайте.",
+    "methodEN": "Pour all ingredients directly into old fashioned glass filled with ice cubes. Stir gently.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Нет данных",
+    "garnishEN": "N/A"
+  },
+  {
+    "nameRU": "ЗОЛОТАЯ МЕЧТА",
+    "nameEN": "GOLDEN DREAM",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "ПОСЛЕ УЖИНА",
+    "typeEN": "AFTER_DINNER",
+    "ingredients": [
+      {
+        "nameRU": "Galliano",
+        "nameEN": "Galliano"
+      },
+      {
+        "nameRU": "Triple Sec",
+        "nameEN": "Triple Sec"
+      },
+      {
+        "nameRU": "Fresh Orange Juice",
+        "nameEN": "Fresh Orange Juice"
+      },
+      {
+        "nameRU": "Fresh Cream",
+        "nameEN": "Fresh Cream"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер, наполненный льдом. Быстро встряхните несколько секунд. Процедить в охлажденный коктейльный бокал.",
+    "methodEN": "Pour all ingredients into shaker filled with ice. Shake briskly for few seconds. Strain into chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Нет данных",
+    "garnishEN": "N/A"
+  },
+  {
+    "nameRU": "КУЗНЕЧИК",
+    "nameEN": "GRASSHOPPER",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "ПОСЛЕ УЖИНА",
+    "typeEN": "AFTER_DINNER",
+    "ingredients": [
+      {
+        "nameRU": "Crème de Cacao (White)",
+        "nameEN": "Crème de Cacao (White)"
+      },
+      {
+        "nameRU": "Crème de Menthe (Green)",
+        "nameEN": "Crème de Menthe (Green)"
+      },
+      {
+        "nameRU": "Fresh Cream",
+        "nameEN": "Fresh Cream"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер, наполненный льдом. Быстро встряхните несколько секунд. Процедить в охлажденный коктейльный бокал.",
+    "methodEN": "Pour all ingredients into shaker filled with ice. Shake briskly for few seconds. Strain into chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "По желанию можно оставить мяту.",
+    "garnishEN": "N/A, optional mint leave."
+  },
+  {
+    "nameRU": "HEMINGWAY СПЕЦИАЛЬНЫЙ",
+    "nameEN": "HEMINGWAY SPECIAL",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Rum",
+        "nameEN": "Rum"
+      },
+      {
+        "nameRU": "Grapefruit Juice",
+        "nameEN": "Grapefruit Juice"
+      },
+      {
+        "nameRU": "Maraschino",
+        "nameEN": "Maraschino"
+      },
+      {
+        "nameRU": "Fresh Lime",
+        "nameEN": "Fresh Lime"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер со льдом. Хорошо взболтать и процедить в большой бокал для коктейля.",
+    "methodEN": "Pour all ingredients into a shaker with ice. Shake well and strain into a large cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Нет данных",
+    "garnishEN": "N/A"
+  },
+  {
+    "nameRU": "ШЕЯ ЛОШАДИ",
+    "nameEN": "HORSE\u0027S NECK",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "LONG_DRINK",
+    "typeEN": "LONG_DRINK",
+    "ingredients": [
+      {
+        "nameRU": "Cognac",
+        "nameEN": "Cognac"
+      },
+      {
+        "nameRU": "Ginger Ale",
+        "nameEN": "Ginger Ale"
+      },
+      {
+        "nameRU": "Angostura Bitter (optional)",
+        "nameEN": "Angostura Bitter (optional)"
+      }
+    ],
+    "methodRU": "Налейте коньяк и имбирный эль прямо в стакан с кубиками льда. Осторожно перемешайте. Если хотите, добавьте немного ангостурского биттера.",
+    "methodEN": "Pour Cognac and ginger ale directly into highball glass with ice cubes. Stir gently. If preferred, add dashes of Angostura Bitter.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить цедрой одной лимонной спирали.",
+    "garnishEN": "Garnish with rind of one lemon spiral."
+  },
+  {
+    "nameRU": "КОФЕ ПО-ИРЛАНДСКИ",
+    "nameEN": "IRISH COFFEE",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "ГОРЯЧИЙ НАПИТОК",
+    "typeEN": "HOT_DRINK",
+    "ingredients": [
+      {
+        "nameRU": "Irish Whiskey",
+        "nameEN": "Irish Whiskey"
+      },
+      {
+        "nameRU": "Hot coffee",
+        "nameEN": "Hot coffee"
+      },
+      {
+        "nameRU": "Fresh Cream (Chilled)",
+        "nameEN": "Fresh Cream (Chilled)"
+      },
+      {
+        "nameRU": "Sugar",
+        "nameEN": "Sugar"
+      }
+    ],
+    "methodRU": "Теплый черный кофе наливается в предварительно нагретый ирландский кофейный стакан. Добавляют виски и хотя бы одну чайную ложку сахара и перемешивают до растворения. Свежие густые охлажденные сливки аккуратно выливают на тыльную сторону ложки, которую держат прямо над поверхностью кофе. Слой сливок будет плавать на кофе, не перемешивая. Обычный сахар можно заменить сахарным сиропом",
+    "methodEN": "Warm black coffee is poured into a pre-heated Irish coffee glass. Whiskey and at least one teaspoon of sugar is added and stirred until dissolved. Fresh thick chilled cream is carefully poured over the back of a spoon held just above the surface of the coffee. The layer of cream will float on the coffee without mixing. Plain sugar can be replaced with sugar syrup",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Нет данных",
+    "garnishEN": "N/A"
+  },
+  {
+    "nameRU": "КИР",
+    "nameEN": "KIR",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "ДО ОБЕДА",
+    "typeEN": "BEFORE_DINNER",
+    "ingredients": [
+      {
+        "nameRU": "Dry White Wine",
+        "nameEN": "Dry White Wine"
+      },
+      {
+        "nameRU": "Crème de Cassis",
+        "nameEN": "Crème de Cassis"
+      }
+    ],
+    "methodRU": "Налейте Crème de Cassis в бокал, залейте белым вином.",
+    "methodEN": "Pour Crème de Cassis into glass, top up with white wine.",
+    "noteRU": "KIR ROYAL - Используйте шампанское вместо белого вина.",
+    "noteEN": "KIR ROYAL - Use Champagne instead of white wine",
+    "garnishRU": "Нет данных",
+    "garnishEN": "N/A"
+  },
+  {
+    "nameRU": "ЗАМОРОЖЕННЫЙ ЧАЙ LONG ISLAND",
+    "nameEN": "LONG ISLAND ICED TEA",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "LONG_DRINK",
+    "typeEN": "LONG_DRINK",
+    "ingredients": [
+      {
+        "nameRU": "Vodka",
+        "nameEN": "Vodka"
+      },
+      {
+        "nameRU": "Tequila",
+        "nameEN": "Tequila"
+      },
+      {
+        "nameRU": "White Rum",
+        "nameEN": "White Rum"
+      },
+      {
+        "nameRU": "Gin",
+        "nameEN": "Gin"
+      },
+      {
+        "nameRU": "Cointreau",
+        "nameEN": "Cointreau"
+      },
+      {
+        "nameRU": "Fresh Lemon Juice",
+        "nameEN": "Fresh Lemon Juice"
+      },
+      {
+        "nameRU": "Simple Syrup",
+        "nameEN": "Simple Syrup"
+      },
+      {
+        "nameRU": "Cola",
+        "nameEN": "Cola"
+      }
+    ],
+    "methodRU": "Добавьте все ингредиенты в стакан для хайболла, наполненный льдом. Осторожно перемешайте.",
+    "methodEN": "Add all ingredients into highball glass filled with ice. Stir gently.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Ломтик лимона (необязательно)",
+    "garnishEN": "Lemon Slice (Optional)"
+  },
+  {
+    "nameRU": "МАЙ-ТАЙ",
+    "nameEN": "MAI-TAI",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "LONG_DRINK",
+    "typeEN": "LONG_DRINK",
+    "ingredients": [
+      {
+        "nameRU": "Amber Jamaican Rum",
+        "nameEN": "Amber Jamaican Rum"
+      },
+      {
+        "nameRU": "Martinique Molasses Rhum*",
+        "nameEN": "Martinique Molasses Rhum*"
+      },
+      {
+        "nameRU": "Orange Curacao",
+        "nameEN": "Orange Curacao"
+      },
+      {
+        "nameRU": "Orgeat Syrup (Almond)",
+        "nameEN": "Orgeat Syrup (Almond)"
+      },
+      {
+        "nameRU": "Fresh Lime Juice",
+        "nameEN": "Fresh Lime Juice"
+      },
+      {
+        "nameRU": "Simple Syrup",
+        "nameEN": "Simple Syrup"
+      }
+    ],
+    "methodRU": "Добавьте все ингредиенты в шейкер со льдом. Встряхните и перелейте в двойной бокал для камней или хайбол. * Ром Мартиникской патоки, используемый Trader Vic, не был ромом Agricole, а был разновидностью «ромми» из патоки.",
+    "methodEN": "Add all ingredients into a shaker with ice. Shake and pour into a double rocks glass or an highball glass.\n* The Martinique molasses rum used by Trader Vic was not an Agricole rum but a type of \"rummy\" from molasses.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить копьем ананаса, листьями мяты и цедрой лайма.",
+    "garnishEN": "Garnish with pineapple spear, mint leaves and lime peel."
+  },
+  {
+    "nameRU": "МАРГАРИТА",
+    "nameEN": "MARGARITA",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Tequila 100% Agave",
+        "nameEN": "Tequila 100% Agave"
+      },
+      {
+        "nameRU": "Triple Sec",
+        "nameEN": "Triple Sec"
+      },
+      {
+        "nameRU": "Freshly Squeezed Lime Juice",
+        "nameEN": "Freshly Squeezed Lime Juice"
+      }
+    ],
+    "methodRU": "Добавьте все ингредиенты в шейкер со льдом. Встряхните и процедите в охлажденный коктейльный бокал.",
+    "methodEN": "Add all ingredients into a shaker with ice. Shake and strain into a chilled cocktail glass",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Полусолевой ободок (необязательно)",
+    "garnishEN": "Half salt rim (Optional)"
+  },
+  {
+    "nameRU": "MIMOSA",
+    "nameEN": "MIMOSA",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "ИГРЕНИЕ",
+    "typeEN": "SPARKLING",
+    "ingredients": [
+      {
+        "nameRU": "Fresh Orange Juice",
+        "nameEN": "Fresh Orange Juice"
+      },
+      {
+        "nameRU": "Prosecco",
+        "nameEN": "Prosecco"
+      }
+    ],
+    "methodRU": "В бокал для флейты налить апельсиновый сок и аккуратно налить игристое вино. Осторожно перемешайте.",
+    "methodEN": "Pour orange juice into flute glass and gently pour the sparkling wine. Stir gently.",
+    "noteRU": "Также известен как Buck\u0027s Fizz",
+    "noteEN": "Also known as Buck’s Fizz",
+    "garnishRU": "Украсить апельсиновой коркой (по желанию).",
+    "garnishEN": "Garnish with orange twist (optional)."
+  },
+  {
+    "nameRU": "МЯТНЫЙ ДЖУЛЕП",
+    "nameEN": "MINT JULEP",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Bourbon Whiskey",
+        "nameEN": "Bourbon Whiskey"
+      },
+      {
+        "nameRU": "Mint",
+        "nameEN": "Mint"
+      },
+      {
+        "nameRU": "Powdered Sugar",
+        "nameEN": "Powdered Sugar"
+      },
+      {
+        "nameRU": "Water",
+        "nameEN": "Water"
+      }
+    ],
+    "methodRU": "В чашке из нержавеющей стали Julep аккуратно смешайте мяту с сахаром и водой. Наполните стакан треснувшим льдом, добавьте бурбон и хорошо перемешайте, пока чашка не замерзнет.",
+    "methodEN": "In Julep Stainless Steel Cup gently muddle the mint with sugar and water. Fill the glass with cracked ice, add the Bourbon and stir well until the cup frosts.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить веточкой мяты.",
+    "garnishEN": "Garnish with a mint sprig."
+  },
+  {
+    "nameRU": "МОХИТО",
+    "nameEN": "MOJITO",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "LONG_DRINK",
+    "typeEN": "LONG_DRINK",
+    "ingredients": [
+      {
+        "nameRU": "White Cuban Ron",
+        "nameEN": "White Cuban Ron"
+      },
+      {
+        "nameRU": "Fresh Lime Juice",
+        "nameEN": "Fresh Lime Juice"
+      },
+      {
+        "nameRU": "Mint",
+        "nameEN": "Mint"
+      },
+      {
+        "nameRU": "White Cane Sugar",
+        "nameEN": "White Cane Sugar"
+      },
+      {
+        "nameRU": "Soda Water",
+        "nameEN": "Soda Water"
+      }
+    ],
+    "methodRU": "Смешайте мяту с сахаром и соком лайма. Добавьте немного газированной воды и наполните стакан льдом. Залейте ром и сверху залейте газированной водой. Легкое перемешивание, чтобы задействовать все ингредиенты.",
+    "methodEN": "Mix mint springs with sugar and lime juice. Add splash of soda water and fill the glass with ice. Pour the rum and top with soda water. Light stir to involve all ingredients.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить веточками мяты и долькой лайма.",
+    "garnishEN": "Garnish with sprigs of mint and slice of lime"
+  },
+  {
+    "nameRU": "МОСКОВСКИЙ МУЛ",
+    "nameEN": "MOSCOW MULE",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Smirnoff Vodka",
+        "nameEN": "Smirnoff Vodka"
       },
       {
         "nameRU": "Ginger Beer",
@@ -44,11 +712,2155 @@
         "nameEN": "Fresh Lime Juice"
       }
     ],
-    "methodRU": "In an Mule Cup or rocks glass, combine the vodka and ginger beer. Add lime juice and gently stir to involve all ingredients.",
+    "methodRU": "В чашке мула или в бокале смешайте водку и имбирное пиво. Добавьте сок лайма и аккуратно перемешайте, чтобы задействовать все ингредиенты.",
     "methodEN": "In an Mule Cup or rocks glass, combine the vodka and ginger beer. Add lime juice and gently stir to involve all ingredients.",
     "noteRU": "-",
     "noteEN": "-",
-    "garnishRU": "Garnish with a lime slice",
+    "garnishRU": "Украсить долькой лайма",
     "garnishEN": "Garnish with a lime slice"
+  },
+  {
+    "nameRU": "PINA COLADA",
+    "nameEN": "PINA COLADA",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "LONG_DRINK",
+    "typeEN": "LONG_DRINK",
+    "ingredients": [
+      {
+        "nameRU": "White Rum",
+        "nameEN": "White Rum"
+      },
+      {
+        "nameRU": "Coconut Cream",
+        "nameEN": "Coconut Cream"
+      },
+      {
+        "nameRU": "Fresh Pineapple Juice",
+        "nameEN": "Fresh Pineapple Juice"
+      }
+    ],
+    "methodRU": "Смешайте все ингредиенты со льдом в электрическом блендере, перелейте в большой стакан и подавайте с соломкой.",
+    "methodEN": "Blend all the ingredients with ice in a electric blender, pour into a large glass and serve with straws.",
+    "noteRU": "Исторически по вкусу добавляли несколько капель свежего сока лайма. 4 ломтика свежего ананаса можно использовать вместо сока",
+    "noteEN": "Historically a few drops of fresh lime juice was added to taste. 4 slices of fresh pineapple can be used instead of juice",
+    "garnishRU": "Украсить долькой ананаса коктейльной вишенкой",
+    "garnishEN": "Garnish with a slice of pineapple with a cocktail cherry"
+  },
+  {
+    "nameRU": "PISCO SOUR",
+    "nameEN": "PISCO SOUR",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Pisco",
+        "nameEN": "Pisco"
+      },
+      {
+        "nameRU": "Fresh Lemon Juice",
+        "nameEN": "Fresh Lemon Juice"
+      },
+      {
+        "nameRU": "Simple Syrup",
+        "nameEN": "Simple Syrup"
+      },
+      {
+        "nameRU": "Egg White",
+        "nameEN": "Egg White"
+      }
+    ],
+    "methodRU": "Добавьте все ингредиенты в шейкер со льдом. Встряхните и процедите в охлажденный бокал.",
+    "methodEN": "Add all ingredients into a shaker with ice. Shake and strain into a chilled goblet glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Несколько капель Amargo biaers в качестве ароматного гарнира.",
+    "garnishEN": "Few dashes of Amargo biaers on top as an aromatic garnish."
+  },
+  {
+    "nameRU": "МОРСКОЙ БРИЗ",
+    "nameEN": "SEA BREEZE",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "LONG_DRINK",
+    "typeEN": "LONG_DRINK",
+    "ingredients": [
+      {
+        "nameRU": "Vodka",
+        "nameEN": "Vodka"
+      },
+      {
+        "nameRU": "Cranberry Juice",
+        "nameEN": "Cranberry Juice"
+      },
+      {
+        "nameRU": "Grapefruit Juice",
+        "nameEN": "Grapefruit Juice"
+      }
+    ],
+    "methodRU": "Выложите все ингредиенты в стакан для хайбола, наполненный льдом.",
+    "methodEN": "Build all ingredients in a highball glass filled with ice.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить цедрой апельсина и вишни",
+    "garnishEN": "Garnish with an orange zest and cherry"
+  },
+  {
+    "nameRU": "СЕКС НА ПЛЯЖЕ",
+    "nameEN": "SEX ON THE BEACH",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "LONG_DRINK",
+    "typeEN": "LONG_DRINK",
+    "ingredients": [
+      {
+        "nameRU": "Vodka",
+        "nameEN": "Vodka"
+      },
+      {
+        "nameRU": "Peach Schnapps",
+        "nameEN": "Peach Schnapps"
+      },
+      {
+        "nameRU": "Fresh Orange Juice",
+        "nameEN": "Fresh Orange Juice"
+      },
+      {
+        "nameRU": "Cranberry Juice",
+        "nameEN": "Cranberry Juice"
+      }
+    ],
+    "methodRU": "Выложите все ингредиенты в стакан для хайбола, наполненный льдом.",
+    "methodEN": "Build all ingredients in a highball glass filled with ice.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить половинкой дольки апельсина.",
+    "garnishEN": "Garnish with half orange slice."
+  },
+  {
+    "nameRU": "СИНГАПУР СЛИНГ",
+    "nameEN": "SINGAPORE SLING",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "LONG_DRINK",
+    "typeEN": "LONG_DRINK",
+    "ingredients": [
+      {
+        "nameRU": "Gin",
+        "nameEN": "Gin"
+      },
+      {
+        "nameRU": "Cherry Liqueur",
+        "nameEN": "Cherry Liqueur"
+      },
+      {
+        "nameRU": "Cointreau",
+        "nameEN": "Cointreau"
+      },
+      {
+        "nameRU": "DOM Bénédictine",
+        "nameEN": "DOM Bénédictine"
+      },
+      {
+        "nameRU": "Fresh Pineapple Juice",
+        "nameEN": "Fresh Pineapple Juice"
+      },
+      {
+        "nameRU": "Fresh Lime Juice",
+        "nameEN": "Fresh Lime Juice"
+      },
+      {
+        "nameRU": "Grenadine Syrup",
+        "nameEN": "Grenadine Syrup"
+      },
+      {
+        "nameRU": "Angostura Bitter",
+        "nameEN": "Angostura Bitter"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер, наполненный кубиками льда. Хорошо встряхните. Процедить в стекло Hurricane.",
+    "methodEN": "Pour all ingredients into cocktail shaker filled with ice cubes. Shake well. Strain into Hurricane glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить ананасом и вишней мараскино",
+    "garnishEN": "Garnish with pineapple and maraschino cherry"
+  },
+  {
+    "nameRU": "ТЕКИЛА САНРАЙЗ",
+    "nameEN": "TEQUILA SUNRISE",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "LONG_DRINK",
+    "typeEN": "LONG_DRINK",
+    "ingredients": [
+      {
+        "nameRU": "Tequila",
+        "nameEN": "Tequila"
+      },
+      {
+        "nameRU": "Fresh Orange Juice",
+        "nameEN": "Fresh Orange Juice"
+      },
+      {
+        "nameRU": "Grenadine Syrup",
+        "nameEN": "Grenadine Syrup"
+      }
+    ],
+    "methodRU": "Налейте текилу и апельсиновый сок прямо в хайболл, наполненный кубиками льда. Добавьте сироп гренадина для создания эффекта цветности (восход солнца), не перемешивайте.",
+    "methodEN": "Pour tequila and orange juice directly into highball glass filled with ice cubes. Add the grenadine syrup to create chromaUc effect (sunrise), do not stir.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить половинкой апельсина или цедрой апельсина",
+    "garnishEN": "Garnish with half orange slice or an orange zest"
+  },
+  {
+    "nameRU": "ВЕСПЕР",
+    "nameEN": "VESPER",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "МАРТИНИС",
+    "typeEN": "MARTINIS",
+    "ingredients": [
+      {
+        "nameRU": "Gin",
+        "nameEN": "Gin"
+      },
+      {
+        "nameRU": "Vodka",
+        "nameEN": "Vodka"
+      },
+      {
+        "nameRU": "Lillet Blanc",
+        "nameEN": "Lillet Blanc"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер, наполненный кубиками льда. Встряхните и процедите в охлажденный коктейльный бокал.",
+    "methodEN": "Pour all ingredients into cocktail shaker filled with ice cubes. Shake and strain into a chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Лимонная цедра",
+    "garnishEN": "Lemon zest"
+  },
+  {
+    "nameRU": "ЖИВОЙ МЕРТВЕЦ",
+    "nameEN": "ZOMBIE",
+    "associationRU": "CONTEMPORARY_CLASSICS",
+    "associationEN": "CONTEMPORARY_CLASSICS",
+    "typeRU": "LONG_DRINK",
+    "typeEN": "LONG_DRINK",
+    "ingredients": [
+      {
+        "nameRU": "Jamaican dark rum",
+        "nameEN": "Jamaican dark rum"
+      },
+      {
+        "nameRU": "Gold Puerto Rican Rum",
+        "nameEN": "Gold Puerto Rican Rum"
+      },
+      {
+        "nameRU": "Demerara Rum",
+        "nameEN": "Demerara Rum"
+      },
+      {
+        "nameRU": "Fresh Lime Juice",
+        "nameEN": "Fresh Lime Juice"
+      },
+      {
+        "nameRU": "Falernum",
+        "nameEN": "Falernum"
+      },
+      {
+        "nameRU": "Donn’s Mix*",
+        "nameEN": "Donn’s Mix*"
+      },
+      {
+        "nameRU": "Grenadine Syrup",
+        "nameEN": "Grenadine Syrup"
+      },
+      {
+        "nameRU": "Angostura Bitter",
+        "nameEN": "Angostura Bitter"
+      },
+      {
+        "nameRU": "Pernod",
+        "nameEN": "Pernod"
+      }
+    ],
+    "methodRU": "Добавьте все ингредиенты в электрический блендер со 170 граммами колотого льда. Смешайте пульсирующую удушку в течение нескольких секунд. Подавать в высоком стакане.",
+    "methodEN": "Add all ingredients into an electric blender with 170 grams of cracked ice. With pulse boaom blend for a few seconds. Serve in a tall tumbler glass.",
+    "noteRU": "* Donn\u0027s Mix: 2 части свежего желтого грейпфрута и 1 часть сиропа корицы.",
+    "noteEN": "*Donn’s Mix: 2 parts of fresh yellow grapefruit and 1 part of cinnamon syrup",
+    "garnishRU": "Украсить листиками мяты.",
+    "garnishEN": "Garnish with mint leaves."
+  },
+  {
+    "nameRU": "АЛЕКСАНДР",
+    "nameEN": "ALEXANDER",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "ПОСЛЕ УЖИНА",
+    "typeEN": "AFTER_DINNER",
+    "ingredients": [
+      {
+        "nameRU": "Cognac",
+        "nameEN": "Cognac"
+      },
+      {
+        "nameRU": "Crème de Cacao (Brown)",
+        "nameEN": "Crème de Cacao (Brown)"
+      },
+      {
+        "nameRU": "Fresh Cream",
+        "nameEN": "Fresh Cream"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер, наполненный кубиками льда. Встряхните и процедите в охлажденный коктейльный бокал.",
+    "methodEN": "Pour all ingredients into cocktail shaker filled with ice cubes. Shake and strain into a chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Сверху посыпать свежемолотым мускатным орехом.",
+    "garnishEN": "Sprinkle fresh ground nutmeg on top."
+  },
+  {
+    "nameRU": "АМЕРИКАНО",
+    "nameEN": "AMERICANO",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "ДО ОБЕДА",
+    "typeEN": "BEFORE_DINNER",
+    "ingredients": [
+      {
+        "nameRU": "Bitter Campari",
+        "nameEN": "Bitter Campari"
+      },
+      {
+        "nameRU": "Sweet Red Vermouth",
+        "nameEN": "Sweet Red Vermouth"
+      },
+      {
+        "nameRU": "Soda Water",
+        "nameEN": "Soda Water"
+      }
+    ],
+    "methodRU": "Смешайте ингредиенты прямо в старомодном стакане, наполненном кубиками льда. Добавьте немного газированной воды. Осторожно перемешайте.",
+    "methodEN": "Mix the ingredients directly in an old fashioned glass filled with ice cubes. Add a splash of Soda Water. Stir gently.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить половинкой дольки апельсина и цедрой лимона.",
+    "garnishEN": "Garnish with half orange slice and a lemon zest."
+  },
+  {
+    "nameRU": "АНГЕЛЬСКОЕ ЛИЦО",
+    "nameEN": "ANGEL FACE",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "МАРТИНИС",
+    "typeEN": "MARTINIS",
+    "ingredients": [
+      {
+        "nameRU": "Gin",
+        "nameEN": "Gin"
+      },
+      {
+        "nameRU": "Apricot Brandy",
+        "nameEN": "Apricot Brandy"
+      },
+      {
+        "nameRU": "Calvados",
+        "nameEN": "Calvados"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер, наполненный кубиками льда. Встряхните и процедите в охлажденный коктейльный бокал.",
+    "methodEN": "Pour all ingredients into cocktail shaker filled with ice cubes. Shake and strain into a chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Нет данных",
+    "garnishEN": "N/A"
+  },
+  {
+    "nameRU": "АВИАЦИЯ",
+    "nameEN": "AVIATION",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "МАРТИНИС",
+    "typeEN": "MARTINIS",
+    "ingredients": [
+      {
+        "nameRU": "Gin",
+        "nameEN": "Gin"
+      },
+      {
+        "nameRU": "Maraschino Liqueur",
+        "nameEN": "Maraschino Liqueur"
+      },
+      {
+        "nameRU": "Fresh Lemon Juice",
+        "nameEN": "Fresh Lemon Juice"
+      },
+      {
+        "nameRU": "Crème de Violette",
+        "nameEN": "Crème de Violette"
+      }
+    ],
+    "methodRU": "Добавьте все ингредиенты в шейкер для коктейлей. Взболтать с треснувшим льдом и процедить в охлажденный коктейльный бокал.",
+    "methodEN": "Add all ingredients into a cocktail shaker. Shake with cracked ice and strain into a chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Необязательный Maraschino Cherry.",
+    "garnishEN": "Optional Maraschino Cherry."
+  },
+  {
+    "nameRU": "МЕЖДУ ПРОСТЫНЯМИ",
+    "nameEN": "BETWEEN THE SHEETS",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "White Rum",
+        "nameEN": "White Rum"
+      },
+      {
+        "nameRU": "Cognac",
+        "nameEN": "Cognac"
+      },
+      {
+        "nameRU": "Triple Sec",
+        "nameEN": "Triple Sec"
+      },
+      {
+        "nameRU": "Fresh Lemon Juice",
+        "nameEN": "Fresh Lemon Juice"
+      }
+    ],
+    "methodRU": "Добавьте все ингредиенты в шейкер для коктейлей. Взболтать со льдом и процедить в охлажденный коктейльный бокал.",
+    "methodEN": "Add all ingredients into a cocktail shaker. Shake with ice and strain into a chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Нет данных",
+    "garnishEN": "N/A"
+  },
+  {
+    "nameRU": "БУЛЬВАРДЬЕ",
+    "nameEN": "BOULEVARDIER",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "ДО ОБЕДА",
+    "typeEN": "BEFORE_DINNER",
+    "ingredients": [
+      {
+        "nameRU": "Bourbon or Rye Whiskey",
+        "nameEN": "Bourbon or Rye Whiskey"
+      },
+      {
+        "nameRU": "Bitter Campari",
+        "nameEN": "Bitter Campari"
+      },
+      {
+        "nameRU": "Sweet Red Vermouth",
+        "nameEN": "Sweet Red Vermouth"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в стакан для смешивания с кубиками льда. Размешайте как следует. Процедить в охлажденный коктейльный бокал.",
+    "methodEN": "Pour all ingredients into mixing glass with ice cubes. Stir well. Strain into chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить цедрой апельсина, по желанию цедрой лимона.",
+    "garnishEN": "Garnish with a orange zest, optionally a lemon zest."
+  },
+  {
+    "nameRU": "БРЭНДИ КРАСТА",
+    "nameEN": "BRANDY CRUSTA",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Brandy",
+        "nameEN": "Brandy"
+      },
+      {
+        "nameRU": "Maraschino Luxardo",
+        "nameEN": "Maraschino Luxardo"
+      },
+      {
+        "nameRU": "Curacao",
+        "nameEN": "Curacao"
+      },
+      {
+        "nameRU": "Fresh Lemon Juice",
+        "nameEN": "Fresh Lemon Juice"
+      },
+      {
+        "nameRU": "Simple Syrup",
+        "nameEN": "Simple Syrup"
+      },
+      {
+        "nameRU": "Aromatic Bitters",
+        "nameEN": "Aromatic Bitters"
+      }
+    ],
+    "methodRU": "Смешайте все ингредиенты с кубиками льда в стакане для смешивания и процедите в подготовленный тонкий стакан для коктейлей. ",
+    "methodEN": "Mix together all ingredients with ice cubes in a mixing glass and strain into prepared slim cocktail glass. ",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Потрите долькой апельсина (или лимона) край стакана и окуните его в измельченный белый сахар, чтобы сахар прилипал к краю стакана. Осторожно скручивая, поместите цедру апельсина / лимона вокруг внутренней стороны стакана.",
+    "garnishEN": "Rub a slice of orange (or lemon) around the rim of the glass and dip it in pulverized white sugar, so that the sugar will adhere to the edge of the glass. Carefully curling place the orange/lemon peel around the inside of the glass."
+  },
+  {
+    "nameRU": "КАЗИНО",
+    "nameEN": "CASINO",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Old Tom Gin",
+        "nameEN": "Old Tom Gin"
+      },
+      {
+        "nameRU": "Maraschino Liqueur",
+        "nameEN": "Maraschino Liqueur"
+      },
+      {
+        "nameRU": "Fresh Lemon Juice",
+        "nameEN": "Fresh Lemon Juice"
+      },
+      {
+        "nameRU": "Orange Bitters",
+        "nameEN": "Orange Bitters"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер для коктейлей, хорошо взболтайте со льдом, процедите в охлажденный бокал со льдом.",
+    "methodEN": "Pour all ingredients into cocktails shaker, shake well with ice, strain into chilled rocks glass with ice.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить цедрой лимона и вишней мараскино.",
+    "garnishEN": "Garnish with a lemon zest and a maraschino cherry."
+  },
+  {
+    "nameRU": "КЛЕВЕРНЫЙ КЛУБ",
+    "nameEN": "CLOVER CLUB",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Gin",
+        "nameEN": "Gin"
+      },
+      {
+        "nameRU": "Raspberry Syrup",
+        "nameEN": "Raspberry Syrup"
+      },
+      {
+        "nameRU": "Fresh Lemon Juice",
+        "nameEN": "Fresh Lemon Juice"
+      },
+      {
+        "nameRU": "Egg White",
+        "nameEN": "Egg White"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер для коктейлей, хорошо взболтайте со льдом, процедите в охлажденный коктейльный бокал.",
+    "methodEN": "Pour all ingredients into cocktails shaker, shake well with ice, strain into chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Свежая малина.",
+    "garnishEN": "Fresh raspberries."
+  },
+  {
+    "nameRU": "ДАЙКИРИ",
+    "nameEN": "DAIQUIRI",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "ДО ОБЕДА",
+    "typeEN": "BEFORE_DINNER",
+    "ingredients": [
+      {
+        "nameRU": "White Cuban Ron",
+        "nameEN": "White Cuban Ron"
+      },
+      {
+        "nameRU": "Fresh Lime Juice",
+        "nameEN": "Fresh Lime Juice"
+      },
+      {
+        "nameRU": "Superfine Sugar",
+        "nameEN": "Superfine Sugar"
+      }
+    ],
+    "methodRU": "В шейкер для коктейлей добавьте все ингредиенты. Хорошо перемешайте, чтобы сахар растворился. Добавьте лед и взболтайте. Процедить в охлажденный коктейльный бокал.",
+    "methodEN": "In a cocktail shaker add all ingredients. Stir well to dissolve the sugar. Add ice and shake. Strain into chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Нет данных",
+    "garnishEN": "N/A"
+  },
+  {
+    "nameRU": "СУХОЙ МАРТИНИ",
+    "nameEN": "DRY MARTINI",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "МАРТИНИС",
+    "typeEN": "MARTINIS",
+    "ingredients": [
+      {
+        "nameRU": "Gin",
+        "nameEN": "Gin"
+      },
+      {
+        "nameRU": "Dry Vermouth",
+        "nameEN": "Dry Vermouth"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в стакан для смешивания с кубиками льда. Размешайте как следует. Перелить в охлажденный бокал для мартини.",
+    "methodEN": "Pour all ingredients into mixing glass with ice cubes. Stir well. Strain into chilled martini cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Выдавите масло из цедры лимона в напиток или украсьте зелеными оливками, если хотите.",
+    "garnishEN": "Squeeze oil from lemon peel onto the drink, or garnish with a green olives if requested."
+  },
+  {
+    "nameRU": "GIN FIZZ",
+    "nameEN": "GIN FIZZ",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "LONG_DRINK",
+    "typeEN": "LONG_DRINK",
+    "ingredients": [
+      {
+        "nameRU": "Gin",
+        "nameEN": "Gin"
+      },
+      {
+        "nameRU": "Fresh Lemon Juice",
+        "nameEN": "Fresh Lemon Juice"
+      },
+      {
+        "nameRU": "Simple Syrup",
+        "nameEN": "Simple Syrup"
+      },
+      {
+        "nameRU": "Soda Water",
+        "nameEN": "Soda Water"
+      }
+    ],
+    "methodRU": "Взболтайте все ингредиенты со льдом, кроме газированной воды. Налейте в тонкий высокий стакан для стакана и залейте небольшим количеством газированной воды.",
+    "methodEN": "Shake all ingredients with ice except soda water. Pour into thin tall Tumbler glass , top with a splash soda water.",
+    "noteRU": "Подавать без льда.",
+    "noteEN": "Serve without ice.",
+    "garnishRU": "Украсить долькой лимона, по желанию цедрой лимона.",
+    "garnishEN": "Garnish with lemon slice, optional lemon zest."
+  },
+  {
+    "nameRU": "HANKY PANKY",
+    "nameEN": "HANKY PANKY",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "МАРТИНИС",
+    "typeEN": "MARTINIS",
+    "ingredients": [
+      {
+        "nameRU": "London Dry Gin",
+        "nameEN": "London Dry Gin"
+      },
+      {
+        "nameRU": "Sweet Red Vermouth",
+        "nameEN": "Sweet Red Vermouth"
+      },
+      {
+        "nameRU": "Fernet Branca",
+        "nameEN": "Fernet Branca"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в стакан для смешивания с кубиками льда. Размешайте как следует. Процедить в охлажденный коктейльный бокал.",
+    "methodEN": "Pour all ingredients into mixing glass with ice cubes. Stir well. Strain into chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Апельсиновой цедры.",
+    "garnishEN": "Orange zest."
+  },
+  {
+    "nameRU": "ДЖОН КОЛЛИНЗ ",
+    "nameEN": "JOHN COLLINS ",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "LONG_DRINK",
+    "typeEN": "LONG_DRINK",
+    "ingredients": [
+      {
+        "nameRU": "Gin",
+        "nameEN": "Gin"
+      },
+      {
+        "nameRU": "Fresh Lemon Juice",
+        "nameEN": "Fresh Lemon Juice"
+      },
+      {
+        "nameRU": "Simple Syrup",
+        "nameEN": "Simple Syrup"
+      },
+      {
+        "nameRU": "Soda Water",
+        "nameEN": "Soda Water"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты прямо в хайбол, наполненный льдом. Осторожно перемешайте.",
+    "methodEN": "Pour all ingredients directly into highball filled with ice. Stir gently.",
+    "noteRU": "Используйте джин \"Old Tom\" для Тома Коллинза.",
+    "noteEN": "Use \u0027Old Tom\u0027 Gin for Tom Collins.",
+    "garnishRU": "Украсить долькой лимона и вишней мараскино.",
+    "garnishEN": "Garnish with lemon slice and maraschino cherry."
+  },
+  {
+    "nameRU": "ПОСЛЕДНЕЕ СЛОВО",
+    "nameEN": "LAST WORD",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "ДО ОБЕДА",
+    "typeEN": "BEFORE_DINNER",
+    "ingredients": [
+      {
+        "nameRU": "Gin",
+        "nameEN": "Gin"
+      },
+      {
+        "nameRU": "Green Chartreuse",
+        "nameEN": "Green Chartreuse"
+      },
+      {
+        "nameRU": "Maraschino Liqueur",
+        "nameEN": "Maraschino Liqueur"
+      },
+      {
+        "nameRU": "Fresh Lime Juice",
+        "nameEN": "Fresh Lime Juice"
+      }
+    ],
+    "methodRU": "Добавьте все ингредиенты в шейкер для коктейлей. Взболтать со льдом и процедить в охлажденный коктейльный бокал.",
+    "methodEN": "Add all ingredients into a cocktail shaker. Shake with ice and strain into a chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Нет данных",
+    "garnishEN": "N/A"
+  },
+  {
+    "nameRU": "MANHATTAN",
+    "nameEN": "MANHATTAN",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "ДО ОБЕДА",
+    "typeEN": "BEFORE_DINNER",
+    "ingredients": [
+      {
+        "nameRU": "Rye Whiskey",
+        "nameEN": "Rye Whiskey"
+      },
+      {
+        "nameRU": "Sweet Red Vermouth",
+        "nameEN": "Sweet Red Vermouth"
+      },
+      {
+        "nameRU": "Angostura Bitter",
+        "nameEN": "Angostura Bitter"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в стакан для смешивания с кубиками льда. Размешайте как следует. Процедить в охлажденный коктейльный бокал.",
+    "methodEN": "Pour all ingredients into mixing glass with ice cubes. Stir well. Strain into chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить коктейльной вишней.",
+    "garnishEN": "Garnish with cocktail cherry."
+  },
+  {
+    "nameRU": "Мартинес",
+    "nameEN": "MARTINEZ",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "МАРТИНИС",
+    "typeEN": "MARTINIS",
+    "ingredients": [
+      {
+        "nameRU": "London Dry Gin",
+        "nameEN": "London Dry Gin"
+      },
+      {
+        "nameRU": "Sweet Red Vermouth",
+        "nameEN": "Sweet Red Vermouth"
+      },
+      {
+        "nameRU": "Maraschino Liqueur",
+        "nameEN": "Maraschino Liqueur"
+      },
+      {
+        "nameRU": "Orange Bitters",
+        "nameEN": "Orange Bitters"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в стакан для смешивания с кубиками льда. Размешайте как следует. Процедить в охлажденный коктейльный бокал.",
+    "methodEN": "Pour all ingredients into mixing glass with ice cubes. Stir well. Strain into chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Цедра лимона.",
+    "garnishEN": "Lemon zest."
+  },
+  {
+    "nameRU": "МЭРИ ПИКФОРД",
+    "nameEN": "MARY PICKFORD",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "White Rum",
+        "nameEN": "White Rum"
+      },
+      {
+        "nameRU": "Fresh Pineapple Juice",
+        "nameEN": "Fresh Pineapple Juice"
+      },
+      {
+        "nameRU": "Maraschino Liqueur",
+        "nameEN": "Maraschino Liqueur"
+      },
+      {
+        "nameRU": "Grenadine Syrup",
+        "nameEN": "Grenadine Syrup"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер, взболтайте со льдом, процедите в охлажденный коктейльный бокал.",
+    "methodEN": "Pour all ingredients into cocktail shaker, shake well with ice, strain into chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Нет данных",
+    "garnishEN": "N/A"
+  },
+  {
+    "nameRU": "ОБЕЗЬЯННАЯ ЖЕЛЕЗА",
+    "nameEN": "MONKEY GLAND",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Dry Gin",
+        "nameEN": "Dry Gin"
+      },
+      {
+        "nameRU": "Fresh Orange Juice",
+        "nameEN": "Fresh Orange Juice"
+      },
+      {
+        "nameRU": "Absinthe",
+        "nameEN": "Absinthe"
+      },
+      {
+        "nameRU": "Grenadine Syrup",
+        "nameEN": "Grenadine Syrup"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер, хорошо встряхните со льдом, процедите в охлажденный коктейльный бокал.",
+    "methodEN": "Pour all ingredients into cocktail shaker, shake well with ice, strain into chilled cocktail glass",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Нет данных",
+    "garnishEN": "N/A"
+  },
+  {
+    "nameRU": "НЕГРОНИ",
+    "nameEN": "NEGRONI",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "ДО ОБЕДА",
+    "typeEN": "BEFORE_DINNER",
+    "ingredients": [
+      {
+        "nameRU": "Gin",
+        "nameEN": "Gin"
+      },
+      {
+        "nameRU": "Bitter Campari",
+        "nameEN": "Bitter Campari"
+      },
+      {
+        "nameRU": "Sweet Red Vermouth",
+        "nameEN": "Sweet Red Vermouth"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты прямо в охлажденный старомодный стакан со льдом и аккуратно перемешайте. ",
+    "methodEN": "Pour all ingredients directly into chilled old fashioned glass filled with ice, Stir gently. ",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить половинкой дольки апельсина.",
+    "garnishEN": "Garnish with half orange slice."
+  },
+  {
+    "nameRU": "СТАРЫЙ МОДНЫЙ",
+    "nameEN": "OLD FASHIONED",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "ДО ОБЕДА",
+    "typeEN": "BEFORE_DINNER",
+    "ingredients": [
+      {
+        "nameRU": "Bourbon or Rye Whiskey",
+        "nameEN": "Bourbon or Rye Whiskey"
+      },
+      {
+        "nameRU": "Sugar Cube",
+        "nameEN": "Sugar Cube"
+      },
+      {
+        "nameRU": "Angostura Bitter",
+        "nameEN": "Angostura Bitter"
+      },
+      {
+        "nameRU": "Plain Water",
+        "nameEN": "Plain Water"
+      }
+    ],
+    "methodRU": "Поместите сахарный кубик в старомодный стакан и пропитайте биэром, добавьте несколько капель простой воды. Месить до растворения. Наполните стакан кубиками льда и добавьте виски. Осторожно перемешайте.",
+    "methodEN": "Place sugar cube in old fashioned glass and saturate with biaer, add few dashes of plain water. Muddle until dissolved. Fill the glass with ice cubes and add whiskey. Stir gently.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить долькой или цедрой апельсина и коктейльной вишенкой.",
+    "garnishEN": "Garnish with orange slice or zest, and a cocktail cherry."
+  },
+  {
+    "nameRU": "РАЙ",
+    "nameEN": "PARADISE",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Gin",
+        "nameEN": "Gin"
+      },
+      {
+        "nameRU": "Apricot Brandy",
+        "nameEN": "Apricot Brandy"
+      },
+      {
+        "nameRU": "Fresh Orange Juice",
+        "nameEN": "Fresh Orange Juice"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер, взболтайте со льдом, процедите в охлажденный коктейльный бокал.",
+    "methodEN": "Pour all ingredients into cocktail shaker, shake well with ice, strain into chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Нет данных",
+    "garnishEN": "N/A"
+  },
+  {
+    "nameRU": "ПУАНСОННЫЙ ПУАНСОН",
+    "nameEN": "PLANTERS PUNCH",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "LONG_DRINK",
+    "typeEN": "LONG_DRINK",
+    "ingredients": [
+      {
+        "nameRU": "Jamaican Rum",
+        "nameEN": "Jamaican Rum"
+      },
+      {
+        "nameRU": "Fresh Lime Juice",
+        "nameEN": "Fresh Lime Juice"
+      },
+      {
+        "nameRU": "Sugar Cane Juice",
+        "nameEN": "Sugar Cane Juice"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты прямо в небольшой стакан или обычный терракотовый стакан.",
+    "methodEN": "Pour all ingredients directly in a small tumbler or a typical terracoaa glass.",
+    "noteRU": "Добавляйте разбавление по вкусу, можно добавлять воду, лед или свежевыжатые соки.",
+    "noteEN": "Add dilution up to taste, it can be given by water, ice or fresh juices.",
+    "garnishRU": "Украсить цедрой апельсина",
+    "garnishEN": "Garnish with orange zest"
+  },
+  {
+    "nameRU": "ПОРТО ФЛИП",
+    "nameEN": "PORTO FLIP",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "ПОСЛЕ УЖИНА",
+    "typeEN": "AFTER_DINNER",
+    "ingredients": [
+      {
+        "nameRU": "Brandy",
+        "nameEN": "Brandy"
+      },
+      {
+        "nameRU": "Red Tawny Port Wine",
+        "nameEN": "Red Tawny Port Wine"
+      },
+      {
+        "nameRU": "Egg Yolk",
+        "nameEN": "Egg Yolk"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер, взболтайте со льдом, процедите в охлажденный коктейльный бокал.",
+    "methodEN": "Pour all ingredients into cocktail shaker, shake well with ice, strain into chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Посыпать свежемолотым мускатным орехом.",
+    "garnishEN": "Sprinkle with fresh ground nutmeg."
+  },
+  {
+    "nameRU": "RAMOS FIZZ",
+    "nameEN": "RAMOS FIZZ",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "LONG_DRINK",
+    "typeEN": "LONG_DRINK",
+    "ingredients": [
+      {
+        "nameRU": "Gin",
+        "nameEN": "Gin"
+      },
+      {
+        "nameRU": "Fresh Lime Juice",
+        "nameEN": "Fresh Lime Juice"
+      },
+      {
+        "nameRU": "Fresh Lemon Juice",
+        "nameEN": "Fresh Lemon Juice"
+      },
+      {
+        "nameRU": "Sugar Syrup",
+        "nameEN": "Sugar Syrup"
+      },
+      {
+        "nameRU": "Cream",
+        "nameEN": "Cream"
+      },
+      {
+        "nameRU": "Egg White",
+        "nameEN": "Egg White"
+      },
+      {
+        "nameRU": "Orange Flower Water",
+        "nameEN": "Orange Flower Water"
+      },
+      {
+        "nameRU": "Vanilla Extract",
+        "nameEN": "Vanilla Extract"
+      },
+      {
+        "nameRU": "Soda Water",
+        "nameEN": "Soda Water"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты, кроме газированной воды, в шейкер со льдом, встряхивайте в течение двух минут, дважды процедите в стакан, вылейте напиток обратно в шейкер и встряхивайте без льда в течение одной минуты. Перелить в стакан для хайбол, долить содовой.",
+    "methodEN": "Pour all ingredients except soda water in a cocktail shaker with ice, Shake for two minutes, double strain in a glass, pour the drink back in the shaker and hard shake without ice for one minute. Strain into a highball glass, top up with soda.",
+    "noteRU": "Напиток был изобретен Генри Рамосом в 1888 году в своем баре Meyer Table d\u0027Hôtel Internationale в Новом Орлеане. Изначально Ramos Fizz встряхивал в течение 12 минут бригада из 30 барменов, которые передавали шейкер от одного к другому.",
+    "noteEN": "The drink was invented by Henry Ramos in 1888, at his bar Meyer’s Table d’Hôtel Internationale in New Orleans. The Ramos Fizz was originally shaken for 12 minutes by a crew of 30 bartenders who passed the shaker from one to another.",
+    "garnishRU": "Нет данных",
+    "garnishEN": "N/A"
+  },
+  {
+    "nameRU": "РЖАВЫЙ ГВОЗДЬ ",
+    "nameEN": "RUSTY NAIL ",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "ПОСЛЕ УЖИНА",
+    "typeEN": "AFTER_DINNER",
+    "ingredients": [
+      {
+        "nameRU": "Scotch Whisky",
+        "nameEN": "Scotch Whisky"
+      },
+      {
+        "nameRU": "Drambuie",
+        "nameEN": "Drambuie"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты прямо в старомодный стакан, наполненный льдом. Осторожно перемешайте.",
+    "methodEN": "Pour all ingredients directly into an old fashioned glass filled with ice. Stir gently.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить цедрой лимона.",
+    "garnishEN": "Garnish with lemon zest."
+  },
+  {
+    "nameRU": "САЗЕРАК",
+    "nameEN": "SAZERAC",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "ПОСЛЕ УЖИНА",
+    "typeEN": "AFTER_DINNER",
+    "ingredients": [
+      {
+        "nameRU": "Cognac",
+        "nameEN": "Cognac"
+      },
+      {
+        "nameRU": "Absinthe",
+        "nameEN": "Absinthe"
+      },
+      {
+        "nameRU": "Sugar Cube",
+        "nameEN": "Sugar Cube"
+      },
+      {
+        "nameRU": "Peychaud\u0027s Bitters",
+        "nameEN": "Peychaud\u0027s Bitters"
+      }
+    ],
+    "methodRU": "Ополосните охлажденный старомодный бокал абсентом, добавьте колотый лед и отставьте в сторону. Перемешайте остальные ингредиенты со льдом в стакане для смешивания. Удалите лед и лишний абсент из приготовленного стакана, процедите смешанный напиток в стакан.",
+    "methodEN": "Rinse a chilled old-fashioned glass with the absinthe, add crushed ice and set it aside. Stir the remaining ingredients over ice in a mixing glass . Discard the ice and any excess absinthe from the prepared glass, strain the mixed drink into the glass",
+    "noteRU": "Первоначальный рецепт изменился после Гражданской войны в США, ржаной виски заменили коньяком, так как его стало трудно достать.",
+    "noteEN": "The original recipe changed after the American Civil War, Rye Whiskey substituted Cognac as it became hard to obtain",
+    "garnishRU": "Украсить цедрой лимона.",
+    "garnishEN": "Garnish with lemon zest."
+  },
+  {
+    "nameRU": "SIDECAR",
+    "nameEN": "SIDECAR",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Cognac",
+        "nameEN": "Cognac"
+      },
+      {
+        "nameRU": "Triple Sec",
+        "nameEN": "Triple Sec"
+      },
+      {
+        "nameRU": "Fresh Lemon Juice",
+        "nameEN": "Fresh Lemon Juice"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер, взболтайте со льдом, процедите в охлажденный коктейльный бокал.",
+    "methodEN": "Pour all ingredients into cocktail shaker, shake well with ice, strain into chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Нет данных",
+    "garnishEN": "N/A"
+  },
+  {
+    "nameRU": "ЖАЛО",
+    "nameEN": "STINGER",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "ПОСЛЕ УЖИНА",
+    "typeEN": "AFTER_DINNER",
+    "ingredients": [
+      {
+        "nameRU": "Cognac",
+        "nameEN": "Cognac"
+      },
+      {
+        "nameRU": "White Crème de Menthe",
+        "nameEN": "White Crème de Menthe"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в стакан для смешивания с кубиками льда. Размешайте как следует. Перелить в охлажденный бокал для мартини.",
+    "methodEN": "Pour all ingredients into mixing glass with ice cubes. Stir well. Strain into chilled martini cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Необязательный отпуск мяты",
+    "garnishEN": "Optional mint leave"
+  },
+  {
+    "nameRU": "СМОКИНГ",
+    "nameEN": "TUXEDO",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "МАРТИНИС",
+    "typeEN": "MARTINIS",
+    "ingredients": [
+      {
+        "nameRU": "Old Tom Gin",
+        "nameEN": "Old Tom Gin"
+      },
+      {
+        "nameRU": "Dry Vermouth",
+        "nameEN": "Dry Vermouth"
+      },
+      {
+        "nameRU": "Maraschino Liqueur",
+        "nameEN": "Maraschino Liqueur"
+      },
+      {
+        "nameRU": "Absinthe",
+        "nameEN": "Absinthe"
+      },
+      {
+        "nameRU": "Orange Bitters",
+        "nameEN": "Orange Bitters"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в стакан для смешивания с кубиками льда. Размешайте как следует. Перелить в охлажденный бокал для мартини.",
+    "methodEN": "Pour all ingredients into mixing glass with ice cubes. Stir well. Strain into chilled martini cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить цедрой вишни и лимона",
+    "garnishEN": "Garnish with cherry and lemon zest"
+  },
+  {
+    "nameRU": "VIEUX CARRÉ ",
+    "nameEN": "VIEUX CARRÉ ",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "ПОСЛЕ УЖИНА",
+    "typeEN": "AFTER_DINNER",
+    "ingredients": [
+      {
+        "nameRU": "Rye Whiskey",
+        "nameEN": "Rye Whiskey"
+      },
+      {
+        "nameRU": "Cognac",
+        "nameEN": "Cognac"
+      },
+      {
+        "nameRU": "Sweet Vermouth",
+        "nameEN": "Sweet Vermouth"
+      },
+      {
+        "nameRU": "Bénédictine",
+        "nameEN": "Bénédictine"
+      },
+      {
+        "nameRU": "Peychaud\u0027s Bitters",
+        "nameEN": "Peychaud\u0027s Bitters"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в стакан для смешивания с кубиками льда. Размешайте как следует. Процедить в охлажденный коктейльный бокал.",
+    "methodEN": "Pour all ingredients into mixing glass with ice cubes. Stir well. Strain into chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить цедрой апельсина и вишней мараскино.",
+    "garnishEN": "Garnish with orange zest and maraschino cherry."
+  },
+  {
+    "nameRU": "ВИСКИ ",
+    "nameEN": "WHISKEY SOUR ",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "ДО ОБЕДА",
+    "typeEN": "BEFORE_DINNER",
+    "ingredients": [
+      {
+        "nameRU": "Bourbon Whiskey",
+        "nameEN": "Bourbon Whiskey"
+      },
+      {
+        "nameRU": "Fresh Lemon Juice",
+        "nameEN": "Fresh Lemon Juice"
+      },
+      {
+        "nameRU": "Sugar Syrup",
+        "nameEN": "Sugar Syrup"
+      },
+      {
+        "nameRU": "Egg White (Optional)",
+        "nameEN": "Egg White (Optional)"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер, наполненный льдом. Хорошо встряхните. Процедить в бокал для сапожника. Если подается «на камнях», процедите ингредиенты в старомодный стакан, наполненный льдом.",
+    "methodEN": "Pour all ingredients into cocktail shaker filled with ice. Shake well. Strain into cobbler glass. If served \"On the rocks\", strain ingredients into old fashioned glass filled with ice.",
+    "noteRU": "Если используется яичный белок, встряхните немного сильнее, чтобы он высвободился и смешал пену с яичного белка.",
+    "noteEN": "If egg white is used shake little harder to release and incorporate the foam from the egg white.",
+    "garnishRU": "Украсить половинкой дольки апельсина и вишней мараскино, по желанию можно использовать цедру апельсина.",
+    "garnishEN": "Garnish with half orange slice and maraschino cherry, optionally use orange zest."
+  },
+  {
+    "nameRU": "БЕЛАЯ ДАМА",
+    "nameEN": "WHITE LADY",
+    "associationRU": "THE_UNFORGETTABLES",
+    "associationEN": "THE_UNFORGETTABLES",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Gin",
+        "nameEN": "Gin"
+      },
+      {
+        "nameRU": "Triple Sec",
+        "nameEN": "Triple Sec"
+      },
+      {
+        "nameRU": "Fresh Lemon Juice",
+        "nameEN": "Fresh Lemon Juice"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер, взболтайте со льдом, процедите в охлажденный коктейльный бокал.",
+    "methodEN": "Pour all ingredients into cocktail shaker, shake well with ice, strain into chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Нет данных",
+    "garnishEN": "N/A"
+  },
+  {
+    "nameRU": "БАРРАКУДА",
+    "nameEN": "BARRACUDA",
+    "associationRU": "NEW_ERA_DRINKS",
+    "associationEN": "NEW_ERA_DRINKS",
+    "typeRU": "ИГРЕНИЕ",
+    "typeEN": "SPARKLING",
+    "ingredients": [
+      {
+        "nameRU": "Gold Rum",
+        "nameEN": "Gold Rum"
+      },
+      {
+        "nameRU": "Galliano",
+        "nameEN": "Galliano"
+      },
+      {
+        "nameRU": "Fresh Pineapple Juice",
+        "nameEN": "Fresh Pineapple Juice"
+      },
+      {
+        "nameRU": "Fresh Lime Juice",
+        "nameEN": "Fresh Lime Juice"
+      },
+      {
+        "nameRU": "Prosecco",
+        "nameEN": "Prosecco"
+      }
+    ],
+    "methodRU": "Вылейте в шейкер для коктейлей все ингредиенты, кроме Просекко, хорошо встряхните со льдом, процедите в охлажденный бокал для хайболла, наполненный льдом, и долейте Просекко.",
+    "methodEN": "Pour all ingredients into cocktail shaker except the Prosecco, shake well with ice, strain into chilled highball glass filled with ice and top up with Prosecco.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Ананас и вишня, по желанию - мята для дополнительного аромата.",
+    "garnishEN": "Pineapple and Cherry, optional mint spring for additional aroma."
+  },
+  {
+    "nameRU": "BRAMBLE",
+    "nameEN": "BRAMBLE",
+    "associationRU": "NEW_ERA_DRINKS",
+    "associationEN": "NEW_ERA_DRINKS",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Gin",
+        "nameEN": "Gin"
+      },
+      {
+        "nameRU": "Fresh Lemon Juice",
+        "nameEN": "Fresh Lemon Juice"
+      },
+      {
+        "nameRU": "Sugar Syrup",
+        "nameEN": "Sugar Syrup"
+      },
+      {
+        "nameRU": "Crème de Mûre",
+        "nameEN": "Crème de Mûre"
+      }
+    ],
+    "methodRU": "Вылейте в шейкер для коктейлей все ингредиенты, кроме Crème de M wellre, хорошо встряхните со льдом, процедите в охлажденный старомодный стакан, наполненный колотым льдом, затем налейте ликер из ежевики (Crème de M overre) поверх напитка круговыми движениями.",
+    "methodEN": "Pour all ingredients into cocktail shaker except the Crème de Mûre, shake well with ice, strain into chilled old fashioned glass filled with crushed ice, then pour the blackberry liqueur (Crème de Mûre) over the top of the drink, in a circular motion.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить по желанию долькой лимона и ежевикой.",
+    "garnishEN": "Garnish optionally with a lemon slice and blackberries."
+  },
+  {
+    "nameRU": "КОЛЕНКИ ",
+    "nameEN": "BEE’S KNEES ",
+    "associationRU": "NEW_ERA_DRINKS",
+    "associationEN": "NEW_ERA_DRINKS",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Dry Gin",
+        "nameEN": "Dry Gin"
+      },
+      {
+        "nameRU": "Honey Syrup",
+        "nameEN": "Honey Syrup"
+      },
+      {
+        "nameRU": "Fresh Lemon Juice",
+        "nameEN": "Fresh Lemon Juice"
+      },
+      {
+        "nameRU": "Fresh Orange Juice",
+        "nameEN": "Fresh Orange Juice"
+      }
+    ],
+    "methodRU": "Мед смешать с лимонным и апельсиновым соками, пока он не растворится, добавить джин и взболтать со льдом. Перелить в охлажденный коктейльный бокал.",
+    "methodEN": "Stir honey with lemon and orange juices unUl it dissolves, add gin and shake with ice. Strain into a chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "По желанию украсить цедрой лимона или апельсина",
+    "garnishEN": "Optionally garnish with a lemon or orange zest"
+  },
+  {
+    "nameRU": "КАЧАНЧАРА",
+    "nameEN": "CACHANCHARA",
+    "associationRU": "NEW_ERA_DRINKS",
+    "associationEN": "NEW_ERA_DRINKS",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Cuban Aguardiente",
+        "nameEN": "Cuban Aguardiente"
+      },
+      {
+        "nameRU": "Fresh Lime Juice",
+        "nameEN": "Fresh Lime Juice"
+      },
+      {
+        "nameRU": "Honey",
+        "nameEN": "Honey"
+      },
+      {
+        "nameRU": "Water",
+        "nameEN": "Water"
+      }
+    ],
+    "methodRU": "Смешайте мед с водой и соком лайма и распределите смесь по подставке и бокам стакана. Добавьте треснувший лед, а затем ром. Закончите энергичным перемешиванием от удочки до верха.",
+    "methodEN": "Mix honey with water and lime juice and spread the mixture on the boaom and sides of the glass. Add cracked ice, and then the rum. End by energeUcally stirring from boaom to top.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Долька извести.",
+    "garnishEN": "Lime wedge."
+  },
+  {
+    "nameRU": "ТЁМНАЯ БУРЯ",
+    "nameEN": "DARK ‘N’ STORMY",
+    "associationRU": "NEW_ERA_DRINKS",
+    "associationEN": "NEW_ERA_DRINKS",
+    "typeRU": "LONG_DRINK",
+    "typeEN": "LONG_DRINK",
+    "ingredients": [
+      {
+        "nameRU": "Goslings Rum",
+        "nameEN": "Goslings Rum"
+      },
+      {
+        "nameRU": "Ginger Beer",
+        "nameEN": "Ginger Beer"
+      }
+    ],
+    "methodRU": "В стакан для хайболла, наполненный льдом, налейте имбирное пиво и сверху налейте ром.",
+    "methodEN": "In a highball glass filled with ice pour the ginger beer and top floating with the Rum.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить долькой или долькой лайма.",
+    "garnishEN": "Garnish with a lime wedge or slice."
+  },
+  {
+    "nameRU": "ЭСПРЕССО МАРТИНИ",
+    "nameEN": "ESPRESSO MARTINI",
+    "associationRU": "NEW_ERA_DRINKS",
+    "associationEN": "NEW_ERA_DRINKS",
+    "typeRU": "ПОСЛЕ УЖИНА",
+    "typeEN": "AFTER_DINNER",
+    "ingredients": [
+      {
+        "nameRU": "Vodka",
+        "nameEN": "Vodka"
+      },
+      {
+        "nameRU": "Kahlúa",
+        "nameEN": "Kahlúa"
+      },
+      {
+        "nameRU": "Sugar Syrup",
+        "nameEN": "Sugar Syrup"
+      },
+      {
+        "nameRU": "Strong Espresso",
+        "nameEN": "Strong Espresso"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер, взболтайте со льдом, процедите в охлажденный коктейльный бокал.",
+    "methodEN": "Pour all ingredients into cocktail shaker, shake well with ice, strain into chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Нет данных",
+    "garnishEN": "N/A"
+  },
+  {
+    "nameRU": "ФЕРНАНДИТО",
+    "nameEN": "FERNANDITO",
+    "associationRU": "NEW_ERA_DRINKS",
+    "associationEN": "NEW_ERA_DRINKS",
+    "typeRU": "LONG_DRINK",
+    "typeEN": "LONG_DRINK",
+    "ingredients": [
+      {
+        "nameRU": "Fernet Branca",
+        "nameEN": "Fernet Branca"
+      },
+      {
+        "nameRU": "Cola",
+        "nameEN": "Cola"
+      }
+    ],
+    "methodRU": "Перелейте Fernet Branca в двойной старомодный стакан со льдом, наполните стакан колой. Осторожно перемешайте.",
+    "methodEN": "Pour the Fernet Branca into a double old fashioned glass with ice, fill the glass up with Cola. Gently stir.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Нет данных",
+    "garnishEN": "N/A"
+  },
+  {
+    "nameRU": "ФРАНЦУЗСКИЙ МАРТИНИ",
+    "nameEN": "FRENCH MARTINI",
+    "associationRU": "NEW_ERA_DRINKS",
+    "associationEN": "NEW_ERA_DRINKS",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Vodka",
+        "nameEN": "Vodka"
+      },
+      {
+        "nameRU": "Raspberry Liqueur",
+        "nameEN": "Raspberry Liqueur"
+      },
+      {
+        "nameRU": "Fresh Pineapple Juice",
+        "nameEN": "Fresh Pineapple Juice"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер, взболтайте со льдом, процедите в охлажденный коктейльный бокал.",
+    "methodEN": "Pour all ingredients into cocktail shaker, shake well with ice, strain into chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Выдавите масло из цедры лимона в напиток.",
+    "garnishEN": "Squeeze oil from lemon peel onto the drink."
+  },
+  {
+    "nameRU": "НЕЗАКОННЫЙ",
+    "nameEN": "ILLEGAL",
+    "associationRU": "NEW_ERA_DRINKS",
+    "associationEN": "NEW_ERA_DRINKS",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Espadin Mezcal",
+        "nameEN": "Espadin Mezcal"
+      },
+      {
+        "nameRU": "Jamaica Overproof White Rum",
+        "nameEN": "Jamaica Overproof White Rum"
+      },
+      {
+        "nameRU": "Falernum",
+        "nameEN": "Falernum"
+      },
+      {
+        "nameRU": "Maraschino Luxardo",
+        "nameEN": "Maraschino Luxardo"
+      },
+      {
+        "nameRU": "Fresh Lime Juice",
+        "nameEN": "Fresh Lime Juice"
+      },
+      {
+        "nameRU": "Simple Syrup",
+        "nameEN": "Simple Syrup"
+      },
+      {
+        "nameRU": "Egg White (Optional)",
+        "nameEN": "Egg White (Optional)"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер. Энергично взболтать со льдом. Процедите в охлажденный коктейльный бокал или «на камнях» в традиционной глиняной или терракоаовой кружке.",
+    "methodEN": "Pour all ingredients into the shaker. Shake vigorously with ice. Strain into a chilled cocktail glass, or \"on the rocks\" in a traditional clay or terracoaa mug.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Нет данных",
+    "garnishEN": "N/A"
+  },
+  {
+    "nameRU": "ЛИМОННАЯ КАПЛЯ МАРТИНИ",
+    "nameEN": "LEMON DROP MARTINI",
+    "associationRU": "NEW_ERA_DRINKS",
+    "associationEN": "NEW_ERA_DRINKS",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Vodka Citron",
+        "nameEN": "Vodka Citron"
+      },
+      {
+        "nameRU": "Triple Sec",
+        "nameEN": "Triple Sec"
+      },
+      {
+        "nameRU": "Fresh Lemon Juice",
+        "nameEN": "Fresh Lemon Juice"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер, взболтайте со льдом, процедите в охлажденный коктейльный бокал.",
+    "methodEN": "Pour all ingredients into cocktail shaker, shake well with ice, strain into chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсьте бокал сахарной каймой",
+    "garnishEN": "Garnish with sugar rim arround the glass"
+  },
+  {
+    "nameRU": "Голый и знаменитый",
+    "nameEN": "NAKED AND FAMOUS",
+    "associationRU": "NEW_ERA_DRINKS",
+    "associationEN": "NEW_ERA_DRINKS",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Mezcal",
+        "nameEN": "Mezcal"
+      },
+      {
+        "nameRU": "Yellow Chartreuse",
+        "nameEN": "Yellow Chartreuse"
+      },
+      {
+        "nameRU": "Aperol",
+        "nameEN": "Aperol"
+      },
+      {
+        "nameRU": "Fresh Lime Juice",
+        "nameEN": "Fresh Lime Juice"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер, взболтайте со льдом, процедите в охлажденный коктейльный бокал.",
+    "methodEN": "Pour all ingredients into cocktail shaker, shake well with ice, strain into chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Нет данных",
+    "garnishEN": "N/A"
+  },
+  {
+    "nameRU": "NEW YORK SOUR",
+    "nameEN": "NEW YORK SOUR",
+    "associationRU": "NEW_ERA_DRINKS",
+    "associationEN": "NEW_ERA_DRINKS",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Rye Whiskey or Bourbon",
+        "nameEN": "Rye Whiskey or Bourbon"
+      },
+      {
+        "nameRU": "Simple Syrup",
+        "nameEN": "Simple Syrup"
+      },
+      {
+        "nameRU": "Fresh Lemon Juice",
+        "nameEN": "Fresh Lemon Juice"
+      },
+      {
+        "nameRU": "Egg White",
+        "nameEN": "Egg White"
+      },
+      {
+        "nameRU": "Red wine (Shiraz or Malbech)",
+        "nameEN": "Red wine (Shiraz or Malbech)"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер. Энергично взболтать со льдом. Процедите в охлажденный бокал, наполненный льдом. Выложите вино сверху.",
+    "methodEN": "Pour all ingredients into the shaker. Shake vigorously with ice. Strain into a chilled rocks glass filled with ice. Float the wine on top.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить цедрой лимона или апельсина с вишней.",
+    "garnishEN": "Garnish with lemon or orange zest with cherry."
+  },
+  {
+    "nameRU": "СТАРЫЙ КУБИНСКИЙ",
+    "nameEN": "OLD CUBAN",
+    "associationRU": "NEW_ERA_DRINKS",
+    "associationEN": "NEW_ERA_DRINKS",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Mint",
+        "nameEN": "Mint"
+      },
+      {
+        "nameRU": "Aged Rum",
+        "nameEN": "Aged Rum"
+      },
+      {
+        "nameRU": "Fresh Lime Juice",
+        "nameEN": "Fresh Lime Juice"
+      },
+      {
+        "nameRU": "Simple Syrup",
+        "nameEN": "Simple Syrup"
+      },
+      {
+        "nameRU": "Angostura Bitter",
+        "nameEN": "Angostura Bitter"
+      },
+      {
+        "nameRU": "Brut Champagne or Prosecco",
+        "nameEN": "Brut Champagne or Prosecco"
+      }
+    ],
+    "methodRU": "Вылейте в шейкер все ингредиенты, кроме вина, хорошо взболтайте со льдом, процедите в охлажденный элегантный коктейльный бокал. Долейте игристое вино",
+    "methodEN": "Pour all ingredients into cocktail shaker except the wine, shake well with ice, strain into chilled elegant cocktail glass. Top up with the sparkling wine",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить листочками мяты.",
+    "garnishEN": "Garnish with mint springs."
+  },
+  {
+    "nameRU": "ПАЛОМА",
+    "nameEN": "PALOMA",
+    "associationRU": "NEW_ERA_DRINKS",
+    "associationEN": "NEW_ERA_DRINKS",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Agave Tequila",
+        "nameEN": "Agave Tequila"
+      },
+      {
+        "nameRU": "Fresh Lime",
+        "nameEN": "Fresh Lime"
+      },
+      {
+        "nameRU": "Salt",
+        "nameEN": "Salt"
+      },
+      {
+        "nameRU": "Pink Grapefruit Soda",
+        "nameEN": "Pink Grapefruit Soda"
+      }
+    ],
+    "methodRU": "Перелейте текилу в хайбол, выжмите сок лайма. Добавьте лед и соль, залейте розовой грейпфрутовой содой. Осторожно перемешайте.",
+    "methodEN": "Poor the tequila into a highball glass, squeeze the lime juice. Add ice and salt, fill up pink grapefruit soda. Stir gently.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить долькой лайма",
+    "garnishEN": "Garnish with a slice of lime"
+  },
+  {
+    "nameRU": "БУМАЖНЫЙ САМОЛЕТИК",
+    "nameEN": "PAPER PLANE",
+    "associationRU": "NEW_ERA_DRINKS",
+    "associationEN": "NEW_ERA_DRINKS",
+    "typeRU": "ДО ОБЕДА",
+    "typeEN": "BEFORE_DINNER",
+    "ingredients": [
+      {
+        "nameRU": "Bourbon Whiskey",
+        "nameEN": "Bourbon Whiskey"
+      },
+      {
+        "nameRU": "Amaro Nonino",
+        "nameEN": "Amaro Nonino"
+      },
+      {
+        "nameRU": "Aperol",
+        "nameEN": "Aperol"
+      },
+      {
+        "nameRU": "Fresh Lemon Juice",
+        "nameEN": "Fresh Lemon Juice"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер, взболтайте со льдом, процедите в охлажденный коктейльный бокал.",
+    "methodEN": "Pour all ingredients into cocktail shaker, shake well with ice, strain into chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Нет данных",
+    "garnishEN": "N/A"
+  },
+  {
+    "nameRU": "ПЕНИЦИЛЛИН",
+    "nameEN": "PENICILLIN",
+    "associationRU": "NEW_ERA_DRINKS",
+    "associationEN": "NEW_ERA_DRINKS",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Blended Scotch Whisky",
+        "nameEN": "Blended Scotch Whisky"
+      },
+      {
+        "nameRU": "Lagavulin 16y Whisky",
+        "nameEN": "Lagavulin 16y Whisky"
+      },
+      {
+        "nameRU": "Fresh Lemon Juice",
+        "nameEN": "Fresh Lemon Juice"
+      },
+      {
+        "nameRU": "Honey Syrup",
+        "nameEN": "Honey Syrup"
+      },
+      {
+        "nameRU": "Fresh Ginger",
+        "nameEN": "Fresh Ginger"
+      }
+    ],
+    "methodRU": "Смешайте свежий имбирь в шейкере и добавьте остальные ингредиенты, кроме односолодового виски Islay. Наполните шейкер льдом и встряхните. Дважды процедите в охлажденный старомодный стакан со льдом. Сверху налейте односолодовый виски.",
+    "methodEN": "Muddle fresh ginger in a shaker and add the remaining ingredients, except for the Islay single malt whiskey. Fill the shaker with ice and shake. Double-strain into a chilled old fashioned glass with ice. Float the single malt whisky on top.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить засахаренным имбирем.",
+    "garnishEN": "Garnish with a candied ginger."
+  },
+  {
+    "nameRU": "РУССКИЙ ВЕСЕННИЙ ПУАНС",
+    "nameEN": "RUSSIAN SPRING PUNCH",
+    "associationRU": "NEW_ERA_DRINKS",
+    "associationEN": "NEW_ERA_DRINKS",
+    "typeRU": "ИГРЕНИЕ",
+    "typeEN": "SPARKLING",
+    "ingredients": [
+      {
+        "nameRU": "Vodka",
+        "nameEN": "Vodka"
+      },
+      {
+        "nameRU": "Fresh Lemon Juice",
+        "nameEN": "Fresh Lemon Juice"
+      },
+      {
+        "nameRU": "Crème de Cassis",
+        "nameEN": "Crème de Cassis"
+      },
+      {
+        "nameRU": "Sugar Syrup",
+        "nameEN": "Sugar Syrup"
+      },
+      {
+        "nameRU": "Sparkling wine",
+        "nameEN": "Sparkling wine"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер, кроме игристого вина, хорошо встряхните со льдом, процедите в охлажденный высокий стакан, наполненный льдом, и долейте игристое вино.",
+    "methodEN": "Pour all ingredients into cocktail shaker except the sparkling wine, shake well with ice, strain into chilled tall tumbler glass filled with ice and top up with sparkling wine.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить ежевикой и, при желании, долькой лимона.",
+    "garnishEN": "Garnish with blackberries and optionally a lemon slice as well."
+  },
+  {
+    "nameRU": "ЮЖНАЯ СТОРОНА",
+    "nameEN": "SOUTHSIDE",
+    "associationRU": "NEW_ERA_DRINKS",
+    "associationEN": "NEW_ERA_DRINKS",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "London Dry Gin",
+        "nameEN": "London Dry Gin"
+      },
+      {
+        "nameRU": "Fresh Lemon Juice",
+        "nameEN": "Fresh Lemon Juice"
+      },
+      {
+        "nameRU": "Simple Syrup",
+        "nameEN": "Simple Syrup"
+      },
+      {
+        "nameRU": "Mint",
+        "nameEN": "Mint"
+      },
+      {
+        "nameRU": "Egg White (Optional)",
+        "nameEN": "Egg White (Optional)"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер для коктейлей, хорошо встряхните со льдом, дважды процедите в охлажденный коктейльный бокал.",
+    "methodEN": "Pour all ingredients into a cocktail shaker, shake well with ice, double-strain into chilled cocktail glass.",
+    "noteRU": "Если используется яичный белок, энергично встряхните",
+    "noteEN": "If egg white is used shake vigorously",
+    "garnishRU": "Украсить листочками мяты.",
+    "garnishEN": "Garnish with mint springs."
+  },
+  {
+    "nameRU": "ОСТРЫЕ ПЯТЬДЕСЯТ",
+    "nameEN": "SPICY FIFTY",
+    "associationRU": "NEW_ERA_DRINKS",
+    "associationEN": "NEW_ERA_DRINKS",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Vodka Vanilla",
+        "nameEN": "Vodka Vanilla"
+      },
+      {
+        "nameRU": "Elderflower Cordial",
+        "nameEN": "Elderflower Cordial"
+      },
+      {
+        "nameRU": "Fresh Lemon Juice",
+        "nameEN": "Fresh Lemon Juice"
+      },
+      {
+        "nameRU": "Monin Honey Syrup",
+        "nameEN": "Monin Honey Syrup"
+      },
+      {
+        "nameRU": "Red Chili Pepper",
+        "nameEN": "Red Chili Pepper"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер для коктейлей, хорошо встряхните со льдом, дважды процедите в охлажденный коктейльный бокал.",
+    "methodEN": "Pour all ingredients into a cocktail shaker, shake well with ice, double -strain into chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить красным перцем чили",
+    "garnishEN": "Garnish with a red chili pepper"
+  },
+  {
+    "nameRU": "SPRITZ",
+    "nameEN": "SPRITZ",
+    "associationRU": "NEW_ERA_DRINKS",
+    "associationEN": "NEW_ERA_DRINKS",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Prosecco",
+        "nameEN": "Prosecco"
+      },
+      {
+        "nameRU": "Aperol",
+        "nameEN": "Aperol"
+      },
+      {
+        "nameRU": "Soda Water",
+        "nameEN": "Soda Water"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в бокал для вина, наполненный льдом. Осторожно перемешайте.",
+    "methodEN": "Build all ingredients into a wine glass filled with ice. Stir gently.",
+    "noteRU": "Существуют и другие версии Spritz, которые используют Campari, Cynar или Select вместо Aperol.",
+    "noteEN": "There are other versions of the Spritz that use Campari, Cynar or Select instead of Aperol.",
+    "garnishRU": "Украсить долькой апельсина.",
+    "garnishEN": "Garnish with a slice of orange."
+  },
+  {
+    "nameRU": "СТРАДАЮЩИЙ ублюдок",
+    "nameEN": "SUFFERING BASTARD",
+    "associationRU": "NEW_ERA_DRINKS",
+    "associationEN": "NEW_ERA_DRINKS",
+    "typeRU": "LONG_DRINK",
+    "typeEN": "LONG_DRINK",
+    "ingredients": [
+      {
+        "nameRU": "Cognac or Brandy",
+        "nameEN": "Cognac or Brandy"
+      },
+      {
+        "nameRU": "Gin",
+        "nameEN": "Gin"
+      },
+      {
+        "nameRU": "Fresh Lime Juice",
+        "nameEN": "Fresh Lime Juice"
+      },
+      {
+        "nameRU": "Angostura Bitter",
+        "nameEN": "Angostura Bitter"
+      },
+      {
+        "nameRU": "Ginger Beer",
+        "nameEN": "Ginger Beer"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер для коктейлей, кроме имбирного пива, хорошо встряхните со льдом, налейте не процеженное в стакан Collins или оригинальную кружку S. Bastard и долейте имбирное пиво.",
+    "methodEN": "Pour all ingredients into cocktail shaker except the ginger beer, shake well with ice, Pour unstrained into a Collins glass or in the original S. Bastard mug and top up with ginger beer.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить мятой и, при желании, долькой апельсина.",
+    "garnishEN": "Garnish with mint spring and optionally an orange slice as well."
+  },
+  {
+    "nameRU": "СЛУЧАЙНЫЙ",
+    "nameEN": "TIPPERARY",
+    "associationRU": "NEW_ERA_DRINKS",
+    "associationEN": "NEW_ERA_DRINKS",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Irish Whiskey",
+        "nameEN": "Irish Whiskey"
+      },
+      {
+        "nameRU": "Sweet Red Vermouth",
+        "nameEN": "Sweet Red Vermouth"
+      },
+      {
+        "nameRU": "Green Chartreuse",
+        "nameEN": "Green Chartreuse"
+      },
+      {
+        "nameRU": "Angostura Bitter",
+        "nameEN": "Angostura Bitter"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в стакан для смешивания с кубиками льда. Размешайте как следует. Перелить в охлажденный бокал для мартини.",
+    "methodEN": "Pour all ingredients into mixing glass with ice cubes. Stir well. Strain into chilled martini cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить долькой апельсина",
+    "garnishEN": "Garnish with a slice of orange"
+  },
+  {
+    "nameRU": "ТОММИ МАРГАРИТА",
+    "nameEN": "TOMMY’S MARGARITA",
+    "associationRU": "NEW_ERA_DRINKS",
+    "associationEN": "NEW_ERA_DRINKS",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Tequila 100% Agave",
+        "nameEN": "Tequila 100% Agave"
+      },
+      {
+        "nameRU": "Fresh Lime Juice",
+        "nameEN": "Fresh Lime Juice"
+      },
+      {
+        "nameRU": "Agave Nectar",
+        "nameEN": "Agave Nectar"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер для коктейлей, хорошо встряхните со льдом, процедите в охлажденный рок-бокал, наполненный льдом.",
+    "methodEN": "Pour all ingredients into a cocktail shaker, shake well with ice, strain into chilled rocks glass filled with ice.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Украсить долькой лайма.",
+    "garnishEN": "Garnish with a lime slice."
+  },
+  {
+    "nameRU": "ТРИНИДАД СУР",
+    "nameEN": "TRINIDAD SOUR",
+    "associationRU": "NEW_ERA_DRINKS",
+    "associationEN": "NEW_ERA_DRINKS",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "Angostura Bitter",
+        "nameEN": "Angostura Bitter"
+      },
+      {
+        "nameRU": "Orgeat Syrup",
+        "nameEN": "Orgeat Syrup"
+      },
+      {
+        "nameRU": "Fresh Lemon Juice",
+        "nameEN": "Fresh Lemon Juice"
+      },
+      {
+        "nameRU": "Rye Whiskey",
+        "nameEN": "Rye Whiskey"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в стакан для смешивания с кубиками льда. Размешайте как следует. Процедить в охлажденный коктейльный бокал.",
+    "methodEN": "Pour all ingredients into mixing glass with ice cubes. Stir well. Strain into chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Нет данных",
+    "garnishEN": "N/A"
+  },
+  {
+    "nameRU": "ЖЕЛТАЯ ПТИЦА",
+    "nameEN": "YELLOW BIRD",
+    "associationRU": "NEW_ERA_DRINKS",
+    "associationEN": "NEW_ERA_DRINKS",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "White Rum",
+        "nameEN": "White Rum"
+      },
+      {
+        "nameRU": "Galliano",
+        "nameEN": "Galliano"
+      },
+      {
+        "nameRU": "Triple Sec",
+        "nameEN": "Triple Sec"
+      },
+      {
+        "nameRU": "Fresh Lime Juice",
+        "nameEN": "Fresh Lime Juice"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер, хорошо взболтайте со льдом, процедите в охлажденный коктейльный бокал.",
+    "methodEN": "Pour all ingredients into a cocktail shaker, shake well with ice, strain into chilled cocktail glass.",
+    "noteRU": "-",
+    "noteEN": "-",
+    "garnishRU": "Нет данных",
+    "garnishEN": "N/A"
+  },
+  {
+    "nameRU": "VE.N.TO.",
+    "nameEN": "VE.N.TO.",
+    "associationRU": "NEW_ERA_DRINKS",
+    "associationEN": "NEW_ERA_DRINKS",
+    "typeRU": "ВЕСЬ ДЕНЬ",
+    "typeEN": "ALL_DAY",
+    "ingredients": [
+      {
+        "nameRU": "White Smooth Grappa",
+        "nameEN": "White Smooth Grappa"
+      },
+      {
+        "nameRU": "Fresh Lemon Juice",
+        "nameEN": "Fresh Lemon Juice"
+      },
+      {
+        "nameRU": "Honey Mix (replace water with chamomile)*",
+        "nameEN": "Honey Mix (replace water with chamomile)*"
+      },
+      {
+        "nameRU": "Chamomile Cordial",
+        "nameEN": "Chamomile Cordial"
+      },
+      {
+        "nameRU": "Egg White (Optional)",
+        "nameEN": "Egg White (Optional)"
+      }
+    ],
+    "methodRU": "Вылейте все ингредиенты в шейкер. Энергично взболтать со льдом. Процедите в небольшой охлажденный стакан, наполненный льдом.",
+    "methodEN": "Pour all ingredients into the shaker. Shake vigorously with ice. Strain into a chilled small tumbler glass filled with ice.",
+    "noteRU": "* При желании воду можно заменить настоем ромашки в медовой смеси.",
+    "noteEN": "*If desired water can be replaced by chamomile infusion in the honey mix.",
+    "garnishRU": "Украсить цедрой лимона и белым виноградом.",
+    "garnishEN": "Garnish with lemon zest and white grapes."
   }
 ]
