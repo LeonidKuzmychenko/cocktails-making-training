@@ -28,8 +28,7 @@ public class MixCocktailService {
         cocktail.addIngredient(ingredient);
         ingredient.addCocktail(cocktail);
 
-        cocktailRepository.save(cocktail);
-        return cocktail;
+        return cocktailRepository.save(cocktail);
     }
 
 }
