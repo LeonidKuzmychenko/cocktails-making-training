@@ -25,4 +25,11 @@ public class CocktailService {
         return repository.findRandomLimitCocktails(limit);
     }
 
+    public Cocktail findRandomCocktail(List<Long> exclude) {
+        return repository.findRandomLimitCocktail(exclude);
+//       List<Cocktail> cocktails = repository.findRandomLimitCocktail(exclude);
+//       List<Cocktail> cocktails =  repository.findRandomLimitCocktail();
+//       return cocktails.get(0);
+    }
+
 }

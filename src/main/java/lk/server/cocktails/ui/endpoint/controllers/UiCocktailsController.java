@@ -27,11 +27,16 @@ public class UiCocktailsController {
     @Qualifier("Gson")
     private Gson gson;
 
-    @GetMapping(value = "/getMode", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<String> getMode(@RequestParam("locale") Locale locale,
+    @GetMapping(value = "/getModeAll", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> getModeAll(@RequestParam("locale") Locale locale,
                                          @RequestParam("cSize") Integer cSize, @RequestParam("iSize") Integer iSize) {
         List<UiCocktail> cocktails = uiCocktailsService.getCocktails(locale, cSize, iSize);
         return new ResponseEntity<>(gson.toJson(cocktails), HttpStatus.OK);
     }
 
+    @GetMapping(value = "/getModeOne", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> getModeOne(@RequestParam("locale") Locale locale, @RequestParam("iSize") Integer iSize) {
+        UiCocktail cocktail = uiCocktailsService.getCocktail(locale, iSize);
+        return new ResponseEntity<>(gson.toJson(cocktail), HttpStatus.OK);
+    }
 }
