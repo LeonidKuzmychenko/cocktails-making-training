@@ -5,6 +5,7 @@ import lk.server.cocktails.features.cocktail.repositories.CocktailRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Collections;
 import java.util.List;
 
 @Service
@@ -26,10 +27,8 @@ public class CocktailService {
     }
 
     public Cocktail findRandomCocktail(List<Long> exclude) {
-        return repository.findRandomLimitCocktail(exclude);
-//       List<Cocktail> cocktails = repository.findRandomLimitCocktail(exclude);
-//       List<Cocktail> cocktails =  repository.findRandomLimitCocktail();
-//       return cocktails.get(0);
+        return repository.findRandomLimitCocktail(exclude.isEmpty() ?
+                Collections.singletonList(Long.MIN_VALUE) : exclude);
     }
 
 }

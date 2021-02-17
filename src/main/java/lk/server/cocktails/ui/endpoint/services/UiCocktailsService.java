@@ -8,6 +8,7 @@ import lk.server.cocktails.features.ingredient.entities.Ingredient;
 import lk.server.cocktails.features.ingredient.services.IngredientService;
 import lk.server.cocktails.ui.endpoint.dto.UiCocktail;
 import lk.server.cocktails.ui.endpoint.dto.UiIngredient;
+import lk.server.cocktails.utils.MyStreamUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,15 +31,17 @@ public class UiCocktailsService {
         return cocktailService.findRandomLimitCocktails(cSize).stream()
                 .map(cocktail -> cocktailToUiCocktail(cocktail, locale, iSize))
                 .collect(Collectors.toList());
-
     }
 
-    public UiCocktail getCocktail(Locale locale, int iSize) {
-//        Cocktail cocktail = cocktailService.findRandomCocktail(Arrays.asList(5L,65L,4L));
-        Cocktail cocktail = cocktailService.findRandomCocktail(Arrays.asList(-999999L));
+    public UiCocktail getCocktail(Locale locale, String exclude, int iSize) {
+        List<Long> list = Arrays.stream(exclude.trim().split(","))
+                .map(MyStreamUtils.wrap(Long::valueOf))
+                .filter(Objects::nonNull)
+                .collect(Collectors.toList());
+        Cocktail cocktail = cocktailService.findRandomCocktail(list);
         return cocktailToUiCocktail(cocktail, locale, iSize);
     }
-
+    
     private UiCocktail cocktailToUiCocktail(Cocktail cocktail, Locale locale, int iSize) {
         String name = localeService.getStringByLocale((Set) cocktail.getCocktailName(), locale);
         String association = localeService.getStringByLocale((Set) cocktail.getCocktailAssociation(), locale);
