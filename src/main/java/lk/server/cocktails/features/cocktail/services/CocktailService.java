@@ -28,7 +28,8 @@ public class CocktailService {
 
     public Cocktail findRandomCocktail(List<Long> exclude) {
         return repository.findRandomLimitCocktail(exclude.isEmpty() ?
-                Collections.singletonList(Long.MIN_VALUE) : exclude);
+                Collections.singletonList(Long.MIN_VALUE) : //https://hibernate.atlassian.net/browse/HHH-8091
+                exclude);
     }
 
 }

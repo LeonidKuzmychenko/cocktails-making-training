@@ -41,7 +41,7 @@ public class UiCocktailsService {
         Cocktail cocktail = cocktailService.findRandomCocktail(list);
         return cocktailToUiCocktail(cocktail, locale, iSize);
     }
-    
+
     private UiCocktail cocktailToUiCocktail(Cocktail cocktail, Locale locale, int iSize) {
         String name = localeService.getStringByLocale((Set) cocktail.getCocktailName(), locale);
         String association = localeService.getStringByLocale((Set) cocktail.getCocktailAssociation(), locale);

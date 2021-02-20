@@ -15,13 +15,7 @@ public interface CocktailRepository extends JpaRepository<Cocktail, Long> {
     @Query(value = "SELECT * from cocktail ORDER BY random() LIMIT :limit", nativeQuery = true)
     List<Cocktail> findRandomLimitCocktails(@Param("limit") int limit);
 
-
-//    @Query(value = "SELECT * from cocktail WHERE cocktail_id NOT IN :exclude ORDER BY random() LIMIT 1", nativeQuery = true)
-//    Cocktail findRandomLimitCocktail(@Param("exclude") List<Long> exclude);
-
     @Query(value = "SELECT * from cocktail WHERE cocktail.cocktail_id NOT IN :exclude ORDER BY random() LIMIT 1", nativeQuery = true)
     Cocktail findRandomLimitCocktail(@Param("exclude") List<Long> exclude);
 
-//    @Query(value = "SELECT * from cocktail LIMIT 1", nativeQuery = true)
-//    List<Cocktail> findRandomLimitCocktail();
 }
