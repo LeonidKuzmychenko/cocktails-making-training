@@ -21,6 +21,10 @@ public class IngredientService {
         return repository.save(ingredient);
     }
 
+    public List<Ingredient> saveAll(List<Ingredient> ingredients) {
+        return repository.saveAll(ingredients);
+    }
+
     public List<Ingredient> findRandomIngredientsWithExcludeAndLimitsIds(List<Long> exclude, int limit) {
         return repository.findRandomIngredientsWithExcludeAndLimitsIds(exclude, limit);
     }

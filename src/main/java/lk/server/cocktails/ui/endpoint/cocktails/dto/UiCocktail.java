@@ -1,4 +1,4 @@
-package lk.server.cocktails.ui.endpoint.dto;
+package lk.server.cocktails.ui.endpoint.cocktails.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
