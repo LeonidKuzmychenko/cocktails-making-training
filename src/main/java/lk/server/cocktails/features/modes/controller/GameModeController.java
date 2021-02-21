@@ -29,5 +29,6 @@ public class GameModeController {
     public ResponseEntity<String> get() {
         List<GameMode> gameModes = service.findAll();
         return new ResponseEntity<>(gson.toJson(gameModes), HttpStatus.OK);
+//        return new ResponseEntity<>(HttpStatus.OK);
     }
 }

@@ -21,7 +21,7 @@ public class GameMode {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Expose
-    private Long modeId;
+    private Long gameModeId;
 
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @Expose

@@ -1,8 +1,7 @@
 package lk.server.cocktails.features.modes.service;
 
 import lk.server.cocktails.features.modes.entities.GameMode;
-import lk.server.cocktails.features.modes.repository.GameModeRepository;
-import lk.utils.files.FileManager;
+import lk.server.cocktails.features.modes.repositories.GameModeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

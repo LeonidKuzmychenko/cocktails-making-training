@@ -134,7 +134,7 @@ public class InitService {
 
     public List<GameMode> readModes() throws IOException {
         //Считывание режимов из файла
-        System.out.println("Считывание ингредиентов из файла (14)");
+        System.out.println("Считывание режимов из файла (14)");
         String readGameModesDto = fileManager.readString("src/main/resources/db/modes.json");
 
         //Преобразование Json в список объектов режимов
@@ -143,8 +143,8 @@ public class InitService {
         }.getType();
         List<GameModeDto> gameModesDto = gson.fromJson(readGameModesDto, type);
 
-        //Преобразование формата объекта для парсинга в формат для записили в бд
-        System.out.println("Преобразование формата объекта для парсинга в формат для записили в бд (16)");
+        //Преобразование формата объектов режимов для парсинга в формат для записили в бд
+        System.out.println("Преобразование формата объектов режимов для парсинга в формат для записили в бд (16)");
         return gameModesDto.stream().map(GameModeDto::toGameModeName).collect(Collectors.toList());
     }
 

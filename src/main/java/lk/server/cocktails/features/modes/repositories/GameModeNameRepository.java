@@ -1,4 +1,4 @@
-package lk.server.cocktails.features.modes.repository;
+package lk.server.cocktails.features.modes.repositories;
 
 import lk.server.cocktails.features.modes.entities.GameModeName;
 import org.springframework.data.jpa.repository.JpaRepository;
