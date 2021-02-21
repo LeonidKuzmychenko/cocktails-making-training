@@ -22,6 +22,10 @@ public class CocktailService {
         return repository.save(cocktail);
     }
 
+    public List<Cocktail> saveAll(List<Cocktail> cocktails) {
+        return repository.saveAll(cocktails);
+    }
+
     public List<Cocktail> findRandomLimitCocktails(int limit) {
         return repository.findRandomLimitCocktails(limit);
     }

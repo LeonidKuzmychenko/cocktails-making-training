@@ -13,6 +13,9 @@ import lk.server.cocktails.features.init.dto.IngredientFileStructure;
 import lk.server.cocktails.features.init.dto.help.CocktailsTransformHelperFinish;
 import lk.server.cocktails.features.init.dto.help.CocktailsTransformHelperStart;
 import lk.server.cocktails.features.mix.services.MixCocktailService;
+import lk.server.cocktails.features.modes.dto.GameModeDto;
+import lk.server.cocktails.features.modes.entities.GameMode;
+import lk.server.cocktails.features.modes.service.GameModeService;
 import lk.utils.files.FileManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -37,6 +40,9 @@ public class InitService {
     private MixCocktailService mixCocktailService;
 
     @Autowired
+    private GameModeService gameModeService;
+
+    @Autowired
     private FileManager fileManager;
 
     @Autowired
@@ -59,14 +65,14 @@ public class InitService {
 
         //Связываются все коктейли с их игредиентами
         System.out.println("Связываются все коктейли с их игредиентами (12)");
-        for (CocktailsTransformHelperFinish cocktailsTransformHelperFinish : cocktailsTransformHelperFinishes) {
-            Long cocktailId = cocktailsTransformHelperFinish.getCocktailId();
-            List<Long> ingredientIds = cocktailsTransformHelperFinish.getIngredientIds();
-            for (Long ingredientId : ingredientIds) {
-                System.out.println("Cocktail id = " + cocktailId + ", ingredientId = " + ingredientId);
-                mixCocktailService.addIngredient(cocktailId, ingredientId);
-            }
-        }
+        mixCocktailService.addIngredientsByHelperClass(cocktailsTransformHelperFinishes);
+
+
+        //Режимы сохраняются в бд
+        System.out.println("Режимы сохраняются в бд (13)");
+        List<GameMode> gameModes = readModes();
+        gameModeService.saveAll(gameModes);
+
         System.out.println("end init");
     }
 
@@ -88,12 +94,7 @@ public class InitService {
 
         //Запись коктейлей в бд и преобразование их в список с id-шниками
         System.out.println("Запись коктейлей в бд и преобразование их в список с id-шниками (4)");
-        List<Cocktail> savedCocktails = cocktailList.stream()
-                .map(cocktail -> {
-                    System.out.println(localeService.getStringByLocale(new ArrayList<>(cocktail.getCocktailName()), Locale.EN));
-                    return cocktailService.save(cocktail);
-                })
-                .collect(Collectors.toList());
+        List<Cocktail> savedCocktails = cocktailService.saveAll(cocktailList);
 
         //Преобразование коктейлей в тип данных, где хранятся только id коктейля и названия ингредиентов на EN
         System.out.println("Преобразование коктейлей в тип данных, где хранятся только id коктейля и названия ингредиентов на EN (5)");
@@ -121,13 +122,7 @@ public class InitService {
 
         //Запись ингредиентов в бд и преобразование их в список с id-шниками
         System.out.println("Запись ингредиентов в бд и преобразование их в список с id-шниками (9)");
-        List<Ingredient> savedIngredients = cocktailsFinish.stream()
-                .map(ingredient -> {
-                    System.out.println(localeService.getStringByLocale(new ArrayList<>(ingredient.getIngredientNames()), Locale.EN));
-                    return ingredientService.save(ingredient);
-                })
-                .collect(Collectors.toList());
-
+        List<Ingredient> savedIngredients = ingredientService.saveAll(cocktailsFinish);
 
         //Создание мапы коктелей, где ключ - имя игредиента на английском, а значение - id
         System.out.println("Создание мапы коктелей, где ключ - имя игредиента на английском, а значение - id (10)");
@@ -135,6 +130,22 @@ public class InitService {
                 .collect(Collectors.toMap(
                         key -> localeService.getStringByLocale(new ArrayList<>(key.getIngredientNames()), Locale.EN),
                         Ingredient::getIngredientId));
+    }
+
+    public List<GameMode> readModes() throws IOException {
+        //Считывание режимов из файла
+        System.out.println("Считывание ингредиентов из файла (14)");
+        String readGameModesDto = fileManager.readString("src/main/resources/db/modes.json");
+
+        //Преобразование Json в список объектов режимов
+        System.out.println("Преобразование Json в список объектов режимов (15)");
+        Type type = new TypeToken<List<GameModeDto>>() {
+        }.getType();
+        List<GameModeDto> gameModesDto = gson.fromJson(readGameModesDto, type);
+
+        //Преобразование формата объекта для парсинга в формат для записили в бд
+        System.out.println("Преобразование формата объекта для парсинга в формат для записили в бд (16)");
+        return gameModesDto.stream().map(GameModeDto::toGameModeName).collect(Collectors.toList());
     }
 
     public CocktailsTransformHelperStart toCocktailsTransformHelperStart(List<CocktailFileStructure> cocktailFileStructures, Cocktail cocktail) {
