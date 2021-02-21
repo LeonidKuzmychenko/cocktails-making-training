@@ -1,6 +1,7 @@
 package lk.server.cocktails.features.modes.entities;
 
 import com.google.gson.annotations.Expose;
+import lk.server.cocktails.customtypes.locale.ILocalization;
 import lk.server.cocktails.customtypes.locale.Locale;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -15,7 +16,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Entity
 @Table(name = "GameModeName")
-public class GameModeName {
+public class GameModeName implements ILocalization {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

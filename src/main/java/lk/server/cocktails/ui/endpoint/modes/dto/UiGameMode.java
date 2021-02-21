@@ -1,4 +1,4 @@
-package lk.server.cocktails.ui.endpoint.dto;
+package lk.server.cocktails.ui.endpoint.modes.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,9 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class UiIngredient {
-
+public class UiGameMode {
+    private Long id;
     private String name;
-    private boolean consists;
-
 }

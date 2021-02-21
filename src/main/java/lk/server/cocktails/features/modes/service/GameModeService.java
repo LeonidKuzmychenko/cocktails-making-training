@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class GameModeService {
@@ -23,6 +24,10 @@ public class GameModeService {
 
     public List<GameMode> findAll(){
         return repository.findAll();
+    }
+
+    public Optional<GameMode> findById(Long id){
+        return repository.findById(id);
     }
 
 }

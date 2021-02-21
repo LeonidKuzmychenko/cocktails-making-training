@@ -1,4 +1,4 @@
-package lk.server.cocktails.ui.endpoint.services;
+package lk.server.cocktails.ui.endpoint.cocktails.services;
 
 import lk.server.cocktails.customtypes.locale.Locale;
 import lk.server.cocktails.customtypes.locale.LocaleService;
@@ -6,8 +6,8 @@ import lk.server.cocktails.features.cocktail.entities.Cocktail;
 import lk.server.cocktails.features.cocktail.services.CocktailService;
 import lk.server.cocktails.features.ingredient.entities.Ingredient;
 import lk.server.cocktails.features.ingredient.services.IngredientService;
-import lk.server.cocktails.ui.endpoint.dto.UiCocktail;
-import lk.server.cocktails.ui.endpoint.dto.UiIngredient;
+import lk.server.cocktails.ui.endpoint.cocktails.dto.UiCocktail;
+import lk.server.cocktails.ui.endpoint.cocktails.dto.UiIngredient;
 import lk.server.cocktails.utils.MyStreamUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
