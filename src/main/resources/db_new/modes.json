@@ -1,0 +1,26 @@
+[
+  {
+    "gameModeNames": [
+      {
+        "locale": "RU",
+        "name": "ВЫБОР ИНГРЕДИЕНТОВ, ЗНАЯ КОКТЕЙЛЬ"
+      },
+      {
+        "locale": "EN",
+        "name": "CHOOSE INGREDIENTS BY COCKTAIL"
+      }
+    ]
+  },
+  {
+    "gameModeNames": [
+      {
+        "locale": "RU",
+        "name": "ВЫБОР КОКТЕЙЛЯ, ЗНАЯ ИНГРЕДИЕНТЫ"
+      },
+      {
+        "locale": "EN",
+        "name": "CHOOSE COCKTAIL BY INGREDIENTS"
+      }
+    ]
+  }
+]

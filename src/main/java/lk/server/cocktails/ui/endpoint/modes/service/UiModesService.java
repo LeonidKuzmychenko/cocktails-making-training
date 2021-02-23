@@ -21,13 +21,13 @@ public class UiModesService {
     @Autowired
     private LocaleService localeService;
 
-    public List<UiGameMode> getAll(Locale locale){
+    public List<UiGameMode> getAll(Locale locale) {
         List<GameMode> gameModes = service.findAll();
 
-        List<UiGameMode> uiGameModes = gameModes.stream().map(it->{
+        List<UiGameMode> uiGameModes = gameModes.stream().map(it -> {
             UiGameMode uiGameMode = new UiGameMode();
             uiGameMode.setId(it.getGameModeId());
-            uiGameMode.setName(localeService.getStringByLocale((Set)it.getGameModeNames(), locale));
+            uiGameMode.setName(localeService.getStringByLocale((Set) it.getGameModeNames(), locale));
             return uiGameMode;
         }).collect(Collectors.toList());
 
