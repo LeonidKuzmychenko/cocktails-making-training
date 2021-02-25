@@ -1,4 +1,4 @@
-package lk.server.cocktails.features.init.services;
+package lk.server.cocktails.features.init.services.parent;
 
 import com.google.gson.reflect.TypeToken;
 import lk.server.cocktails.features.cocktail.entities.Cocktail;

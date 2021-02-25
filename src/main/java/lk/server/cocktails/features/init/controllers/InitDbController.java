@@ -1,6 +1,6 @@
 package lk.server.cocktails.features.init.controllers;
 
-import lk.server.cocktails.features.init.services.InitService;
+import lk.server.cocktails.features.init.services.InitDbService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -13,14 +13,14 @@ import java.io.IOException;
 
 @RestController
 @RequestMapping(value = "/cocktails")
-public class InitCocktailController {
+public class InitDbController {
 
     @Autowired
-    private InitService initService;
+    private InitDbService initDbService;
 
     @GetMapping(value = "/init", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> init() throws IOException {
-        initService.init();
+        initDbService.init();
         return new ResponseEntity<>(HttpStatus.OK);
     }
 

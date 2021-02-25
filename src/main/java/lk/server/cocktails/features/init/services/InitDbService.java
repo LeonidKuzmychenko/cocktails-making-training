@@ -8,6 +8,7 @@ import lk.server.cocktails.features.ingredient.entities.Ingredient;
 import lk.server.cocktails.features.ingredient.services.IngredientService;
 import lk.server.cocktails.features.init.dto.CocktailDto;
 import lk.server.cocktails.features.init.dto.CocktailsMixDto;
+import lk.server.cocktails.features.init.services.parent.InitServiceAbstract;
 import lk.server.cocktails.features.mix.services.MixCocktailService;
 import lk.server.cocktails.features.modes.entities.GameMode;
 import lk.server.cocktails.features.modes.service.GameModeService;
@@ -23,7 +24,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 @Service
-public class InitService extends InitServiceAbstract {
+public class InitDbService extends InitServiceAbstract {
 
     @Autowired
     private CocktailService cocktailService;
