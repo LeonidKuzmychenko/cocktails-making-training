@@ -1,4 +1,4 @@
-package lk.server.cocktails.features.init.services;
+package lk.server.cocktails.features.init.services.parent;
 
 import lk.server.cocktails.features.cocktail.entities.Cocktail;
 import lk.server.cocktails.features.cocktail.services.CocktailService;
@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-public class InitDbService {
+public abstract class InitDbService {
 
     @Autowired
     private GameModeService gameModeService;
@@ -39,28 +39,20 @@ public class InitDbService {
     @Autowired
     private RowMapperCocktailMixDto rowMapperCocktailMixDto;
 
-    public void init(InitDbDto dtos) {
-        List<GameMode> gameModes = initModes(dtos.getGameModes());
-        List<Ingredient> ingredients = initIngredients(dtos.getIngredients());
-        List<Cocktail> cocktails = initCocktails(dtos.getCocktailsDto());
-        List<Cocktail> mixedCocktails = mixCocktails(cocktails, dtos.getCocktailsDto(), ingredients);
-    }
-
-    private List<GameMode> initModes(List<GameMode> gameModes) {
+    protected List<GameMode> initModes(List<GameMode> gameModes) {
         return gameModeService.saveAll(gameModes);
     }
 
-    private List<Ingredient> initIngredients(List<Ingredient> ingredients) {
+    protected List<Ingredient> initIngredients(List<Ingredient> ingredients) {
         return ingredientService.saveAll(ingredients);
     }
 
-    private List<Cocktail> initCocktails(List<CocktailDto> cocktailsDto) {
-        List<Cocktail> cocktails = cocktailsDto.stream()
-                .map(it -> rowMapperCocktail.join(it)).collect(Collectors.toList());
+    protected List<Cocktail> initCocktails(List<CocktailDto> cocktailsDto) {
+        List<Cocktail> cocktails = cocktailsDto.stream().map(it -> rowMapperCocktail.join(it)).collect(Collectors.toList());
         return cocktailService.saveAll(cocktails);
     }
 
-    private List<Cocktail> mixCocktails(List<Cocktail> cocktails, List<CocktailDto> cocktailsDto, List<Ingredient> ingredients) {
+    protected List<Cocktail> mixCocktails(List<Cocktail> cocktails, List<CocktailDto> cocktailsDto, List<Ingredient> ingredients) {
         List<CocktailMixDto> cocktailsMixDto = rowMapperCocktailMixDto.join(cocktails, cocktailsDto, ingredients);
         return mixCocktailService.addIngredientsByCocktailMixDto(cocktailsMixDto);
     }
