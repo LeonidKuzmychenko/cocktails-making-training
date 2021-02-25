@@ -36,10 +36,10 @@ public class ReadDbByWebService extends InitDbService {
     //TODO некрасиво
     public List<GameMode> getGameModes() {
         return gameModeService.findAll().stream()
-                .peek(it-> it.setGameModeId(null))
-                .peek(it->{
+                .peek(it -> it.setGameModeId(null))
+                .peek(it -> {
                     Set<GameModeName> gameModeNames = it.getGameModeNames().stream()
-                            .peek(it2-> it2.setGameModeNameId(null))
+                            .peek(it2 -> it2.setGameModeNameId(null))
                             .collect(Collectors.toSet());
                     it.setGameModeNames(gameModeNames);
                 })
@@ -50,9 +50,9 @@ public class ReadDbByWebService extends InitDbService {
     public List<Ingredient> getIngredients() {
         return ingredientService.findAll().stream()
                 .peek(it -> it.setIngredientId(null))
-                .peek(it->{
+                .peek(it -> {
                     Set<IngredientName> ingredientNames = it.getIngredientNames().stream()
-                            .peek(it2-> it2.setIngredientNameId(null))
+                            .peek(it2 -> it2.setIngredientNameId(null))
                             .collect(Collectors.toSet());
                     it.setIngredientNames(ingredientNames);
                 })
@@ -63,34 +63,34 @@ public class ReadDbByWebService extends InitDbService {
     public List<CocktailDto> getCocktails() {
         return cocktailService.findAll().stream()
                 .map(it -> rowMapperCocktailDto.join(it))
-                .peek(it->{
+                .peek(it -> {
                     Set<CocktailName> cocktailNames = it.getCocktailName().stream()
-                            .peek(it2-> it2.setCocktailNameId(null))
+                            .peek(it2 -> it2.setCocktailNameId(null))
                             .collect(Collectors.toSet());
                     it.setCocktailName(cocktailNames);
 
                     Set<CocktailAssociation> cocktailAssociations = it.getCocktailAssociation().stream()
-                            .peek(it2-> it2.setCocktailAssociationId(null))
+                            .peek(it2 -> it2.setCocktailAssociationId(null))
                             .collect(Collectors.toSet());
                     it.setCocktailAssociation(cocktailAssociations);
 
                     Set<CocktailType> cocktailTypes = it.getCocktailType().stream()
-                            .peek(it2-> it2.setCocktailTypeId(null))
+                            .peek(it2 -> it2.setCocktailTypeId(null))
                             .collect(Collectors.toSet());
                     it.setCocktailType(cocktailTypes);
 
                     Set<CocktailMethod> cocktailMethods = it.getCocktailMethod().stream()
-                            .peek(it2-> it2.setCocktailMethodId(null))
+                            .peek(it2 -> it2.setCocktailMethodId(null))
                             .collect(Collectors.toSet());
                     it.setCocktailMethod(cocktailMethods);
 
                     Set<CocktailNote> cocktailNotes = it.getCocktailNote().stream()
-                            .peek(it2-> it2.setCocktailNoteId(null))
+                            .peek(it2 -> it2.setCocktailNoteId(null))
                             .collect(Collectors.toSet());
                     it.setCocktailNote(cocktailNotes);
 
                     Set<CocktailGarnish> cocktailGarnishes = it.getCocktailGarnish().stream()
-                            .peek(it2-> it2.setCocktailGarnishId(null))
+                            .peek(it2 -> it2.setCocktailGarnishId(null))
                             .collect(Collectors.toSet());
                     it.setCocktailGarnish(cocktailGarnishes);
                 })

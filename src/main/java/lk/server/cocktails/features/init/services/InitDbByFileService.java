@@ -16,6 +16,7 @@ import org.springframework.stereotype.Service;
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class InitDbByFileService extends InitDbService {
@@ -61,7 +62,10 @@ public class InitDbByFileService extends InitDbService {
 
     private List<Ingredient> readIngredientsMethod() throws IOException {
         String readIngredients = fileManager.readString("src/main/resources/db_new/ingredients.json");
-        return gson.fromJson(readIngredients, getIngredientsTypeList());
+        List<Ingredient> ingredients = gson.fromJson(readIngredients, getIngredientsTypeList());
+        return ingredients.stream()
+                .peek(it -> it.setCocktails(null))
+                .collect(Collectors.toList());
     }
 
     private List<CocktailDto> readCocktailsDtoMethod() throws IOException {
