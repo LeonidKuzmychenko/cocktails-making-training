@@ -31,7 +31,6 @@ public class Ingredient {
     private Set<IngredientName> ingredientNames;
 
     @ManyToMany(mappedBy = "ingredients")
-    @NotNull
     private Set<Cocktail> cocktails = new HashSet<>();
 
     public Ingredient(@NotNull Set<IngredientName> ingredientNames) {
