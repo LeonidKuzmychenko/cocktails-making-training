@@ -63,7 +63,9 @@ public class InitDbByFileService extends InitDbService {
     private List<Ingredient> readIngredientsMethod() throws IOException {
         String readIngredients = fileManager.readString("src/main/resources/db_new/ingredients.json");
         List<Ingredient> ingredients = gson.fromJson(readIngredients, getIngredientsTypeList());
-        return ingredients.stream().peek(it-> it.setCocktails(null)).collect(Collectors.toList());
+        return ingredients.stream()
+                .peek(it -> it.setCocktails(null))
+                .collect(Collectors.toList());
     }
 
     private List<CocktailDto> readCocktailsDtoMethod() throws IOException {
