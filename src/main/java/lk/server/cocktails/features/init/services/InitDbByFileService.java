@@ -5,6 +5,7 @@ import com.google.gson.reflect.TypeToken;
 import lk.server.cocktails.features.cocktail.entities.Cocktail;
 import lk.server.cocktails.features.ingredient.entities.Ingredient;
 import lk.server.cocktails.features.init.dto.CocktailDto;
+import lk.server.cocktails.features.init.dto.InitDbDto;
 import lk.server.cocktails.features.init.services.parent.InitDbService;
 import lk.server.cocktails.features.modes.entities.GameMode;
 import lk.utils.files.FileManager;
@@ -34,6 +35,13 @@ public class InitDbByFileService extends InitDbService {
         List<CocktailDto> readCocktails = readCocktailsDtoMethod();
         List<Cocktail> cocktails = initCocktails(readCocktails);
         List<Cocktail> mixedCocktails = mixCocktails(cocktails, readCocktails, ingredients);
+    }
+
+    public InitDbDto read() throws IOException {
+        List<GameMode> readGameModes = readGameModesMethod();
+        List<Ingredient> readIngredients = readIngredientsMethod();
+        List<CocktailDto> readCocktails = readCocktailsDtoMethod();
+        return new InitDbDto(readGameModes, readIngredients, readCocktails);
     }
 
     private List<GameMode> readGameModesMethod() throws IOException {
