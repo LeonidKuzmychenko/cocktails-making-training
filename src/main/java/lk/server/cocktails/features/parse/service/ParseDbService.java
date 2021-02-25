@@ -31,8 +31,11 @@ public class ParseDbService {
 
     public InitDbDto parse() {
         InitDbDto initDbDto = new InitDbDto();
+        System.out.println("getGameModes");
         initDbDto.setGameModes(getGameModes());
+        System.out.println("getIngredients");
         initDbDto.setIngredients(getIngredients());
+        System.out.println("getCocktails");
         initDbDto.setCocktailsDto(getCocktails());
         return initDbDto;
     }

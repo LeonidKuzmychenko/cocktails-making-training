@@ -27,11 +27,13 @@ public class InitDbController {
     private InitDbByFileService initDbByFileService;
 
     @Autowired
-    @Qualifier("Gson")
+    @Qualifier("GsonExpose")
     private Gson gson;
 
     @PostMapping(value = "/initByWeb", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> initByWeb(@RequestBody InitDbDto initDbDto) {
+        System.out.println("initByWeb");
+        System.out.println("InitDbDto = " + initDbDto);
         initDbByWebService.init(initDbDto);
         return new ResponseEntity<>(HttpStatus.OK);
     }
@@ -39,6 +41,7 @@ public class InitDbController {
     @PostMapping(value = "/initByFile", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> initByFile() {
         try {
+            System.out.println("initByFile");
             initDbByFileService.init();
             return new ResponseEntity<>(HttpStatus.OK);
         } catch (IOException e) {
@@ -50,7 +53,9 @@ public class InitDbController {
     @PostMapping(value = "/readByFile", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> readByFile() {
         try {
+            System.out.println("readByFile");
             InitDbDto initDbDto = initDbByFileService.read();
+            System.out.println("InitDbDto = " + initDbDto);
             return new ResponseEntity<>(gson.toJson(initDbDto), HttpStatus.OK);
         } catch (IOException e) {
             e.printStackTrace();

@@ -24,22 +24,32 @@ public class InitDbByFileService extends InitDbService {
     private FileManager fileManager;
 
     @Autowired
-    @Qualifier("Gson")
+    @Qualifier("GsonExpose")
     private Gson gson;
 
     public void init() throws IOException {
+        System.out.println("readGameModes");
         List<GameMode> readGameModes = readGameModesMethod();
+        System.out.println("gameModes");
         List<GameMode> gameModes = initModes(readGameModes);
+        System.out.println("readIngredients");
         List<Ingredient> readIngredients = readIngredientsMethod();
+        System.out.println("ingredients");
         List<Ingredient> ingredients = initIngredients(readIngredients);
+        System.out.println("readCocktails");
         List<CocktailDto> readCocktails = readCocktailsDtoMethod();
+        System.out.println("cocktails");
         List<Cocktail> cocktails = initCocktails(readCocktails);
+        System.out.println("mixedCocktails");
         List<Cocktail> mixedCocktails = mixCocktails(cocktails, readCocktails, ingredients);
     }
 
     public InitDbDto read() throws IOException {
+        System.out.println("readGameModes");
         List<GameMode> readGameModes = readGameModesMethod();
+        System.out.println("readIngredients");
         List<Ingredient> readIngredients = readIngredientsMethod();
+        System.out.println("readCocktails");
         List<CocktailDto> readCocktails = readCocktailsDtoMethod();
         return new InitDbDto(readGameModes, readIngredients, readCocktails);
     }

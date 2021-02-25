@@ -13,9 +13,13 @@ import java.util.List;
 public class InitDbByWebService extends InitDbService {
 
     public void init(InitDbDto dtos) {
+        System.out.println("gameModes");
         List<GameMode> gameModes = initModes(dtos.getGameModes());
+        System.out.println("ingredients");
         List<Ingredient> ingredients = initIngredients(dtos.getIngredients());
+        System.out.println("cocktails");
         List<Cocktail> cocktails = initCocktails(dtos.getCocktailsDto());
+        System.out.println("mixedCocktails");
         List<Cocktail> mixedCocktails = mixCocktails(cocktails, dtos.getCocktailsDto(), ingredients);
     }
 

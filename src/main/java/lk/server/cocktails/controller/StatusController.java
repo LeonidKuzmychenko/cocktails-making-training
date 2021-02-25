@@ -15,7 +15,7 @@ public class StatusController {
 
     @GetMapping(value = "/version")
     public ResponseEntity<String> version() {
-        return new ResponseEntity<>("1.2", HttpStatus.OK);
+        return new ResponseEntity<>("1.3", HttpStatus.OK);
     }
 
     @GetMapping(value = "/status")
