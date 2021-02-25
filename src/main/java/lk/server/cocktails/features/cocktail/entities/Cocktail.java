@@ -5,6 +5,7 @@ import lk.server.cocktails.features.ingredient.entities.Ingredient;
 import lk.utils.mapper.annotation.RowMapper;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.jetbrains.annotations.NotNull;
 
@@ -14,6 +15,7 @@ import java.util.Set;
 
 @Getter
 @Setter
+@NoArgsConstructor
 @AllArgsConstructor
 @Entity
 @Table(name = "Cocktail")
@@ -73,10 +75,6 @@ public class Cocktail {
 
     public void addIngredient(@NotNull Ingredient ingredient) {
         ingredients.add(ingredient);
-    }
-
-    public Cocktail() {
-
     }
 
     @Override
