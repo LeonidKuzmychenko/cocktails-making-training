@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import lk.server.cocktails.features.init.dto.InitDbDto;
 import lk.server.cocktails.features.init.services.InitDbByFileService;
 import lk.server.cocktails.features.init.services.InitDbByWebService;
+import lk.server.cocktails.features.init.services.ReadDbByWebService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
@@ -25,6 +26,9 @@ public class InitDbController {
 
     @Autowired
     private InitDbByFileService initDbByFileService;
+
+    @Autowired
+    private ReadDbByWebService readDbByWebService;
 
     @Autowired
     @Qualifier("GsonExpose")
@@ -61,6 +65,14 @@ public class InitDbController {
             e.printStackTrace();
             return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
         }
+    }
+
+    @PostMapping(value = "/readByWeb", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> readByWeb() {
+        System.out.println("readByWeb");
+        InitDbDto initDbDto = readDbByWebService.read();
+        System.out.println("InitDbDto = " + initDbDto);
+        return new ResponseEntity<>(gson.toJson(initDbDto), HttpStatus.OK);
     }
 
 }

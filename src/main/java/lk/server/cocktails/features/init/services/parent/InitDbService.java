@@ -6,14 +6,12 @@ import lk.server.cocktails.features.ingredient.entities.Ingredient;
 import lk.server.cocktails.features.ingredient.services.IngredientService;
 import lk.server.cocktails.features.init.dto.CocktailDto;
 import lk.server.cocktails.features.init.dto.CocktailMixDto;
-import lk.server.cocktails.features.init.dto.InitDbDto;
 import lk.server.cocktails.features.init.mappers.RowMapperCocktail;
 import lk.server.cocktails.features.init.mappers.RowMapperCocktailMixDto;
 import lk.server.cocktails.features.mix.services.MixCocktailService;
 import lk.server.cocktails.features.modes.entities.GameMode;
 import lk.server.cocktails.features.modes.service.GameModeService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -21,22 +19,22 @@ import java.util.stream.Collectors;
 public abstract class InitDbService {
 
     @Autowired
-    private GameModeService gameModeService;
+    protected GameModeService gameModeService;
 
     @Autowired
-    private IngredientService ingredientService;
+    protected IngredientService ingredientService;
 
     @Autowired
-    private CocktailService cocktailService;
+    protected CocktailService cocktailService;
 
     @Autowired
-    private MixCocktailService mixCocktailService;
+    protected MixCocktailService mixCocktailService;
 
     @Autowired
-    private RowMapperCocktail rowMapperCocktail;
+    protected RowMapperCocktail rowMapperCocktail;
 
     @Autowired
-    private RowMapperCocktailMixDto rowMapperCocktailMixDto;
+    protected RowMapperCocktailMixDto rowMapperCocktailMixDto;
 
     protected List<GameMode> initModes(List<GameMode> gameModes) {
         return gameModeService.saveAll(gameModes);
