@@ -4,13 +4,12 @@ import lk.server.cocktails.features.cocktail.entities.Cocktail;
 import lk.server.cocktails.features.cocktail.repositories.CocktailRepository;
 import lk.server.cocktails.features.ingredient.entities.Ingredient;
 import lk.server.cocktails.features.ingredient.repositories.IngredientRepository;
-import lk.server.cocktails.features.init.dto.help.CocktailsTransformHelperFinish;
+import lk.server.cocktails.features.init.dto.CocktailMixDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
 @Service
@@ -35,9 +34,9 @@ public class MixCocktailService {
         return cocktailRepository.save(cocktail);
     }
 
-    public List<Cocktail> addIngredientsByHelperClass(List<CocktailsTransformHelperFinish> cocktails) {
+    public List<Cocktail> addIngredientsByCocktailMixDto(List<CocktailMixDto> cocktails) {
         List<Cocktail> cocktailsWithIngredients = cocktails.stream()
-                .map(it->{
+                .map(it -> {
                     Optional<Cocktail> cocktailOptional = cocktailRepository.findById(it.getCocktailId());
                     Cocktail cocktail = cocktailOptional.get();
                     it.getIngredientIds().forEach(idIngredient -> {

@@ -2,8 +2,10 @@ package lk.server.cocktails.features.cocktail.entities;
 
 import com.google.gson.annotations.Expose;
 import lk.server.cocktails.features.ingredient.entities.Ingredient;
+import lk.utils.mapper.annotation.RowMapper;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.jetbrains.annotations.NotNull;
 
@@ -13,6 +15,7 @@ import java.util.Set;
 
 @Getter
 @Setter
+@NoArgsConstructor
 @AllArgsConstructor
 @Entity
 @Table(name = "Cocktail")
@@ -21,36 +24,43 @@ public class Cocktail {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Expose
+    @RowMapper(name = "LongCocktailId")
     private Long cocktailId;
 
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @Expose
     @NotNull
+    @RowMapper(name = "SetCocktailName")
     private Set<CocktailName> cocktailName;
 
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @Expose
     @NotNull
+    @RowMapper(name = "SetCocktailAssociation")
     private Set<CocktailAssociation> cocktailAssociation;
 
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @Expose
     @NotNull
+    @RowMapper(name = "SetCocktailType")
     private Set<CocktailType> cocktailType;
 
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @Expose
     @NotNull
+    @RowMapper(name = "SetCocktailMethod")
     private Set<CocktailMethod> cocktailMethod;
 
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @Expose
     @NotNull
+    @RowMapper(name = "SetCocktailNote")
     private Set<CocktailNote> cocktailNote;
 
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @Expose
     @NotNull
+    @RowMapper(name = "SetCocktailGarnish")
     private Set<CocktailGarnish> cocktailGarnish;
 
     @ManyToMany
@@ -60,14 +70,11 @@ public class Cocktail {
             inverseJoinColumns = @JoinColumn(name = "ingredient_id"))
     @Expose
     @NotNull
+    @RowMapper(name = "SetIngredient")
     private Set<Ingredient> ingredients = new HashSet<>();
 
     public void addIngredient(@NotNull Ingredient ingredient) {
         ingredients.add(ingredient);
-    }
-
-    public Cocktail() {
-
     }
 
     @Override

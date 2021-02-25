@@ -25,7 +25,7 @@ public class GameModeDto {
     @Expose
     private String nameRU;
 
-    public GameMode toGameModeName(){
+    public GameMode toGameModeName() {
         GameMode gameMode = new GameMode();
         Set<GameModeName> gameModeNames = new HashSet<GameModeName>() {{
             add(new GameModeName(Locale.EN, getNameEN()));

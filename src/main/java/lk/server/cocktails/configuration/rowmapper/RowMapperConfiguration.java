@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 public class RowMapperConfiguration {
 
     @Bean
-    public RowMapperService<?> provideRowMapperService(){
+    public RowMapperService<?> provideRowMapperService() {
         return new RowMapperService<>();
     }
 
