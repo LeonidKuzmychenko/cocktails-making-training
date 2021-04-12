@@ -11,6 +11,7 @@ import java.util.List;
 @AllArgsConstructor
 public class UiCocktail {
 
+    private Long id;
     private String name;
     private String association;
     private String type;

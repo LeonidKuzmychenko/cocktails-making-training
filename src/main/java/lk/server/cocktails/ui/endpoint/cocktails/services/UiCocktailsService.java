@@ -43,6 +43,7 @@ public class UiCocktailsService {
     }
 
     private UiCocktail cocktailToUiCocktail(Cocktail cocktail, Locale locale, int iSize) {
+        Long id = cocktail.getCocktailId();
         String name = localeService.getStringByLocale((Set) cocktail.getCocktailName(), locale);
         String association = localeService.getStringByLocale((Set) cocktail.getCocktailAssociation(), locale);
         String type = localeService.getStringByLocale((Set) cocktail.getCocktailType(), locale);
@@ -54,6 +55,7 @@ public class UiCocktailsService {
         uiIngredients.addAll(getNotConsistsIngredients(cocktail, iSize - uiIngredients.size(), locale));
         Collections.shuffle(uiIngredients);
         UiCocktail uiCocktail = new UiCocktail();
+        uiCocktail.setId(id);
         uiCocktail.setName(name);
         uiCocktail.setAssociation(association);
         uiCocktail.setType(type);
