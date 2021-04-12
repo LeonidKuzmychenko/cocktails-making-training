@@ -25,16 +25,16 @@ public class ReadDbByWebService extends InitDbService {
     public InitDbDto read() {
         InitDbDto initDbDto = new InitDbDto();
         System.out.println("getGameModes");
-        initDbDto.setGameModes(getGameModes());
+        initDbDto.setGameModes(readGameModes());
         System.out.println("getIngredients");
-        initDbDto.setIngredients(getIngredients());
+        initDbDto.setIngredients(readIngredients());
         System.out.println("getCocktails");
-        initDbDto.setCocktailsDto(getCocktails());
+        initDbDto.setCocktailsDto(readCocktails());
         return initDbDto;
     }
 
     //TODO некрасиво
-    public List<GameMode> getGameModes() {
+    public List<GameMode> readGameModes() {
         return gameModeService.findAll().stream()
                 .peek(it -> it.setGameModeId(null))
                 .peek(it -> {
@@ -47,7 +47,7 @@ public class ReadDbByWebService extends InitDbService {
     }
 
     //TODO некрасиво
-    public List<Ingredient> getIngredients() {
+    public List<Ingredient> readIngredients() {
         return ingredientService.findAll().stream()
                 .peek(it -> it.setIngredientId(null))
                 .peek(it -> {
@@ -60,7 +60,7 @@ public class ReadDbByWebService extends InitDbService {
     }
 
     //TODO некрасиво
-    public List<CocktailDto> getCocktails() {
+    public List<CocktailDto> readCocktails() {
         return cocktailService.findAll().stream()
                 .map(it -> rowMapperCocktailDto.join(it))
                 .peek(it -> {

@@ -1,10 +1,13 @@
 package lk.server.cocktails.features.init.controllers;
 
 import com.google.gson.Gson;
+import lk.server.cocktails.features.ingredient.entities.Ingredient;
+import lk.server.cocktails.features.init.dto.CocktailDto;
 import lk.server.cocktails.features.init.dto.InitDbDto;
 import lk.server.cocktails.features.init.services.InitDbByFileService;
 import lk.server.cocktails.features.init.services.InitDbByWebService;
 import lk.server.cocktails.features.init.services.ReadDbByWebService;
+import lk.server.cocktails.features.modes.entities.GameMode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
@@ -16,6 +19,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
+import java.util.List;
 
 @RestController
 @RequestMapping(value = "/db")
@@ -68,11 +72,27 @@ public class InitDbController {
     }
 
     @PostMapping(value = "/readByWeb", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<String> readByWeb() {
-        System.out.println("readByWeb");
+    public ResponseEntity<String> readByWebAll() {
         InitDbDto initDbDto = readDbByWebService.read();
-        System.out.println("InitDbDto = " + initDbDto);
         return new ResponseEntity<>(gson.toJson(initDbDto), HttpStatus.OK);
+    }
+
+    @PostMapping(value = "/readByWebModes", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> readByWebModes() {
+        List<GameMode> gameModes = readDbByWebService.readGameModes();
+        return new ResponseEntity<>(gson.toJson(gameModes), HttpStatus.OK);
+    }
+
+    @PostMapping(value = "/readByWebIngredients", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> readByWebIngredients() {
+        List<Ingredient> ingredients = readDbByWebService.readIngredients();
+        return new ResponseEntity<>(gson.toJson(ingredients), HttpStatus.OK);
+    }
+
+    @PostMapping(value = "/readByWebCocktails", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> readByWebCocktails() {
+        List<CocktailDto> cocktails = readDbByWebService.readCocktails();
+        return new ResponseEntity<>(gson.toJson(cocktails), HttpStatus.OK);
     }
 
 }
