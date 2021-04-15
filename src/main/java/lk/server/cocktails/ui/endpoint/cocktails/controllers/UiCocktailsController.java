@@ -9,10 +9,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -28,7 +25,7 @@ public class UiCocktailsController {
     private Gson gson;
 
     @GetMapping(value = "/all", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<String> getModeAll(@RequestParam("locale") Locale locale,
+    public ResponseEntity<String> getModeAll(@RequestHeader("locale") Locale locale,
                                              @RequestParam("cSize") Integer cSize,
                                              @RequestParam("iSize") Integer iSize) {
         List<UiCocktail> cocktails = uiCocktailsService.getCocktails(locale, cSize, iSize);
@@ -36,7 +33,7 @@ public class UiCocktailsController {
     }
 
     @GetMapping(value = "/one", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<String> getModeOne(@RequestParam("locale") Locale locale,
+    public ResponseEntity<String> getModeOne(@RequestHeader("locale") Locale locale,
                                              @RequestParam("exclude") String exclude,
                                              @RequestParam("iSize") Integer iSize) {
         UiCocktail cocktail = uiCocktailsService.getCocktail(locale, exclude, iSize);
