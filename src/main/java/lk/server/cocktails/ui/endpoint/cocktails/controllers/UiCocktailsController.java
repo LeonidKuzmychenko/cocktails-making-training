@@ -6,13 +6,11 @@ import lk.server.cocktails.ui.endpoint.cocktails.dto.UiCocktail;
 import lk.server.cocktails.ui.endpoint.cocktails.services.UiCocktailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 @RestController
@@ -39,9 +37,9 @@ public class UiCocktailsController {
                                              @RequestParam("exclude") String exclude,
                                              @RequestParam("iSize") Integer iSize) {
         UiCocktail cocktail = uiCocktailsService.getCocktail(locale, exclude, iSize);
-        if (cocktail == null)
+        if (cocktail == null) {
             return new ResponseEntity<>(null, null, 215);
-        else
-            return new ResponseEntity<>(gson.toJson(cocktail), HttpStatus.OK);
+        }
+        return new ResponseEntity<>(gson.toJson(cocktail), HttpStatus.OK);
     }
 }

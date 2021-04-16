@@ -1,18 +1,17 @@
 package lk.server.cocktails.ui.endpoint.cocktails.services;
 
 import lk.server.cocktails.customtypes.locale.Locale;
-import lk.server.cocktails.customtypes.locale.LocaleService;
 import lk.server.cocktails.features.cocktail.entities.Cocktail;
 import lk.server.cocktails.features.cocktail.services.CocktailService;
-import lk.server.cocktails.features.ingredient.entities.Ingredient;
-import lk.server.cocktails.features.ingredient.services.IngredientService;
 import lk.server.cocktails.ui.endpoint.cocktails.dto.UiCocktail;
-import lk.server.cocktails.ui.endpoint.cocktails.dto.UiIngredient;
+import lk.server.cocktails.ui.endpoint.cocktails.mappers.RowMapperUiCocktail;
 import lk.server.cocktails.utils.MyStreamUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 @Service
@@ -22,10 +21,7 @@ public class UiCocktailsService {
     private CocktailService cocktailService;
 
     @Autowired
-    private IngredientService ingredientService;
-
-    @Autowired
-    private LocaleService localeService;
+    private RowMapperUiCocktail rowMapperUiCocktail;
 
     public List<UiCocktail> getCocktails(Locale locale, int cSize, int iSize) {
         return cocktailService.findRandomLimitCocktails(cSize).stream()
@@ -43,42 +39,6 @@ public class UiCocktailsService {
     }
 
     private UiCocktail cocktailToUiCocktail(Cocktail cocktail, Locale locale, int iSize) {
-        Long id = cocktail.getCocktailId();
-        String name = localeService.getStringByLocale(cocktail.getCocktailName(), locale);
-        String association = localeService.getStringByLocale(cocktail.getCocktailAssociation(), locale);
-        String type = localeService.getStringByLocale(cocktail.getCocktailType(), locale);
-        String method = localeService.getStringByLocale(cocktail.getCocktailMethod(), locale);
-        String note = localeService.getStringByLocale(cocktail.getCocktailNote(), locale);
-        String garnish = localeService.getStringByLocale(cocktail.getCocktailGarnish(), locale);
-        List<Ingredient> ingredients = new ArrayList<>(cocktail.getIngredients());
-        List<UiIngredient> uiIngredients = ingredientsToUiVersion(ingredients, true, locale);
-        uiIngredients.addAll(getNotConsistsIngredients(cocktail, iSize - uiIngredients.size(), locale));
-        Collections.shuffle(uiIngredients);
-        UiCocktail uiCocktail = new UiCocktail();
-        uiCocktail.setId(id);
-        uiCocktail.setName(name);
-        uiCocktail.setAssociation(association);
-        uiCocktail.setType(type);
-        uiCocktail.setMethod(method);
-        uiCocktail.setNote(note);
-        uiCocktail.setGarnish(garnish);
-        uiCocktail.setIngredients(uiIngredients);
-        return uiCocktail;
-    }
-
-    private List<UiIngredient> ingredientsToUiVersion(Collection<Ingredient> ingredients, boolean consists, Locale locale) {
-        return ingredients.stream().map(item -> {
-            UiIngredient uiIngredient = new UiIngredient();
-            uiIngredient.setConsists(consists);
-            String name = localeService.getStringByLocale(item.getIngredientNames(), locale);
-            uiIngredient.setName(name);
-            return uiIngredient;
-        }).collect(Collectors.toList());
-    }
-
-    private List<UiIngredient> getNotConsistsIngredients(Cocktail cocktail, int limit, Locale locale) {
-        List<Long> exclude = cocktail.getIngredients().stream().map(Ingredient::getIngredientId).collect(Collectors.toList());
-        List<Ingredient> ingredients = ingredientService.findRandomIngredientsWithExcludeAndLimitsIds(exclude, limit);
-        return ingredientsToUiVersion(ingredients, false, locale);
+        return rowMapperUiCocktail.join(cocktail, locale, iSize);
     }
 }
