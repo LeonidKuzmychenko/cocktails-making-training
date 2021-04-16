@@ -39,7 +39,7 @@ public class UiCocktailsService {
                 .filter(Objects::nonNull)
                 .collect(Collectors.toList());
         Cocktail cocktail = cocktailService.findRandomCocktail(list);
-        return cocktailToUiCocktail(cocktail, locale, iSize);
+        return (cocktail == null) ? null : cocktailToUiCocktail(cocktail, locale, iSize);
     }
 
     private UiCocktail cocktailToUiCocktail(Cocktail cocktail, Locale locale, int iSize) {
