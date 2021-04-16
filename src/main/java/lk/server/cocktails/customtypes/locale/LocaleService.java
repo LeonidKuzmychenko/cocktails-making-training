@@ -7,14 +7,14 @@ import java.util.Collection;
 @Service
 public class LocaleService {
 
-    public String getStringByLocale(Collection<ILocalization> collection, Locale locale) {
+    public String getStringByLocale(Collection<? extends ILocalization> collection, Locale locale) {
         for (ILocalization item : collection)
             if (item.getLocale() == locale)
                 return item.getName();
         return null;
     }
 
-    public String getEnString(Collection<ILocalization> collection) {
+    public String getEnString(Collection<? extends ILocalization> collection) {
         return getStringByLocale(collection, Locale.EN);
     }
 }

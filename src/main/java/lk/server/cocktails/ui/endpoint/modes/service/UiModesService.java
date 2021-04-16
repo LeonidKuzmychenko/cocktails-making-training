@@ -27,7 +27,7 @@ public class UiModesService {
         List<UiGameMode> uiGameModes = gameModes.stream().map(it -> {
             UiGameMode uiGameMode = new UiGameMode();
             uiGameMode.setId(it.getGameModeId());
-            uiGameMode.setName(localeService.getStringByLocale((Set) it.getGameModeNames(), locale));
+            uiGameMode.setName(localeService.getStringByLocale(it.getGameModeNames(), locale));
             return uiGameMode;
         }).collect(Collectors.toList());
 

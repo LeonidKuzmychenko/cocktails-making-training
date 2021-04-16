@@ -44,12 +44,12 @@ public class UiCocktailsService {
 
     private UiCocktail cocktailToUiCocktail(Cocktail cocktail, Locale locale, int iSize) {
         Long id = cocktail.getCocktailId();
-        String name = localeService.getStringByLocale((Set) cocktail.getCocktailName(), locale);
-        String association = localeService.getStringByLocale((Set) cocktail.getCocktailAssociation(), locale);
-        String type = localeService.getStringByLocale((Set) cocktail.getCocktailType(), locale);
-        String method = localeService.getStringByLocale((Set) cocktail.getCocktailMethod(), locale);
-        String note = localeService.getStringByLocale((Set) cocktail.getCocktailNote(), locale);
-        String garnish = localeService.getStringByLocale((Set) cocktail.getCocktailGarnish(), locale);
+        String name = localeService.getStringByLocale(cocktail.getCocktailName(), locale);
+        String association = localeService.getStringByLocale(cocktail.getCocktailAssociation(), locale);
+        String type = localeService.getStringByLocale(cocktail.getCocktailType(), locale);
+        String method = localeService.getStringByLocale(cocktail.getCocktailMethod(), locale);
+        String note = localeService.getStringByLocale(cocktail.getCocktailNote(), locale);
+        String garnish = localeService.getStringByLocale(cocktail.getCocktailGarnish(), locale);
         List<Ingredient> ingredients = new ArrayList<>(cocktail.getIngredients());
         List<UiIngredient> uiIngredients = ingredientsToUiVersion(ingredients, true, locale);
         uiIngredients.addAll(getNotConsistsIngredients(cocktail, iSize - uiIngredients.size(), locale));
@@ -70,7 +70,7 @@ public class UiCocktailsService {
         return ingredients.stream().map(item -> {
             UiIngredient uiIngredient = new UiIngredient();
             uiIngredient.setConsists(consists);
-            String name = localeService.getStringByLocale((Set) item.getIngredientNames(), locale);
+            String name = localeService.getStringByLocale(item.getIngredientNames(), locale);
             uiIngredient.setName(name);
             return uiIngredient;
         }).collect(Collectors.toList());
