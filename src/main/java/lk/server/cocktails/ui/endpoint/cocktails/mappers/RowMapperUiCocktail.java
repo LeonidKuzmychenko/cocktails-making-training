@@ -36,7 +36,7 @@ public class RowMapperUiCocktail {
         String method = localeService.getStringByLocale(cocktail.getCocktailMethod(), locale);
         String note = localeService.getStringByLocale(cocktail.getCocktailNote(), locale);
         String garnish = localeService.getStringByLocale(cocktail.getCocktailGarnish(), locale);
-
+        String photo = "/photo/" + localeService.getEnString(cocktail.getCocktailName());
         List<Ingredient> ingredients = new ArrayList<>(cocktail.getIngredients());
         List<UiIngredient> uiIngredients = ingredientsToUiVersion(ingredients, true, locale);
         uiIngredients.addAll(getNotConsistsIngredients(cocktail, iSize - uiIngredients.size(), locale));
@@ -50,6 +50,7 @@ public class RowMapperUiCocktail {
         uiCocktail.setNote(note);
         uiCocktail.setGarnish(garnish);
         uiCocktail.setIngredients(uiIngredients);
+        uiCocktail.setPhoto(photo);
         return uiCocktail;
     }
 

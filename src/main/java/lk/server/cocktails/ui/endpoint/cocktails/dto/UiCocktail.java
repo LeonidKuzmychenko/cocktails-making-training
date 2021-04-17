@@ -20,6 +20,7 @@ public class UiCocktail {
     private String method;
     private String note;
     private String garnish;
+    private String photo;
     private List<UiIngredient> ingredients;
 
 }
