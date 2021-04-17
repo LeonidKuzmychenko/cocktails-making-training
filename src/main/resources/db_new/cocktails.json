@@ -2546,11 +2546,11 @@
     "cocktailMethod": [
       {
         "locale": "EN",
-        "name": "Mix together all ingredients with ice cubes in a mixing glass and strain into prepared slim cocktail glass. "
+        "name": "Mix together all ingredients with ice cubes in a mixing glass and strain into prepared slim cocktail glass."
       },
       {
         "locale": "RU",
-        "name": "Смешать все ингредиенты с кубиками льда в шейкере и процедить в подготовленный тонкий стакан для коктейлей. "
+        "name": "Смешать все ингредиенты с кубиками льда в шейкере и процедить в подготовленный тонкий стакан для коктейлей."
       }
     ],
     "cocktailNote": [
@@ -2990,11 +2990,11 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "ДЖОН КОЛЛИНЗ "
+        "name": "ДЖОН КОЛЛИНЗ"
       },
       {
         "locale": "EN",
-        "name": "JOHN COLLINS "
+        "name": "JOHN COLLINS"
       }
     ],
     "cocktailAssociation": [
@@ -3427,11 +3427,11 @@
     "cocktailMethod": [
       {
         "locale": "EN",
-        "name": "Pour all ingredients directly into chilled old fashioned glass filled with ice, Stir gently. "
+        "name": "Pour all ingredients directly into chilled old fashioned glass filled with ice, Stir gently."
       },
       {
         "locale": "RU",
-        "name": "Вылить все ингредиенты прямо в охлажденный стакан со льдом и аккуратно перемешать. "
+        "name": "Вылить все ингредиенты прямо в охлажденный стакан со льдом и аккуратно перемешать."
       }
     ],
     "cocktailNote": [
@@ -3806,11 +3806,11 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "РЖАВЫЙ ГВОЗДЬ "
+        "name": "РЖАВЫЙ ГВОЗДЬ"
       },
       {
         "locale": "EN",
-        "name": "RUSTY NAIL "
+        "name": "RUSTY NAIL"
       }
     ],
     "cocktailAssociation": [
@@ -4142,11 +4142,11 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "VIEUX CARRÉ "
+        "name": "VIEUX CARRE"
       },
       {
         "locale": "EN",
-        "name": "VIEUX CARRÉ "
+        "name": "VIEUX CARRE"
       }
     ],
     "cocktailAssociation": [
@@ -4211,11 +4211,11 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "ВИСКИ "
+        "name": "ВИСКИ"
       },
       {
         "locale": "EN",
-        "name": "WHISKEY SOUR "
+        "name": "WHISKEY SOUR"
       }
     ],
     "cocktailAssociation": [
@@ -4483,11 +4483,11 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "КОЛЕНКИ "
+        "name": "КОЛЕНКИ"
       },
       {
         "locale": "EN",
-        "name": "BEE’S KNEES "
+        "name": "BEE’S KNEES"
       }
     ],
     "cocktailAssociation": [
