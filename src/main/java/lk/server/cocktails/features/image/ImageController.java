@@ -19,7 +19,7 @@ public class ImageController {
     public ResponseEntity<byte[]> photo(HttpServletRequest request, @PathVariable("name") String cocktailName) throws IOException {
         cocktailName = cocktailName.replaceAll("_", " ");
         cocktailName = cocktailName.replaceAll("\\*", "’");
-        InputStream in = request.getServletContext().getResourceAsStream("/icons/" + cocktailName + ".jpg");
+        InputStream in = request.getServletContext().getResourceAsStream("icons/" + cocktailName + ".jpg");
         return new ResponseEntity<>(IOUtils.toByteArray(in), HttpStatus.OK);
     }
 }
