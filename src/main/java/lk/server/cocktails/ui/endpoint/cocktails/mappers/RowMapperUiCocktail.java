@@ -55,7 +55,7 @@ public class RowMapperUiCocktail {
     }
 
     private String getCocktailPhotoPath(Cocktail cocktail) {
-        String photoPath = "/photo/" + localeService.getEnString(cocktail.getCocktailName());
+        String photoPath = "photo/" + localeService.getEnString(cocktail.getCocktailName());
         photoPath = photoPath.replaceAll(" ", "_");
         photoPath = photoPath.replaceAll("’", "*");
         return photoPath;
