@@ -73,7 +73,7 @@ public class PostgreSqlProdConfiguration {
         HibernateJpaVendorAdapter hibernateJpaVendorAdapter = new HibernateJpaVendorAdapter();
         hibernateJpaVendorAdapter.setDatabasePlatform(PostgreSQL82Dialect.class.getName());
         hibernateJpaVendorAdapter.setDatabase(Database.POSTGRESQL);
-        hibernateJpaVendorAdapter.setGenerateDdl(true);
+//        hibernateJpaVendorAdapter.setGenerateDdl(false);
         hibernateJpaVendorAdapter.setShowSql(false);
         return hibernateJpaVendorAdapter;
     }
@@ -81,7 +81,7 @@ public class PostgreSqlProdConfiguration {
     @Bean(name = "mainJpaProperties")
     public Properties jpaProperties() {
         Properties properties = new Properties();
-        properties.put(AvailableSettings.HBM2DDL_AUTO, getDDL(SchemaAutoTooling.CREATE_DROP));
+        properties.put(AvailableSettings.HBM2DDL_AUTO, getDDL(SchemaAutoTooling.UPDATE));
         properties.put(AvailableSettings.DIALECT, PostgreSQL82Dialect.class.getName());
         return properties;
     }
