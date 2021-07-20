@@ -73,7 +73,7 @@ public class PostgreSqlProdConfiguration {
         HibernateJpaVendorAdapter hibernateJpaVendorAdapter = new HibernateJpaVendorAdapter();
         hibernateJpaVendorAdapter.setDatabasePlatform(PostgreSQL82Dialect.class.getName());
         hibernateJpaVendorAdapter.setDatabase(Database.POSTGRESQL);
-//        hibernateJpaVendorAdapter.setGenerateDdl(false);
+        hibernateJpaVendorAdapter.setGenerateDdl(true);
         hibernateJpaVendorAdapter.setShowSql(false);
         return hibernateJpaVendorAdapter;
     }
