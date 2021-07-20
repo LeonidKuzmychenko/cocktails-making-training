@@ -1,8 +1,8 @@
 package lk.server.cocktails.features.init.dto;
 
 import com.google.gson.annotations.Expose;
-import lk.server.cocktails.features.ingredient.entities.Ingredient;
-import lk.server.cocktails.features.modes.entities.GameMode;
+import lk.server.cocktails.database.ingredient.entities.Ingredient;
+import lk.server.cocktails.database.modes.entities.GameMode;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

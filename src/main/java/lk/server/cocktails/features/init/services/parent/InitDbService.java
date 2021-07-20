@@ -1,16 +1,16 @@
 package lk.server.cocktails.features.init.services.parent;
 
-import lk.server.cocktails.features.cocktail.entities.Cocktail;
-import lk.server.cocktails.features.cocktail.services.CocktailService;
-import lk.server.cocktails.features.ingredient.entities.Ingredient;
-import lk.server.cocktails.features.ingredient.services.IngredientService;
+import lk.server.cocktails.database.cocktail.entities.Cocktail;
+import lk.server.cocktails.database.cocktail.services.CocktailService;
+import lk.server.cocktails.database.ingredient.entities.Ingredient;
+import lk.server.cocktails.database.ingredient.services.IngredientService;
+import lk.server.cocktails.database.modes.entities.GameMode;
+import lk.server.cocktails.database.modes.service.GameModeService;
 import lk.server.cocktails.features.init.dto.CocktailDto;
 import lk.server.cocktails.features.init.dto.CocktailMixDto;
 import lk.server.cocktails.features.init.mappers.RowMapperCocktail;
 import lk.server.cocktails.features.init.mappers.RowMapperCocktailMixDto;
 import lk.server.cocktails.features.mix.services.MixCocktailService;
-import lk.server.cocktails.features.modes.entities.GameMode;
-import lk.server.cocktails.features.modes.service.GameModeService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;

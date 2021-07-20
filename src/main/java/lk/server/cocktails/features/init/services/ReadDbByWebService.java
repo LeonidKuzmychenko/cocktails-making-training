@@ -1,14 +1,14 @@
 package lk.server.cocktails.features.init.services;
 
-import lk.server.cocktails.features.cocktail.entities.*;
-import lk.server.cocktails.features.ingredient.entities.Ingredient;
-import lk.server.cocktails.features.ingredient.entities.IngredientName;
+import lk.server.cocktails.database.cocktail.entities.*;
+import lk.server.cocktails.database.ingredient.entities.Ingredient;
+import lk.server.cocktails.database.ingredient.entities.IngredientName;
+import lk.server.cocktails.database.modes.entities.GameMode;
+import lk.server.cocktails.database.modes.entities.GameModeName;
 import lk.server.cocktails.features.init.dto.CocktailDto;
 import lk.server.cocktails.features.init.dto.InitDbDto;
 import lk.server.cocktails.features.init.mappers.RowMapperCocktailDto;
 import lk.server.cocktails.features.init.services.parent.InitDbService;
-import lk.server.cocktails.features.modes.entities.GameMode;
-import lk.server.cocktails.features.modes.entities.GameModeName;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

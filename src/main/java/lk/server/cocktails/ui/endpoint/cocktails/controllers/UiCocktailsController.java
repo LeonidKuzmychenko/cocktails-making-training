@@ -1,7 +1,7 @@
 package lk.server.cocktails.ui.endpoint.cocktails.controllers;
 
 import com.google.gson.Gson;
-import lk.server.cocktails.customtypes.locale.Locale;
+import lk.server.cocktails.locale.Locale;
 import lk.server.cocktails.ui.endpoint.cocktails.dto.UiCocktail;
 import lk.server.cocktails.ui.endpoint.cocktails.services.UiCocktailsService;
 import org.springframework.beans.factory.annotation.Autowired;

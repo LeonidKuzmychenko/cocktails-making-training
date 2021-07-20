@@ -1,7 +1,7 @@
 package lk.server.cocktails.features.init.dto;
 
 import com.google.gson.annotations.Expose;
-import lk.server.cocktails.features.cocktail.entities.*;
+import lk.server.cocktails.database.cocktail.entities.*;
 import lk.utils.mapper.annotation.RowMapper;
 import lombok.Data;
 import lombok.NoArgsConstructor;

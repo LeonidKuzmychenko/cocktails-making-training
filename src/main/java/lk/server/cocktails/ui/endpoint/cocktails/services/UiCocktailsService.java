@@ -1,8 +1,8 @@
 package lk.server.cocktails.ui.endpoint.cocktails.services;
 
-import lk.server.cocktails.customtypes.locale.Locale;
-import lk.server.cocktails.features.cocktail.entities.Cocktail;
-import lk.server.cocktails.features.cocktail.services.CocktailService;
+import lk.server.cocktails.database.cocktail.entities.Cocktail;
+import lk.server.cocktails.database.cocktail.services.CocktailService;
+import lk.server.cocktails.locale.Locale;
 import lk.server.cocktails.ui.endpoint.cocktails.dto.UiCocktail;
 import lk.server.cocktails.ui.endpoint.cocktails.mappers.RowMapperUiCocktail;
 import lk.server.cocktails.utils.MyStreamUtils;
