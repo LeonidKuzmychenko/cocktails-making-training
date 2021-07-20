@@ -1,10 +1,10 @@
 package lk.server.cocktails.features.init.mappers;
 
-import lk.server.cocktails.customtypes.locale.LocaleService;
-import lk.server.cocktails.features.cocktail.entities.Cocktail;
-import lk.server.cocktails.features.ingredient.entities.Ingredient;
+import lk.server.cocktails.database.cocktail.entities.Cocktail;
+import lk.server.cocktails.database.ingredient.entities.Ingredient;
 import lk.server.cocktails.features.init.dto.CocktailDto;
 import lk.server.cocktails.features.init.dto.CocktailMixDto;
+import lk.server.cocktails.locale.LocaleService;
 import lk.utils.mapper.RowMapperService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

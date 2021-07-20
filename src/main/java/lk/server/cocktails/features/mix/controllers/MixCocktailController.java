@@ -1,7 +1,7 @@
 package lk.server.cocktails.features.mix.controllers;
 
 import com.google.gson.Gson;
-import lk.server.cocktails.features.cocktail.entities.Cocktail;
+import lk.server.cocktails.database.cocktail.entities.Cocktail;
 import lk.server.cocktails.features.mix.services.MixCocktailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

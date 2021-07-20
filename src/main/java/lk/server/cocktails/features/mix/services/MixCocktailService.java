@@ -1,9 +1,9 @@
 package lk.server.cocktails.features.mix.services;
 
-import lk.server.cocktails.features.cocktail.entities.Cocktail;
-import lk.server.cocktails.features.cocktail.repositories.CocktailRepository;
-import lk.server.cocktails.features.ingredient.entities.Ingredient;
-import lk.server.cocktails.features.ingredient.repositories.IngredientRepository;
+import lk.server.cocktails.database.cocktail.entities.Cocktail;
+import lk.server.cocktails.database.cocktail.repositories.CocktailRepository;
+import lk.server.cocktails.database.ingredient.entities.Ingredient;
+import lk.server.cocktails.database.ingredient.repositories.IngredientRepository;
 import lk.server.cocktails.features.init.dto.CocktailMixDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

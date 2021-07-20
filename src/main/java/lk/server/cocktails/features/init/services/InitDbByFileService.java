@@ -2,12 +2,12 @@ package lk.server.cocktails.features.init.services;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import lk.server.cocktails.features.cocktail.entities.Cocktail;
-import lk.server.cocktails.features.ingredient.entities.Ingredient;
+import lk.server.cocktails.database.cocktail.entities.Cocktail;
+import lk.server.cocktails.database.ingredient.entities.Ingredient;
+import lk.server.cocktails.database.modes.entities.GameMode;
 import lk.server.cocktails.features.init.dto.CocktailDto;
 import lk.server.cocktails.features.init.dto.InitDbDto;
 import lk.server.cocktails.features.init.services.parent.InitDbService;
-import lk.server.cocktails.features.modes.entities.GameMode;
 import lk.utils.files.FileManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

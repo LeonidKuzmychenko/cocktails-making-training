@@ -1,10 +1,10 @@
 package lk.server.cocktails.features.init.services;
 
-import lk.server.cocktails.features.cocktail.entities.Cocktail;
-import lk.server.cocktails.features.ingredient.entities.Ingredient;
+import lk.server.cocktails.database.cocktail.entities.Cocktail;
+import lk.server.cocktails.database.ingredient.entities.Ingredient;
+import lk.server.cocktails.database.modes.entities.GameMode;
 import lk.server.cocktails.features.init.dto.InitDbDto;
 import lk.server.cocktails.features.init.services.parent.InitDbService;
-import lk.server.cocktails.features.modes.entities.GameMode;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -1,10 +1,10 @@
 package lk.server.cocktails.ui.endpoint.cocktails.mappers;
 
-import lk.server.cocktails.customtypes.locale.Locale;
-import lk.server.cocktails.customtypes.locale.LocaleService;
-import lk.server.cocktails.features.cocktail.entities.Cocktail;
-import lk.server.cocktails.features.ingredient.entities.Ingredient;
-import lk.server.cocktails.features.ingredient.services.IngredientService;
+import lk.server.cocktails.database.cocktail.entities.Cocktail;
+import lk.server.cocktails.database.ingredient.entities.Ingredient;
+import lk.server.cocktails.database.ingredient.services.IngredientService;
+import lk.server.cocktails.locale.Locale;
+import lk.server.cocktails.locale.LocaleService;
 import lk.server.cocktails.ui.endpoint.cocktails.dto.UiCocktail;
 import lk.server.cocktails.ui.endpoint.cocktails.dto.UiIngredient;
 import lk.utils.mapper.RowMapperService;
