@@ -3,11 +3,11 @@
     "gameModeNames": [
       {
         "locale": "RU",
-        "name": "ВЫБОР ИНГРЕДИЕНТОВ, ЗНАЯ КОКТЕЙЛЬ"
+        "name": "Библиотека"
       },
       {
         "locale": "EN",
-        "name": "CHOOSE INGREDIENTS BY COCKTAIL"
+        "name": "LIBRARY"
       }
     ]
   },
@@ -15,11 +15,11 @@
     "gameModeNames": [
       {
         "locale": "RU",
-        "name": "ВЫБОР КОКТЕЙЛЯ, ЗНАЯ ИНГРЕДИЕНТЫ"
+        "name": "ИГРА"
       },
       {
         "locale": "EN",
-        "name": "CHOOSE COCKTAIL BY INGREDIENTS"
+        "name": "GAME"
       }
     ]
   }
