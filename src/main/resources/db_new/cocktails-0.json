@@ -135,7 +135,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "BLOODY MARY"
+        "name": "КРОВАВАЯ МЭРИ"
       },
       {
         "locale": "EN",
@@ -206,7 +206,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "CAIPIRINHA"
+        "name": "КАЙПИРИНЬЯ"
       },
       {
         "locale": "EN",
@@ -277,7 +277,7 @@
       },
       {
         "locale": "RU",
-        "name": "CHAMPAGNE COCKTAIL"
+        "name": "ШАМПАНСКИЙ КОКТЕЙЛЬ"
       }
     ],
     "cocktailAssociation": [
@@ -342,7 +342,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "COSMOPOLITAN"
+        "name": "КОСМОПОЛИТАН"
       },
       {
         "locale": "EN",
@@ -410,7 +410,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "CORPSE REVIVER #2"
+        "name": "ВОССТАНОВИТЕЛЬ ТРУДА #2"
       },
       {
         "locale": "EN",
@@ -479,7 +479,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "CUBA LIBRE"
+        "name": "КУБА ЛИБРЕ"
       },
       {
         "locale": "EN",
@@ -546,7 +546,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "FRENCH 75"
+        "name": "ФРЕНЧ 75"
       },
       {
         "locale": "EN",
@@ -614,7 +614,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "FRENCH CONNECTION"
+        "name": "ФРАНЦУЗСКИЙ СВЯЗНОЙ"
       },
       {
         "locale": "EN",
@@ -684,7 +684,7 @@
       },
       {
         "locale": "RU",
-        "name": "GOLDEN DREAM"
+        "name": "ЗОЛОТАЯ МЕЧТА"
       }
     ],
     "cocktailAssociation": [
@@ -752,7 +752,7 @@
       },
       {
         "locale": "RU",
-        "name": "GRASSHOPPER"
+        "name": "КУЗНЕЧИК"
       }
     ],
     "cocktailAssociation": [
@@ -815,7 +815,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "HEMINGWAY SPECIAL"
+        "name": "ХЭМИНГУЭЙ СПЕШЛ"
       },
       {
         "locale": "EN",
@@ -887,7 +887,7 @@
       },
       {
         "locale": "RU",
-        "name": "HORSE'S NECK"
+        "name": "ЛОШАДИНАЯ ШЕЯ"
       }
     ],
     "cocktailAssociation": [
@@ -950,7 +950,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "IRISH COFFEE"
+        "name": "ИРЛАНДСКИЙ КОФЕ"
       },
       {
         "locale": "EN",
@@ -1022,7 +1022,7 @@
       },
       {
         "locale": "RU",
-        "name": "KIR"
+        "name": "КИР"
       }
     ],
     "cocktailAssociation": [
@@ -1088,7 +1088,7 @@
       },
       {
         "locale": "RU",
-        "name": "LONG ISLAND ICED TEA"
+        "name": "ЗАМОРОЖЕННЫЙ ЧАЙ LONG ISLAND"
       }
     ],
     "cocktailAssociation": [
@@ -1156,7 +1156,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "MAI-TAI"
+        "name": "МАЙ-ТАЙ"
       },
       {
         "locale": "EN",
@@ -1230,7 +1230,7 @@
       },
       {
         "locale": "RU",
-        "name": "MARGARITA"
+        "name": "МАРГАРИТА"
       }
     ],
     "cocktailAssociation": [
@@ -1363,7 +1363,7 @@
       },
       {
         "locale": "RU",
-        "name": "MINT JULEP"
+        "name": "МЯТНЫЙ ДЖУЛЕП"
       }
     ],
     "cocktailAssociation": [
@@ -1427,7 +1427,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "MOJITO"
+        "name": "МОХИТО"
       },
       {
         "locale": "EN",
@@ -1496,7 +1496,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "MOSCOW MULE"
+        "name": "МОСКОВСКИЙ МУЛ"
       },
       {
         "locale": "EN",
@@ -1698,7 +1698,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "SEA BREEZE"
+        "name": "МОРСКОЙ БРИЗ"
       },
       {
         "locale": "EN",
@@ -1765,7 +1765,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "SEX ON THE BEACH"
+        "name": "СЕКС НА ПЛЯЖЕ"
       },
       {
         "locale": "EN",
@@ -1833,7 +1833,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "SINGAPORE SLING"
+        "name": "СИНГАПУР СЛИНГ"
       },
       {
         "locale": "EN",
@@ -1909,7 +1909,7 @@
       },
       {
         "locale": "RU",
-        "name": "TEQUILA SUNRISE"
+        "name": "ТЕКИЛА САНРАЙЗ"
       }
     ],
     "cocktailAssociation": [
@@ -1972,7 +1972,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "VESPER"
+        "name": "ВЕСПЕР"
       },
       {
         "locale": "EN",
@@ -2039,7 +2039,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "ZOMBIE"
+        "name": "ЖИВОЙ МЕРТВЕЦ"
       },
       {
         "locale": "EN",
@@ -2112,7 +2112,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "ALEXANDER"
+        "name": "АЛЕКСАНДР"
       },
       {
         "locale": "EN",
@@ -2179,7 +2179,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "AMERICANO"
+        "name": "АМЕРИКАНО"
       },
       {
         "locale": "EN",
@@ -2246,7 +2246,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "ANGEL FACE"
+        "name": "АНГЕЛЬСКОЕ ЛИЦО"
       },
       {
         "locale": "EN",
@@ -2313,7 +2313,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "AVIATION"
+        "name": "АВИАЦИЯ"
       },
       {
         "locale": "EN",
@@ -2381,7 +2381,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "BETWEEN THE SHEETS"
+        "name": "МЕЖДУ ПРОСТЫНЯМИ"
       },
       {
         "locale": "EN",
@@ -2449,7 +2449,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "BOULEVARDIER"
+        "name": "БУЛЬВАРДЬЕ"
       },
       {
         "locale": "EN",
@@ -2520,7 +2520,7 @@
       },
       {
         "locale": "RU",
-        "name": "BRANDY CRUSTA"
+        "name": "БРЭНДИ КРАСТА"
       }
     ],
     "cocktailAssociation": [
@@ -2586,7 +2586,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "CASINO"
+        "name": "КАЗИНО"
       },
       {
         "locale": "EN",
@@ -2654,7 +2654,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "CLOVER CLUB"
+        "name": "КЛЕВЕРНЫЙ КЛУБ"
       },
       {
         "locale": "EN",
@@ -2726,7 +2726,7 @@
       },
       {
         "locale": "RU",
-        "name": "DAIQUIRI"
+        "name": "ДАЙКИРИ"
       }
     ],
     "cocktailAssociation": [
@@ -2789,7 +2789,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "DRY MARTINI"
+        "name": "СУХОЙ МАРТИНИ"
       },
       {
         "locale": "EN",
@@ -2990,7 +2990,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "JOHN COLLINS"
+        "name": "ДЖОН КОЛЛИНЗ"
       },
       {
         "locale": "EN",
@@ -3058,7 +3058,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "LAST WORD"
+        "name": "ПОСЛЕДНЕЕ СЛОВО"
       },
       {
         "locale": "EN",
@@ -3193,7 +3193,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "MARTINEZ"
+        "name": "МАРТИНЕС"
       },
       {
         "locale": "EN",
@@ -3261,7 +3261,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "MARY PICKFORD"
+        "name": "МЭРИ ПИКФОРД"
       },
       {
         "locale": "EN",
@@ -3329,7 +3329,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "MONKEY GLAND"
+        "name": "ОБЕЗЬЯННАЯ ЖЕЛЕЗА"
       },
       {
         "locale": "EN",
@@ -3397,7 +3397,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "NEGRONI"
+        "name": "НЕГРОНИ"
       },
       {
         "locale": "EN",
@@ -3464,7 +3464,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "OLD FASHIONED"
+        "name": "СТАРЫЙ МОДНЫЙ"
       },
       {
         "locale": "EN",
@@ -3532,7 +3532,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "PARADISE"
+        "name": "РАЙ"
       },
       {
         "locale": "EN",
@@ -3599,7 +3599,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "PLANTERS PUNCH"
+        "name": "ПУАНСОННЫЙ ПУАНСОН"
       },
       {
         "locale": "EN",
@@ -3670,7 +3670,7 @@
       },
       {
         "locale": "RU",
-        "name": "PORTO FLIP"
+        "name": "ПОРТО ФЛИП"
       }
     ],
     "cocktailAssociation": [
@@ -3806,7 +3806,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "RUSTY NAIL"
+        "name": "РЖАВЫЙ ГВОЗДЬ"
       },
       {
         "locale": "EN",
@@ -3872,7 +3872,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "SAZERAC"
+        "name": "САЗЕРАК"
       },
       {
         "locale": "EN",
@@ -4007,7 +4007,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "STINGER"
+        "name": "ЖАЛО"
       },
       {
         "locale": "EN",
@@ -4077,7 +4077,7 @@
       },
       {
         "locale": "RU",
-        "name": "TUXEDO"
+        "name": "СМОКИНГ"
       }
     ],
     "cocktailAssociation": [
@@ -4211,7 +4211,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "WHISKEY SOUR"
+        "name": "ВИСКИ"
       },
       {
         "locale": "EN",
@@ -4283,7 +4283,7 @@
       },
       {
         "locale": "RU",
-        "name": "WHITE LADY"
+        "name": "БЕЛАЯ ДАМА"
       }
     ],
     "cocktailAssociation": [
@@ -4350,7 +4350,7 @@
       },
       {
         "locale": "RU",
-        "name": "BARRACUDA"
+        "name": "БАРРАКУДА"
       }
     ],
     "cocktailAssociation": [
@@ -4483,7 +4483,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "BEE’S KNEES"
+        "name": "КОЛЕНКИ"
       },
       {
         "locale": "EN",
@@ -4551,7 +4551,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "CACHANCHARA"
+        "name": "КАЧАНЧАРА"
       },
       {
         "locale": "EN",
@@ -4623,7 +4623,7 @@
       },
       {
         "locale": "RU",
-        "name": "DARK ‘N’ STORMY"
+        "name": "ТЁМНАЯ БУРЯ"
       }
     ],
     "cocktailAssociation": [
@@ -4685,7 +4685,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "ESPRESSO MARTINI"
+        "name": "ЭСПРЕССО МАРТИНИ"
       },
       {
         "locale": "EN",
@@ -4753,7 +4753,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "FERNANDITO"
+        "name": "ФЕРНАНДИТО"
       },
       {
         "locale": "EN",
@@ -4819,7 +4819,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "FRENCH MARTINI"
+        "name": "ФРАНЦУЗСКИЙ МАРТИНИ"
       },
       {
         "locale": "EN",
@@ -4886,7 +4886,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "ILLEGAL"
+        "name": "НЕЗАКОННЫЙ"
       },
       {
         "locale": "EN",
@@ -4961,7 +4961,7 @@
       },
       {
         "locale": "RU",
-        "name": "LEMON DROP MARTINI"
+        "name": "ЛИМОННАЯ КАПЛЯ МАРТИНИ"
       }
     ],
     "cocktailAssociation": [
@@ -5028,7 +5028,7 @@
       },
       {
         "locale": "RU",
-        "name": "NAKED AND FAMOUS"
+        "name": "Голый и знаменитый"
       }
     ],
     "cocktailAssociation": [
@@ -5161,7 +5161,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "OLD CUBAN"
+        "name": "СТАРЫЙ КУБИНСКИЙ"
       },
       {
         "locale": "EN",
@@ -5235,7 +5235,7 @@
       },
       {
         "locale": "RU",
-        "name": "PALOMA"
+        "name": "ПАЛОМА"
       }
     ],
     "cocktailAssociation": [
@@ -5299,7 +5299,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "PAPER PLANE"
+        "name": "БУМАЖНЫЙ САМОЛЕТИК"
       },
       {
         "locale": "EN",
@@ -5367,7 +5367,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "PENICILLIN"
+        "name": "ПЕНИЦИЛЛИН"
       },
       {
         "locale": "EN",
@@ -5436,7 +5436,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "RUSSIAN SPRING PUNCH"
+        "name": "РУССКИЙ ВЕСЕННИЙ ПУАНС"
       },
       {
         "locale": "EN",
@@ -5509,7 +5509,7 @@
       },
       {
         "locale": "RU",
-        "name": "SOUTHSIDE"
+        "name": "ЮЖНАЯ СТОРОНА"
       }
     ],
     "cocktailAssociation": [
@@ -5574,7 +5574,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "SPICY FIFTY"
+        "name": "ОСТРЫЕ ПЯТЬДЕСЯТ"
       },
       {
         "locale": "EN",
@@ -5714,7 +5714,7 @@
       },
       {
         "locale": "RU",
-        "name": "SUFFERING BASTARD"
+        "name": "СТРАДАЮЩИЙ ублюдок"
       }
     ],
     "cocktailAssociation": [
@@ -5783,7 +5783,7 @@
       },
       {
         "locale": "RU",
-        "name": "TIPPERARY"
+        "name": "СЛУЧАЙНЫЙ"
       }
     ],
     "cocktailAssociation": [
@@ -5847,7 +5847,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "TOMMY’S MARGARITA"
+        "name": "ТОММИ МАРГАРИТА"
       },
       {
         "locale": "EN",
@@ -5918,7 +5918,7 @@
       },
       {
         "locale": "RU",
-        "name": "TRINIDAD SOUR"
+        "name": "ТРИНИДАД СУР"
       }
     ],
     "cocktailAssociation": [
@@ -5986,7 +5986,7 @@
       },
       {
         "locale": "RU",
-        "name": "YELLOW BIRD"
+        "name": "ЖЕЛТАЯ ПТИЦА"
       }
     ],
     "cocktailAssociation": [
