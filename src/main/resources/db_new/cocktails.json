@@ -3,7 +3,7 @@
     "cocktailName": [
       {
         "locale": "RU",
-        "name": "БЕЛЛИНИ"
+        "name": "BELLINI"
       },
       {
         "locale": "EN",
@@ -73,7 +73,7 @@
       },
       {
         "locale": "RU",
-        "name": "ЧЕРНЫЙ РУССКИЙ"
+        "name": "BLACK RUSSIAN"
       }
     ],
     "cocktailAssociation": [
@@ -883,7 +883,7 @@
     "cocktailName": [
       {
         "locale": "EN",
-        "name": "HORSE\u0027S NECK"
+        "name": "HORSE'S NECK"
       },
       {
         "locale": "RU",
