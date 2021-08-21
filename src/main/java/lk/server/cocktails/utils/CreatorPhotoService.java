@@ -17,22 +17,22 @@ public class CreatorPhotoService {
 
     public String getPathFromCocktail(Cocktail cocktail) {
         String photoPath = "photo/" + localeService.getEnString(cocktail.getCocktailName()).trim();
-        photoPath = photoPath.replaceAll(" ", "***1***");
-        photoPath = photoPath.replaceAll("'", "***2***");
-        photoPath = photoPath.replaceAll("`", "***3***");
-        photoPath = photoPath.replaceAll("’", "***4***");
-        photoPath = photoPath.replaceAll("\\*", "***5***");
-        photoPath = photoPath.replaceAll("#", "***6***");
+        photoPath = photoPath.replaceAll(" ", "_");
+        photoPath = photoPath.replaceAll("'", "-0001-");
+        photoPath = photoPath.replaceAll("`", "-0010-");
+        photoPath = photoPath.replaceAll("’", "-0011-");
+        photoPath = photoPath.replaceAll("\\*", "-0100-");
+        photoPath = photoPath.replaceAll("#", "-0101-");
         return photoPath;
     }
 
     public byte[] getCocktailPhotoFromPath(String cocktailName) throws IOException {
-        cocktailName = cocktailName.replaceAll("\\*\\*\\*1\\*\\*\\*", " ");
-        cocktailName = cocktailName.replaceAll("\\*\\*\\*2\\*\\*\\*", "'");
-        cocktailName = cocktailName.replaceAll("\\*\\*\\*3\\*\\*\\*", "`");
-        cocktailName = cocktailName.replaceAll("\\*\\*\\*4\\*\\*\\*", "’");
-        cocktailName = cocktailName.replaceAll("\\*\\*\\*5\\*\\*\\*", "*");
-        cocktailName = cocktailName.replaceAll("\\*\\*\\*6\\*\\*\\*", "#");
+        cocktailName = cocktailName.replaceAll("_", " ");
+        cocktailName = cocktailName.replaceAll("-0001-", "'");
+        cocktailName = cocktailName.replaceAll("-0010-", "`");
+        cocktailName = cocktailName.replaceAll("-0011-", "’");
+        cocktailName = cocktailName.replaceAll("-0100-", "*");
+        cocktailName = cocktailName.replaceAll("-0101-", "#");
         InputStream in = getClass().getClassLoader().getResourceAsStream("icons/" + cocktailName + ".jpg");
         return IOUtils.toByteArray(in);
     }
