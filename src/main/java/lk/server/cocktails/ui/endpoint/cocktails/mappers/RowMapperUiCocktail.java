@@ -7,6 +7,7 @@ import lk.server.cocktails.locale.Locale;
 import lk.server.cocktails.locale.LocaleService;
 import lk.server.cocktails.ui.endpoint.cocktails.dto.UiCocktail;
 import lk.server.cocktails.ui.endpoint.cocktails.dto.UiIngredient;
+import lk.server.cocktails.utils.CreatorPhotoService;
 import lk.utils.mapper.RowMapperService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -39,7 +40,7 @@ public class RowMapperUiCocktail {
         String method = localeService.getStringByLocale(cocktail.getCocktailMethod(), locale);
         String note = localeService.getStringByLocale(cocktail.getCocktailNote(), locale);
         String garnish = localeService.getStringByLocale(cocktail.getCocktailGarnish(), locale);
-        String photo = photoService.getCocktailPhotoPath(cocktail);
+        String photo = photoService.getPathFromCocktail(cocktail);
         List<Ingredient> ingredients = new ArrayList<>(cocktail.getIngredients());
         List<UiIngredient> uiIngredients = ingredientsToUiVersion(ingredients, true, locale);
         uiIngredients.addAll(getNotConsistsIngredients(cocktail, iSize - uiIngredients.size(), locale));

@@ -4,6 +4,7 @@ import lk.server.cocktails.database.cocktail.entities.Cocktail;
 import lk.server.cocktails.locale.Locale;
 import lk.server.cocktails.locale.LocaleService;
 import lk.server.cocktails.ui.endpoint.cocktails.dto.UiCocktail;
+import lk.server.cocktails.utils.CreatorPhotoService;
 import lk.utils.mapper.RowMapperService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,7 +23,7 @@ public class RowMapperUiShortCocktail {
 
     public UiCocktail join(Cocktail cocktail, Locale locale) {
         String name = localeService.getStringByLocale(cocktail.getCocktailName(), locale);
-        String photo = photoService.getCocktailPhotoPath(cocktail);
+        String photo = photoService.getPathFromCocktail(cocktail);
 
         UiCocktail uiCocktail = rowMapper.join(new UiCocktail(), cocktail);
         uiCocktail.setName(name);
