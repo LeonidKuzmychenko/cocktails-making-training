@@ -5,6 +5,7 @@ import lk.server.cocktails.database.cocktail.services.CocktailService;
 import lk.server.cocktails.locale.Locale;
 import lk.server.cocktails.ui.endpoint.cocktails.dto.UiCocktail;
 import lk.server.cocktails.ui.endpoint.cocktails.mappers.RowMapperUiCocktail;
+import lk.server.cocktails.ui.endpoint.cocktails.mappers.RowMapperUiShortCocktail;
 import lk.server.cocktails.utils.MyStreamUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,9 +24,18 @@ public class UiCocktailsService {
     @Autowired
     private RowMapperUiCocktail rowMapperUiCocktail;
 
+    @Autowired
+    private RowMapperUiShortCocktail rowMapperUiShortCocktail;
+
     public List<UiCocktail> getCocktails(Locale locale, int cSize, int iSize) {
         return cocktailService.findRandomLimitCocktails(cSize).stream()
                 .map(cocktail -> cocktailToUiCocktail(cocktail, locale, iSize))
+                .collect(Collectors.toList());
+    }
+
+    public List<UiCocktail> getShortCocktails(Locale locale) {
+        return cocktailService.findAll().stream()
+                .map(cocktail -> rowMapperUiShortCocktail.join(cocktail, locale))
                 .collect(Collectors.toList());
     }
 

@@ -29,6 +29,9 @@ public class RowMapperUiCocktail {
     @Autowired
     private IngredientService ingredientService;
 
+    @Autowired
+    private CreatorPhotoService photoService;
+
     public UiCocktail join(Cocktail cocktail, Locale locale, int iSize) {
         String name = localeService.getStringByLocale(cocktail.getCocktailName(), locale);
         String association = localeService.getStringByLocale(cocktail.getCocktailAssociation(), locale);
@@ -36,7 +39,7 @@ public class RowMapperUiCocktail {
         String method = localeService.getStringByLocale(cocktail.getCocktailMethod(), locale);
         String note = localeService.getStringByLocale(cocktail.getCocktailNote(), locale);
         String garnish = localeService.getStringByLocale(cocktail.getCocktailGarnish(), locale);
-        String photo = getCocktailPhotoPath(cocktail);
+        String photo = photoService.getCocktailPhotoPath(cocktail);
         List<Ingredient> ingredients = new ArrayList<>(cocktail.getIngredients());
         List<UiIngredient> uiIngredients = ingredientsToUiVersion(ingredients, true, locale);
         uiIngredients.addAll(getNotConsistsIngredients(cocktail, iSize - uiIngredients.size(), locale));
@@ -52,13 +55,6 @@ public class RowMapperUiCocktail {
         uiCocktail.setIngredients(uiIngredients);
         uiCocktail.setPhoto(photo);
         return uiCocktail;
-    }
-
-    private String getCocktailPhotoPath(Cocktail cocktail) {
-        String photoPath = "photo/" + localeService.getEnString(cocktail.getCocktailName()).trim();
-        photoPath = photoPath.replaceAll(" ", "_");
-        photoPath = photoPath.replaceAll("’", "*");
-        return photoPath;
     }
 
     private List<UiIngredient> ingredientsToUiVersion(Collection<Ingredient> ingredients, boolean consists, Locale locale) {
