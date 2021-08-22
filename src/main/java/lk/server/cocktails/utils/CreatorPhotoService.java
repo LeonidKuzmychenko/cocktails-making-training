@@ -4,6 +4,7 @@ import lk.server.cocktails.database.cocktail.entities.Cocktail;
 import lk.server.cocktails.locale.LocaleService;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -26,6 +27,7 @@ public class CreatorPhotoService {
         return photoPath;
     }
 
+    @Cacheable("photo")
     public byte[] getCocktailPhotoFromPath(String cocktailName) throws IOException {
         cocktailName = cocktailName.replaceAll("_", " ");
         cocktailName = cocktailName.replaceAll("-0001-", "'");
