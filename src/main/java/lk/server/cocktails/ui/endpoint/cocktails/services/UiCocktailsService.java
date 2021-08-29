@@ -4,7 +4,9 @@ import lk.server.cocktails.database.cocktail.entities.Cocktail;
 import lk.server.cocktails.database.cocktail.services.CocktailService;
 import lk.server.cocktails.locale.Locale;
 import lk.server.cocktails.ui.endpoint.cocktails.dto.UiCocktail;
+import lk.server.cocktails.ui.endpoint.cocktails.dto.UiCocktailInfo;
 import lk.server.cocktails.ui.endpoint.cocktails.mappers.RowMapperUiCocktail;
+import lk.server.cocktails.ui.endpoint.cocktails.mappers.RowMapperUiCocktailInfo;
 import lk.server.cocktails.ui.endpoint.cocktails.mappers.RowMapperUiShortCocktail;
 import lk.server.cocktails.utils.MyStreamUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +15,7 @@ import org.springframework.stereotype.Service;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -23,6 +26,9 @@ public class UiCocktailsService {
 
     @Autowired
     private RowMapperUiCocktail rowMapperUiCocktail;
+
+    @Autowired
+    private RowMapperUiCocktailInfo rowMapperUiCocktailInfo;
 
     @Autowired
     private RowMapperUiShortCocktail rowMapperUiShortCocktail;
@@ -47,6 +53,11 @@ public class UiCocktailsService {
         Cocktail cocktail = cocktailService.findRandomCocktail(list);
         return (cocktail == null) ? null : cocktailToUiCocktail(cocktail, locale, iSize);
     }
+
+    public Optional<UiCocktailInfo> getUiCocktailInfo(Long id, Locale locale) {
+        return cocktailService.getById(id).map(cocktail -> rowMapperUiCocktailInfo.get(cocktail, locale));
+    }
+
 
     private UiCocktail cocktailToUiCocktail(Cocktail cocktail, Locale locale, int iSize) {
         return rowMapperUiCocktail.join(cocktail, locale, iSize);

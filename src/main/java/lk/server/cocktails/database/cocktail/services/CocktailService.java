@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class CocktailService {
@@ -18,6 +19,10 @@ public class CocktailService {
     @Cacheable("cocktails")
     public List<Cocktail> findAll() {
         return repository.findAll();
+    }
+
+    public Optional<Cocktail> getById(Long id) {
+        return repository.findById(id);
     }
 
     public Cocktail save(Cocktail cocktail) {

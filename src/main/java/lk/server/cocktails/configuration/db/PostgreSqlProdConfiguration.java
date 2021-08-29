@@ -21,7 +21,8 @@ import java.util.Properties;
 @EnableJpaRepositories(basePackages = {
         "lk.server.cocktails.database.cocktail.repositories",
         "lk.server.cocktails.database.ingredient.repositories",
-        "lk.server.cocktails.database.modes.repositories"
+        "lk.server.cocktails.database.modes.repositories",
+        "lk.server.cocktails.statistic.repository"
 })
 @ConditionalOnProperty(prefix = "database", name = "env", havingValue = "prod")
 public class PostgreSqlProdConfiguration {
@@ -64,7 +65,8 @@ public class PostgreSqlProdConfiguration {
         return new String[]{
                 "lk.server.cocktails.database.cocktail.entities",
                 "lk.server.cocktails.database.ingredient.entities",
-                "lk.server.cocktails.database.modes.entities"
+                "lk.server.cocktails.database.modes.entities",
+                "lk.server.cocktails.statistic.model"
         };
     }
 

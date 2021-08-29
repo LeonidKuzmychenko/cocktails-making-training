@@ -18,7 +18,7 @@ public class ImageController {
 
     @Autowired
     private CreatorPhotoService photoService;
-    
+
     @GetMapping(value = "/photo/{name}", produces = MediaType.IMAGE_JPEG_VALUE)
     public ResponseEntity<byte[]> photo(@PathVariable("name") String cocktailName) throws IOException {
         byte[] photo = photoService.getCocktailPhotoFromPath(cocktailName);
