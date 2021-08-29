@@ -83,7 +83,7 @@ public class PostgreSqlProdConfiguration {
     @Bean(name = "mainJpaProperties")
     public Properties jpaProperties() {
         Properties properties = new Properties();
-        properties.put(AvailableSettings.HBM2DDL_AUTO, getDDL(SchemaAutoTooling.CREATE_DROP));
+        properties.put(AvailableSettings.HBM2DDL_AUTO, getDDL(SchemaAutoTooling.UPDATE));
         properties.put(AvailableSettings.DIALECT, PostgreSQL82Dialect.class.getName());
         return properties;
     }
