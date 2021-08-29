@@ -3,6 +3,7 @@ package lk.server.cocktails.ui.endpoint.cocktails.controllers;
 import com.google.gson.Gson;
 import lk.server.cocktails.locale.Locale;
 import lk.server.cocktails.ui.endpoint.cocktails.dto.UiCocktail;
+import lk.server.cocktails.ui.endpoint.cocktails.dto.UiCocktailInfo;
 import lk.server.cocktails.ui.endpoint.cocktails.services.UiCocktailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -47,5 +48,11 @@ public class UiCocktailsController {
             return new ResponseEntity<>(null, null, 215);
         }
         return new ResponseEntity<>(gson.toJson(cocktail), HttpStatus.OK);
+    }
+
+    @GetMapping(value = "/info", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<UiCocktailInfo> getById(@RequestParam("id") Long id, @RequestHeader("locale") Locale locale) {
+        return uiCocktailsService.getUiCocktailInfo(id, locale).map(cocktail -> new ResponseEntity<>(cocktail, HttpStatus.OK))
+                .orElseGet(() -> new ResponseEntity<>(HttpStatus.BAD_REQUEST));
     }
 }

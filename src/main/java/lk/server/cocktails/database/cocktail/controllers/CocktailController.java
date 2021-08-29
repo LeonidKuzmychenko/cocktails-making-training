@@ -26,6 +26,11 @@ public class CocktailController {
     @Qualifier("GsonExpose")
     private Gson gson;
 
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Cocktail> getById(@RequestParam("id") Long id) {
+        return cocktailService.getById(id).map(cocktail -> new ResponseEntity<>(cocktail, HttpStatus.OK))
+                .orElseGet(() -> new ResponseEntity<>(HttpStatus.BAD_REQUEST));
+    }
 
     @GetMapping(value = "/findAll", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> findAll() {

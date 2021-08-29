@@ -20,7 +20,8 @@ import java.util.Properties;
 @EnableJpaRepositories(basePackages = {
         "lk.server.cocktails.database.cocktail.repositories",
         "lk.server.cocktails.database.ingredient.repositories",
-        "lk.server.cocktails.database.modes.repositories"
+        "lk.server.cocktails.database.modes.repositories",
+        "lk.server.cocktails.statistic.repository"
 })
 @ConditionalOnProperty(prefix = "database", name = "env", havingValue = "dev")
 public class PostgreSqlDevConfiguration {
@@ -54,7 +55,8 @@ public class PostgreSqlDevConfiguration {
         return new String[]{
                 "lk.server.cocktails.database.cocktail.entities",
                 "lk.server.cocktails.database.ingredient.entities",
-                "lk.server.cocktails.database.modes.entities"
+                "lk.server.cocktails.database.modes.entities",
+                "lk.server.cocktails.statistic.model"
         };
     }
 
@@ -71,7 +73,7 @@ public class PostgreSqlDevConfiguration {
     @Bean(name = "mainJpaProperties")
     public Properties jpaProperties() {
         Properties properties = new Properties();
-        properties.put(AvailableSettings.HBM2DDL_AUTO, getDDL(SchemaAutoTooling.UPDATE));
+        properties.put(AvailableSettings.HBM2DDL_AUTO, getDDL(SchemaAutoTooling.CREATE_DROP));
         properties.put(AvailableSettings.DIALECT, PostgreSQL82Dialect.class.getName());
         return properties;
     }
