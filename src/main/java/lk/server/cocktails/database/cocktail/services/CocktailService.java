@@ -3,7 +3,6 @@ package lk.server.cocktails.database.cocktail.services;
 import lk.server.cocktails.database.cocktail.entities.Cocktail;
 import lk.server.cocktails.database.cocktail.repositories.CocktailRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.Collections;
@@ -16,7 +15,7 @@ public class CocktailService {
     @Autowired
     private CocktailRepository repository;
 
-    @Cacheable("cocktails")
+//    @Cacheable("cocktails") bug
     public List<Cocktail> findAll() {
         return repository.findAll();
     }
